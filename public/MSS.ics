@@ -1322,4 +1322,25 @@ CATEGORIES:celebration
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:usafa-thunderbirds-flyover@maybesomethingseasonal.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
+RDATE;VALUE=DATE:20270527
+SUMMARY:Thunderbirds - Air Force Academy Graduation Flyover
+LOCATION:U.S. Air Force Academy\, Colorado Springs\, Colorado
+DESCRIPTION:Annual graduation flyover with dates updated from published sch
+ edules. The preliminary Thunderbirds schedule lists Thursday\, May 27\, 20
+ 27. This is tentative and conflicts with the Academy academic calendar lis
+ ting graduation on June 3\, 2027. Verify the final schedule before making 
+ plans. In 2026\, reconnaissance took place May 26 and rehearsals May 27 be
+ fore the May 28 graduation. Practice dates for 2027 are not yet confirmed.
+ \n\nIcon: ✈️\nCategory: celebration
+URL:https://airshowstuff.com/v4/2025/usaf-thunderbirds-preliminary-2027-air
+ show-schedule-released/
+CATEGORIES:celebration
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR
