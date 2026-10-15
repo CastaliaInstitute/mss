@@ -1285,4 +1285,41 @@ CATEGORIES:religious
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:monument-fourth-of-july-parade@maybesomethingseasonal.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260704
+DTEND;VALUE=DATE:20260705
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=4
+SUMMARY:Monument 4th of July Parade
+LOCATION:Downtown Monument\, Colorado
+DESCRIPTION:Annual Independence Day parade in downtown Monument\, Colorado.
+  Check the organizer for the current route and start time.\n\nIcon: 🇺
+ 🇸\nCategory: celebration
+URL:https://www.townofmonument.org/338/4th-of-July-Events
+CATEGORIES:celebration
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:usafa-graduation@maybesomethingseasonal.com
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
+RDATE;VALUE=DATE:20270603
+SUMMARY:U.S. Air Force Academy Graduation
+LOCATION:Falcon Stadium\, U.S. Air Force Academy\, Colorado Springs\, Color
+ ado
+DESCRIPTION:Annual U.S. Air Force Academy graduation at Falcon Stadium. The
+  date changes each year: May 28 in 2026 and June 3 in 2027. This recurring
+  series includes only published dates. Add future RDATE values when the Ac
+ ademy publishes its academic calendar. Check the official graduation page 
+ for times\, tickets\, and base access requirements.\n\nIcon: 🎓\nCategor
+ y: celebration
+URL:https://www.usafa.edu/graduation/
+X-SOURCE:https://www.usafa.edu/app/uploads/AY_2026_2027_Calendar.pdf
+CATEGORIES:celebration
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR
