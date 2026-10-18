@@ -7744,8 +7744,7 @@
     "title": "Turron de Alicante (Hard Almond Nougat)",
     "dish": "Turron",
     "events": [
-      "Immaculada",
-      "Christmas Eve"
+      "Immaculada"
     ],
     "intro": "Turron de Alicante is a classic Spanish hard nougat, a beloved confection especially popular during the Christmas season. Its appearance on tables for the Feast of the Immaculate Conception (Immaculada) on December 8th often signals the official start of holiday festivities in Spain, bringing families together to share this sweet, crunchy treat. On Christmas Eve, turrón (torrons in Catalan) is also among the sweets traditionally brought by the Tió de Nadal. In our family celebration, the Tió is made from the tree felled on St. Martin’s Eve.",
     "yield": "One 8x4 inch (20x10 cm) bar, about 12 servings",
@@ -11639,6 +11638,40 @@
       "Use a cooking pumpkin or a dense winter squash, rather than a large carving pumpkin.",
       "This version uses moderate sweetness; drizzle on more syrup to taste.",
       "Refrigerate leftovers in a covered container within 2 hours and use within 3–4 days. Reheat gently with a splash of water."
+    ]
+  },
+  "torro-dagramunt": {
+    "title": "Torró d’Agramunt",
+    "dish": "Torró d’Agramunt",
+    "events": [
+      "Christmas Eve"
+    ],
+    "intro": "Torró d’Agramunt is a traditional Catalan nougat from Agramunt, made with toasted hazelnuts or almonds, honey, sugar, egg white, and edible wafer. This home-style hazelnut version is a sweet for our Christmas Eve Tió festivities.",
+    "yield": "About 20 small pieces",
+    "prepTime": "30 min, plus overnight setting",
+    "cookTime": "30–40 min",
+    "ingredients": [
+      "250 g (about 2 cups) shelled hazelnuts",
+      "150 g honey",
+      "100 g granulated sugar",
+      "2 tablespoons (30 ml) water",
+      "1 large egg white, preferably pasteurized",
+      "2 sheets edible wafer paper (oblea), sized to an 8-inch (20 cm) square pan"
+    ],
+    "steps": [
+      "Heat the oven to 300°F (150°C). Toast the hazelnuts on a tray for 10–15 minutes until fragrant and lightly golden. Rub off loose skins in a clean towel. Keep the nuts warm in the switched-off oven.",
+      "Line an 8-inch (20 cm) square pan with baking parchment, leaving an overhang. Place a sheet of edible wafer paper on the bottom. Have the second sheet and a sturdy, lightly oiled spatula ready.",
+      "Put the honey, sugar, and water in a heavy saucepan with room for bubbling. Warm gently, stirring until the sugar dissolves. Bring to a boil without stirring and cook to 300°F (149°C) on a candy thermometer. Remove from the heat.",
+      "As the syrup approaches temperature, beat the egg white in a heatproof stand-mixer bowl until stiff peaks form. With the mixer running, carefully pour the hot syrup into the egg white in a thin, steady stream down the side of the bowl, avoiding the whisk.",
+      "Beat until the mixture is thick, glossy, and beginning to hold its shape, about 5–8 minutes. Fold in the warm hazelnuts promptly with a sturdy spatula. The mixture will become stiff and sticky.",
+      "Scrape into the prepared pan and press into an even layer. Cover with the second wafer sheet, then a piece of parchment. Place a flat board on top and weight lightly to compact the nougat.",
+      "Leave at cool room temperature overnight to set. Lift out using the parchment, remove the parchment but leave the edible wafer in place, and cut into small pieces with a sturdy knife. Serve with the Christmas Eve Tió sweets."
+    ],
+    "tips": [
+      "Use a candy thermometer: syrup temperature and humidity affect whether the nougat sets firm or chewy. Homemade texture may differ from artisan Torró d’Agramunt.",
+      "Work promptly once the nuts are added; an adult should handle the hot sugar syrup.",
+      "Keep tightly wrapped in an airtight container in a cool, dry place. Avoid damp conditions, which make nougat sticky.",
+      "This hazelnut version contains nuts and egg."
     ]
   }
 }
