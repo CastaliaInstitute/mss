@@ -49,6 +49,7 @@ interface CalendarEvent {
   description: string;
   icon: string;
   image?: string;
+  url?: string;
   category: string;
   endDate?: string;
   calendarMeta?: CalendarMetadata;
@@ -2935,7 +2936,10 @@ const monthFromLocation = (): Date | null => {
 
 const canonicalMonthPath = (date: Date): string => {
   const basePath = getBaseUrl().replace(/\/$/, "");
-  return `${basePath}/${format(date, "yyyy/MM")}`;
+  const params = new URLSearchParams(window.location.search);
+  params.delete("route");
+  const query = params.toString();
+  return `${basePath}/${format(date, "yyyy/MM")}${query ? `?${query}` : ""}${window.location.hash}`;
 };
 
 const App: React.FC = () => {
@@ -3043,6 +3047,10 @@ const App: React.FC = () => {
     const dishes = recipeLinks[event.title] || [];
     return event.description.split("\n").map((line, lineIndex) => {
       const isFeasting = /^Feasting:/.test(line);
+      const resource = line.match(/^(Invitation|Scripts): (https:\/\/mss\.castalia\.institute\/\S+)$/);
+      if (resource) {
+        return <React.Fragment key={lineIndex}>{lineIndex > 0 && "\n"}<a className="recipe-link" href={resource[2]} target="_blank" rel="noopener noreferrer">{resource[1] === "Scripts" ? "Stories & Wild Goose Chase scripts" : "Invitation"}</a></React.Fragment>;
+      }
       if (!isFeasting || dishes.length === 0) {
         return (
           <React.Fragment key={lineIndex}>
@@ -3320,6 +3328,7 @@ const App: React.FC = () => {
                   date: currentEvent.date,
                   endDate: daysDiff > 1 ? currentEvent.endDate : undefined,
                   description: currentEvent.description || "",
+                  url: currentEvent.url,
                   icon: icon,
                   category: category,
                 };
@@ -3437,6 +3446,9 @@ const App: React.FC = () => {
                 .replace(/\\\\/g, "\\");
               currentEvent.description = mainDesc;
             }
+          } else if (inEvent && trimmedLine.startsWith("URL:")) {
+            const url = trimmedLine.substring(4).trim();
+            if (/^https?:\/\//i.test(url)) currentEvent.url = url;
           } else if (inEvent && trimmedLine.startsWith("X-IMAGE")) {
             // Handle custom X-IMAGE property for image URLs
             const colonIndex = trimmedLine.indexOf(":");
@@ -3902,6 +3914,16 @@ const App: React.FC = () => {
               <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-gray-700">
                 {renderDescription(selectedEvent)}
               </p>
+              {selectedEvent.url && (
+                <a
+                  href={selectedEvent.url}
+                  className="recipe-link mt-3 inline-block text-sm font-semibold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Event details
+                </a>
+              )}
             </section>
           ))}
         </div>
@@ -3959,9 +3981,27 @@ const App: React.FC = () => {
               )}
             </div>
             <div className="text-right">
-              <div className="text-lg font-semibold text-gray-800">
-                {format(currentDate, "MMMM yyyy")}
-              </div>
+              <nav aria-label="Month navigation" className="flex items-center justify-end gap-2">
+                <button
+                  type="button"
+                  aria-label="Previous month"
+                  onClick={() => showMonth(subMonths(currentDate, 1))}
+                  className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-green-800 transition-colors hover:bg-green-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-green-700"
+                >
+                  <ChevronLeft className="h-5 w-5" aria-hidden="true" />
+                </button>
+                <h2 aria-live="polite" className="min-w-[10rem] text-center text-lg font-semibold text-gray-800">
+                  {format(currentDate, "MMMM yyyy")}
+                </h2>
+                <button
+                  type="button"
+                  aria-label="Next month"
+                  onClick={() => showMonth(addMonths(currentDate, 1))}
+                  className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-green-800 transition-colors hover:bg-green-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-green-700"
+                >
+                  <ChevronRight className="h-5 w-5" aria-hidden="true" />
+                </button>
+              </nav>
               <div className="text-xs text-gray-500">
                 A calendar celebrating nature&apos;s cycles and seasonal moments
               </div>

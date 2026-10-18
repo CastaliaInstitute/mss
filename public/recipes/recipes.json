@@ -5328,7 +5328,9 @@
     "dish": "Pan de Muerto",
     "events": [
       "Dia de los Muertos",
-      "Dia de los Angelitos"
+      "Dia de los Angelitos",
+      "Día de Muertos Celebration at the Fine Arts Center",
+      "Día de Muertos at the Children’s Museum of Denver"
     ],
     "intro": "Pan de Muerto, or 'Bread of the Dead,' is a traditional sweet bread baked and consumed during Mexico's Dia de los Muertos (Day of the Dead) and Dia de los Angelitos (Day of the Little Angels) celebrations. It is a central element of the 'ofrenda' (altar) dedicated to deceased loved ones, symbolizing the cycle of life and death. The bread is often flavored with orange blossom or anise and decorated with 'bones' and a 'teardrop' or 'skull' shape on top.",
     "yield": "1 large loaf or 2 smaller loaves (Serves 8-10)",
@@ -5549,12 +5551,15 @@
     ]
   },
   "tamales": {
-    "title": "Traditional Pork Tamales for Día de los Muertos",
-    "dish": "Tamales",
+    "title": "Tamales de Muerto",
+    "dish": "Tamales de Muerto",
     "events": [
-      "Dia de los Muertos"
+      "Dia de los Muertos",
+      "Dia de los Angelitos",
+      "Día de Muertos Celebration at the Fine Arts Center",
+      "Día de Muertos at the Children’s Museum of Denver"
     ],
-    "intro": "Tamales are a cornerstone of Día de los Muertos celebrations, lovingly prepared to honor departed loved ones. These savory bundles of masa, often filled with rich pork in a chile sauce, are placed on altars as offerings and shared among family, symbolizing sustenance and connection across generations.",
+    "intro": "Tamales are a cornerstone of Día de los Muertos celebrations, lovingly prepared to honor departed loved ones. These savory bundles of masa, often filled with rich pork in a chile sauce, are placed on altars as offerings and shared among family, symbolizing sustenance and connection across generations. A tamalada is a gathering of family or friends to make tamales together, sharing the work of spreading masa, adding fillings, folding husks, and steaming while exchanging stories. Traditions vary by family and region.",
     "yield": "Serves 8-10 (makes about 30-40 tamales)",
     "prepTime": "3 hours",
     "cookTime": "2 hours",
@@ -5594,7 +5599,8 @@
     "tips": [
       "For a vegetarian option, fill tamales with cheese and jalapeños or a mixture of roasted vegetables.",
       "Tamales can be made ahead of time and frozen. To reheat, steam from frozen for about 30-45 minutes.",
-      "Ensure your masa is light and fluffy; this is key to tender tamales. If it's too dry, add a little more broth, one tablespoon at a time."
+      "Ensure your masa is light and fluffy; this is key to tender tamales. If it's too dry, add a little more broth, one tablespoon at a time.",
+      "Host a tamalada: prepare the filling ahead, soak the husks, then set out stations for spreading masa, filling, and folding. Let an experienced cook demonstrate one tamal, divide the work, and send guests home with a share. Allow several hours for assembly and steaming."
     ]
   },
   "pretzels": {
@@ -9704,7 +9710,10 @@
     "title": "Traditional Atole de Maiz",
     "dish": "Atole",
     "events": [
-      "Dia de los Angelitos"
+      "Dia de los Angelitos",
+      "Dia de los Muertos",
+      "Día de Muertos Celebration at the Fine Arts Center",
+      "Día de Muertos at the Children’s Museum of Denver"
     ],
     "intro": "Atole is a comforting, warm, and thick beverage made from masa harina, traditionally enjoyed throughout Mexico and Central America. During Dia de los Angelitos on November 1st, it is a beloved offering on altars for the returning spirits of children, and a cherished drink for families to share, symbolizing warmth and sustenance for both the living and the departed.",
     "yield": "Serves 6-8",
@@ -11592,6 +11601,43 @@
       "For an extra smooth texture, you can mash some of the rice against the side of the pot with a wooden spoon while cooking.",
       "Adjust the amount of sugar to your preference; some like it sweeter, some less so.",
       "Sholeh Zard is traditionally served cold, which allows its flavors to fully develop and its texture to firm up beautifully."
+    ]
+  },
+  "calabaza-en-tacha": {
+    "title": "Calabaza en Tacha (Candied Pumpkin)",
+    "dish": "Candied Pumpkin",
+    "events": [
+      "Dia de los Angelitos",
+      "Dia de los Muertos",
+      "Día de Muertos Celebration at the Fine Arts Center",
+      "Día de Muertos at the Children’s Museum of Denver"
+    ],
+    "intro": "Calabaza en tacha is a traditional Mexican pumpkin dessert enjoyed during Día de Muertos. Pumpkin wedges simmer gently in piloncillo and cinnamon syrup until tender. The edible flesh is served with syrup; the rind helps the pieces hold their shape.",
+    "yield": "Serves 6–8",
+    "prepTime": "20 min",
+    "cookTime": "1–1½ hours",
+    "ingredients": [
+      "1 small cooking pumpkin or kabocha squash, about 3 lb (1.4 kg)",
+      "12 oz (340 g) piloncillo, chopped, or packed dark brown sugar",
+      "3 cups (720 ml) water, plus more as needed",
+      "2 cinnamon sticks, preferably Mexican canela",
+      "3 whole cloves (optional)",
+      "2 wide strips orange peel, washed, with minimal white pith (optional)",
+      "Pinch of salt",
+      "Milk or cream, for serving (optional)"
+    ],
+    "steps": [
+      "Wash and dry the pumpkin. On a stable cutting board, carefully halve it and scoop out the seeds and stringy pulp. Cut into thick wedges about 2–3 inches wide, leaving the rind on.",
+      "In a wide, heavy pot, combine the piloncillo, water, cinnamon, optional cloves and orange peel, and salt. Bring to a gentle simmer, stirring until the sugar dissolves.",
+      "Arrange the pumpkin wedges in the pot, rind side down where possible. Spoon syrup over the flesh. The syrup need not cover the pumpkin completely.",
+      "Cover and simmer gently for 45–75 minutes, depending on the thickness and variety of pumpkin. Baste every 15–20 minutes and add a little hot water if the syrup gets too low. Avoid stirring or boiling vigorously so the wedges stay intact.",
+      "When a fork slides easily into the flesh, carefully transfer the wedges to a serving dish. If the syrup is thin, simmer it uncovered for 10–15 minutes until lightly thickened; it will thicken further as it cools. Remove the cinnamon, cloves and orange peel.",
+      "Pour the syrup over the pumpkin. Serve warm or at room temperature, with a splash of milk or cream if desired. Scoop the soft flesh away from any tough rind."
+    ],
+    "tips": [
+      "Use a cooking pumpkin or a dense winter squash, rather than a large carving pumpkin.",
+      "This version uses moderate sweetness; drizzle on more syrup to taste.",
+      "Refrigerate leftovers in a covered container within 2 hours and use within 3–4 days. Reheat gently with a splash of water."
     ]
   }
 }

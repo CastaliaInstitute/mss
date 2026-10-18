@@ -817,7 +817,7 @@
     },
     {
       "text": "tamales",
-      "dish": "Tamales",
+      "dish": "Tamales de Muerto",
       "slug": "tamales"
     },
     {
@@ -829,6 +829,16 @@
       "text": "calaveras de azucar",
       "dish": "Calaveras de Azucar",
       "slug": "calaveras-de-azucar"
+    },
+    {
+      "text": "candied pumpkin",
+      "dish": "Candied Pumpkin",
+      "slug": "calabaza-en-tacha"
+    },
+    {
+      "text": "atole",
+      "dish": "Atole",
+      "slug": "atole"
     }
   ],
   "Martinstag Lantern Evening": [
@@ -1525,6 +1535,16 @@
       "text": "favourite sweets",
       "dish": "Sweets",
       "slug": "sweets"
+    },
+    {
+      "text": "candied pumpkin",
+      "dish": "Candied Pumpkin",
+      "slug": "calabaza-en-tacha"
+    },
+    {
+      "text": "tamales",
+      "dish": "Tamales de Muerto",
+      "slug": "tamales"
     }
   ],
   "Christmas Eve": [
@@ -1777,6 +1797,50 @@
       "text": "pie",
       "dish": "Pie",
       "slug": "pie"
+    }
+  ],
+  "Día de Muertos Celebration at the Fine Arts Center": [
+    {
+      "text": "pan de muerto",
+      "dish": "Pan de Muerto",
+      "slug": "pan-de-muerto"
+    },
+    {
+      "text": "candied pumpkin",
+      "dish": "Candied Pumpkin",
+      "slug": "calabaza-en-tacha"
+    },
+    {
+      "text": "atole",
+      "dish": "Atole",
+      "slug": "atole"
+    },
+    {
+      "text": "tamales",
+      "dish": "Tamales de Muerto",
+      "slug": "tamales"
+    }
+  ],
+  "Día de Muertos at the Children’s Museum of Denver": [
+    {
+      "text": "pan de muerto",
+      "dish": "Pan de Muerto",
+      "slug": "pan-de-muerto"
+    },
+    {
+      "text": "candied pumpkin",
+      "dish": "Candied Pumpkin",
+      "slug": "calabaza-en-tacha"
+    },
+    {
+      "text": "atole",
+      "dish": "Atole",
+      "slug": "atole"
+    },
+    {
+      "text": "tamales",
+      "dish": "Tamales de Muerto",
+      "slug": "tamales"
     }
   ]
 }

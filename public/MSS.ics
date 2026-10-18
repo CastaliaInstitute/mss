@@ -554,9 +554,15 @@ DESCRIPTION:History: On 1 November\, Mexican families honour children who h
  ave died\, believing their angelitos return first to enjoy the love of the
  ir kin.\nTraditions: Altars glow with candles\, toys\, and paper cut-outs\
  , while families ring bells and scatter marigolds to guide the little spir
- its home.\nFeasting: Offerings feature atole\, sugar skulls\, tiny pan de 
- muerto loaves\, fruit\, and favourite sweets that delighted the children i
- n life.\nDay: Saturday\n\nIcon: 👼\nCategory: cultural
+ its home.\nFeasting: Offerings feature atole\, sugar skulls\, tiny pan de
+  muerto loaves\, fruit\, and favourite sweets that delighted the children
+  in life. At home\, enjoy candied pumpkin (calabaza en tacha) simmered in
+  piloncillo and cinnamon syrup. At home\, share tamales with warm atole.\n
+ At-home activity: Host a tamalada—a gathering of family or friends to ma
+ ke tamales together. Share the work of spreading masa\, filling\, folding
+  husks\, and steaming while exchanging stories. Customs vary by family and
+  region.\nDay: Saturday\nFilms: At home\, watch Coco (2017) or The Book of
+  Life (2014).\n\nIcon: 👼\nCategory: cultural
 CATEGORIES:cultural
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -566,13 +572,19 @@ DTSTAMP:20251104T055848Z
 DTSTART:20251102T070000Z
 DTEND:20251103T070000Z
 SUMMARY:Dia de los Muertos
-DESCRIPTION:History: Rooted in pre-Hispanic customs later intertwined with 
- Catholic All Souls' rites\, Dia de los Muertos celebrates ancestral contin
- uity on 2 November.\nTraditions: Families build ofrendas with photos and c
- opal incense\, picnic beside candlelit graves\, and share stories through 
- the night.\nFeasting: Traditional dishes include pan de muerto\, mole\, ta
- males\, champurrado\, and calaveras de azucar painted with loved ones' nam
- es.\nDay: Sunday\n\nIcon: 💀\nCategory: cultural
+DESCRIPTION:History: Rooted in pre-Hispanic customs later intertwined with
+  Catholic All Souls' rites\, Dia de los Muertos celebrates ancestral conti
+ nuity on 2 November.\nTraditions: Families build ofrendas with photos and
+  copal incense\, picnic beside candlelit graves\, and share stories throug
+ h the night.\nFeasting: Traditional dishes include pan de muerto\, mole\,
+  tamales\, champurrado\, and calaveras de azucar painted with loved ones'
+  names. At home\, enjoy candied pumpkin (calabaza en tacha) simmered in pi
+ loncillo and cinnamon syrup. Serve warm atole flavored with cinnamon and v
+ anilla alongside the bread.\nAt-home activity: Host a tamalada—a gatheri
+ ng of family or friends to make tamales together. Share the work of spread
+ ing masa\, filling\, folding husks\, and steaming while exchanging stories
+ . Customs vary by family and region.\nDay: Sunday\n\nIcon: 💀\nCategory:
+  cultural
 CATEGORIES:cultural
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -583,12 +595,17 @@ DTSTART:20251110T070000Z
 DTEND:20251111T070000Z
 SUMMARY:Martinstag Lantern Evening
 DESCRIPTION:History: Eves of St. Martin's Day in German-speaking lands reca
- ll the charitable Roman soldier turned bishop who shared his cloak with a 
- beggar.\nTraditions: Children carry handmade lanterns through the streets\
- , sing Sankt Martin songs\, and end with bonfires or shadow plays retellin
- g his compassion.\nFeasting: Warm cider\, pretzels\, roasted chestnuts\, a
- nd buttery pastries reward lantern bearers after the chilly evening walk.\
- nDay: Monday\n\nIcon: 🧥\nCategory: cultural
+ ll the charitable Roman soldier turned bishop who shared his cloak with a
+  beggar.\nTraditions: Children carry handmade lanterns through the streets
+ \, sing Sankt Martin songs\, and end with bonfires or shadow plays retelli
+ ng his compassion.\nFeasting: Warm cider\, pretzels\, roasted chestnuts\,
+  and buttery pastries reward lantern bearers after the chilly evening walk
+ .\nDay: Monday\nOur celebration: Collect pine cones in the afternoon. On t
+ he evening of November 10\, tell St. Martin’s stories with Martin the Po
+ rch Goose in attendance. Keep the pine cones for tomorrow’s adventure.\n
+ Invitation: https://mss.castalia.institute/martinstag/invitation/\nScripts
+ : https://mss.castalia.institute/martinstag/scripts/\n\nIcon: 🧥\nCatego
+ ry: cultural
 CATEGORIES:cultural
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -605,7 +622,13 @@ DESCRIPTION:History: Medieval Europe celebrated 11 November as the close of
  amatizations of Martin's cloak-sharing remind communities to care for thos
  e in need.\nFeasting: Feasts centre on roast goose with red cabbage\, pota
  to dumplings\, spiced biscuits\, and mugs of Gluehwein or Federweisser.\nD
- ay: Tuesday\n\nIcon: 🪿\nCategory: cultural
+ ay: Tuesday\nOur celebration: On the morning of November 11\, give the chi
+ ldren cloaks for the Wild Goose Chase. Martin the Porch Goose has run away
+  overnight\, fearful he will be eaten! Follow the clues he left attached t
+ o yesterday’s pine cones\, with children using goose calls as they searc
+ h.\nInvitation: https://mss.castalia.institute/martinstag/invitation/\nScr
+ ipts: https://mss.castalia.institute/martinstag/scripts/\n\nIcon: 🪿\nCa
+ tegory: cultural
 CATEGORIES:cultural
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -1284,5 +1307,67 @@ DESCRIPTION:Many communities celebrate Rama's victory over Ravana. In
 CATEGORIES:religious
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fac-dia-de-muertos-20261101@mss.castalia.institute
+DTSTAMP:20261018T000000Z
+DTSTART:20261101T193000Z
+DTEND:20261101T233000Z
+SUMMARY:Día de Muertos Celebration at the Fine Arts Center
+LOCATION:Colorado Springs Fine Arts Center at Colorado College\, 30 West Da
+ le St.\, Colorado Springs\, CO 80903
+URL:https://fac.coloradocollege.edu/events/dia-de-muertos/
+DESCRIPTION:Sunday\, November 1\, 2026\, 12:30–4:30 p.m. Mountain Time.\n
+ Location: Colorado Springs Fine Arts Center at Colorado College\, 30 West
+  Dale St.\, Colorado Springs\, CO 80903.\nFree and open to the public\; RS
+ VPs strongly encouraged. Celebrate with a community ofrenda\, live music a
+ nd performances\, hands-on art activities\, an installation by Cal Duran\,
+  a mercado\, and a children's costume parade. Food and drinks available fo
+ r purchase.\nFeasting: At home\, bake pan de muerto\, an orange-scented sw
+ eet bread with bone-shaped decorations and a sugar topping. At home\, enjo
+ y candied pumpkin (calabaza en tacha) simmered in piloncillo and cinnamon
+  syrup. Serve warm atole flavored with cinnamon and vanilla alongside the
+  bread. At home\, share tamales with warm atole.\nAt-home activity: Host a
+  tamalada—a gathering of family or friends to make tamales together. Sha
+ re the work of spreading masa\, filling\, folding husks\, and steaming whi
+ le exchanging stories. Customs vary by family and region.\nFilms: At home\
+ , watch Coco (2017) or The Book of Life (2014).\n\nIcon: 💀\nCategory: c
+ ultural
+CATEGORIES:cultural
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+X-IMAGE:/images/image6.png
+END:VEVENT
+BEGIN:VEVENT
+UID:childrens-museum-dia-de-muertos-20261101@mss.castalia.institute
+DTSTAMP:20261018T000000Z
+DTSTART:20261101T160000Z
+SUMMARY:Día de Muertos at the Children’s Museum of Denver
+LOCATION:Children's Museum of Denver\, 2121 Children's Museum Drive\, Denve
+ r\, CO 80211
+URL:https://www.mychildsmuseum.org/events/EventDetail/day-of-the-dead
+DESCRIPTION:Sunday\, November 1\, 2026\, starting at 9 a.m. Mountain Time.
+  Museum hours: 9 a.m.–4 p.m.\nLocation: 2121 Children's Museum Drive\, D
+ enver\, CO 80211.\nCelebrate traditions from Mexico\, Guatemala and Ecuado
+ r. Activities are included with Museum admission\; members are free. Adult
+ s must be accompanied by a child and children by an adult.\nProgram: All-d
+ ay ofrenda in The Art Studio\; 9–11 a.m. kite making in Joy Park\; 10 a.
+ m. StoryTime with Elisa Garcia\; 11:30 a.m.–12:30 p.m. flower exploratio
+ n in the CornerCopia Garden\; 1:30 p.m. face painting\; 2 p.m. arroz con l
+ eche and horchata tastings while supplies last\; 2:30 p.m. StoryTime\; 3 p
+ .m. mariachi parade. Activities subject to change.\nFeasting: At home\, ba
+ ke pan de muerto\, an orange-scented sweet bread with bone-shaped decorati
+ ons and a sugar topping. At home\, enjoy candied pumpkin (calabaza en tach
+ a) simmered in piloncillo and cinnamon syrup. Serve warm atole flavored wi
+ th cinnamon and vanilla alongside the bread. At home\, share tamales with
+  warm atole.\nAt-home activity: Host a tamalada—a gathering of family or
+  friends to make tamales together. Share the work of spreading masa\, fill
+ ing\, folding husks\, and steaming while exchanging stories. Customs vary
+  by family and region.\nFilms: At home\, watch Coco (2017) or The Book of
+  Life (2014).\n\nIcon: 💀\nCategory: cultural
+CATEGORIES:cultural
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+X-IMAGE:/images/image6.png
 END:VEVENT
 END:VCALENDAR
