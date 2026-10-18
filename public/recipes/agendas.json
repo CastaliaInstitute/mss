@@ -1762,8 +1762,8 @@
     "schedule": [
       {
         "time": "Morning",
-        "activity": "Craft Your Lanterns",
-        "detail": "Gather materials like paper, glue, and lights to create beautiful lanterns, just like children do for the traditional procession. This activity sets the festive mood and provides a creative outlet.",
+        "activity": "Make Turnip Lanterns",
+        "detail": "Make lanterns from turnips: adults hollow and carve the turnips, while children choose the faces, decorate, and help add battery-powered lights. Fit sturdy handles for carrying them on the dusk lantern walk.",
         "recipes": []
       },
       {
@@ -2048,8 +2048,8 @@
       },
       {
         "time": "Early Afternoon",
-        "activity": "Crafting Lanterns",
-        "detail": "Engage in the traditional craft of lantern making. Use paper, jars, or simple craft supplies to create your own lanterns, ready for a symbolic parade later.",
+        "activity": "Ready the Turnip Lanterns",
+        "detail": "Bring out the turnip lanterns made yesterday. Check their handles and battery-powered lights, and refresh the decorations for another lantern walk.",
         "recipes": []
       },
       {
