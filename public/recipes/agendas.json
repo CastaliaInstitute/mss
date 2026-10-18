@@ -3476,6 +3476,14 @@
         "recipes": []
       },
       {
+        "time": "Late Afternoon",
+        "activity": "Tió de Nadal & Turrón",
+        "detail": "Bring out the Tió made from the tree felled on St. Martin’s Eve. Gather the children to sing the Tió song and tap the log, then lift its blanket to discover small gifts and turrón (Catalan: torrons), the traditional Christmas nougat. Share pieces of almond turrón together.",
+        "recipes": [
+          "turron"
+        ]
+      },
+      {
         "time": "Early Evening",
         "activity": "Prepare the Feast",
         "detail": "Begin preparing your traditional Christmas Eve dinner, whether it's the Italian Feast of the Seven Fishes or a Polish Wigilia with comforting beet soup and pierogi, observing the tradition of refraining from meat.",
