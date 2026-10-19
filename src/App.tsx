@@ -3047,9 +3047,9 @@ const App: React.FC = () => {
     const dishes = recipeLinks[event.title] || [];
     return event.description.split("\n").map((line, lineIndex) => {
       const isFeasting = /^Feasting:/.test(line);
-      const resource = line.match(/^(Invitation|Scripts): (https:\/\/mss\.castalia\.institute\/\S+)$/);
+      const resource = line.match(/^(Invitation|Scripts|Children’s Museum|Fine Arts Center): (https:\/\/\S+)$/);
       if (resource) {
-        return <React.Fragment key={lineIndex}>{lineIndex > 0 && "\n"}<a className="recipe-link" href={resource[2]} target="_blank" rel="noopener noreferrer">{resource[1] === "Scripts" ? "Stories & Wild Goose Chase scripts" : "Invitation"}</a></React.Fragment>;
+        return <React.Fragment key={lineIndex}>{lineIndex > 0 && "\n"}<a className="recipe-link" href={resource[2]} target="_blank" rel="noopener noreferrer">{resource[1] === "Scripts" ? "Stories & Wild Goose Chase scripts" : resource[1]}</a></React.Fragment>;
       }
       if (!isFeasting || dishes.length === 0) {
         return (

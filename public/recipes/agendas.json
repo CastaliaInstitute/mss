@@ -1888,67 +1888,6 @@
     ],
     "closing": "May your All Hallows' Eve be filled with warmth, wonder, and a touch of seasonal magic!"
   },
-  "Dia de los Angelitos": {
-    "slug": "dia-de-los-angelitos",
-    "title": "A Day of Loving Remembrance for Dia de los Angelitos",
-    "intro": "On November 1st, we lovingly prepare our homes to welcome back the spirits of children who have passed, believing they return first to feel the warmth of their families.",
-    "schedule": [
-      {
-        "time": "Morning",
-        "activity": "Preparing the Altar for Angelitos",
-        "detail": "Begin the day by lovingly setting up your altar. Adorn it with bright candles, cherished toys, and colourful paper cut-outs, creating a welcoming beacon for the little spirits.",
-        "recipes": []
-      },
-      {
-        "time": "Morning into Afternoon",
-        "activity": "An At-Home Tamalada",
-        "detail": "A tamalada is a gathering of family or friends to make tamales together, sharing the work of spreading masa, adding fillings, folding husks, and steaming while exchanging stories. Traditions vary by family and region. Prepare the filling ahead, gather to spread masa and fold husks, and allow several hours for cooking and steaming. Share the finished tamales with warm atole.",
-        "recipes": [
-          "tamales",
-          "atole"
-        ]
-      },
-      {
-        "time": "Late Morning",
-        "activity": "Crafting Sweet Tributes",
-        "detail": "Dedicate time to prepare traditional treats. Bake tiny pan de muerto loaves, craft intricate sugar skulls, and gather other favourite sweets that delighted the children in life.",
-        "recipes": [
-          "pan-de-muerto",
-          "sugar-skulls",
-          "sweets"
-        ]
-      },
-      {
-        "time": "Early Afternoon",
-        "activity": "Arranging the Angelitos' Feast",
-        "detail": "Carefully arrange the prepared foods, along with fresh fruit, on the altar. These offerings are a loving invitation for the angelitos to enjoy the flavours of home.",
-        "recipes": [
-          "fruit"
-        ]
-      },
-      {
-        "time": "Late Afternoon",
-        "activity": "Guiding Lights and Sounds",
-        "detail": "As the afternoon progresses, scatter vibrant marigold petals from your door to the altar, creating a fragrant path. Gently ring bells to announce your readiness to welcome the returning spirits.",
-        "recipes": []
-      },
-      {
-        "time": "Evening",
-        "activity": "Sharing Warmth and Memories",
-        "detail": "As dusk settles, prepare a warm batch of atole. This comforting beverage can be offered on the altar and shared among family members, symbolizing warmth and continued connection.",
-        "recipes": [
-          "atole"
-        ]
-      },
-      {
-        "time": "Night",
-        "activity": "Quiet Reflection and Presence",
-        "detail": "Spend a quiet moment by the glowing altar. Reflect on the joyful memories of the children being honoured, feeling their presence close as they visit their earthly home.",
-        "recipes": []
-      }
-    ],
-    "closing": "May your home be filled with love and cherished memories as you honour your angelitos."
-  },
   "Dia de los Muertos": {
     "slug": "dia-de-los-muertos",
     "title": "A Warm Dia de los Muertos at Home",
@@ -2045,9 +1984,9 @@
       {
         "time": "Late Morning",
         "activity": "Preparing the Festive Feast",
-        "detail": "Begin the culinary preparations for your St. Martin's feast. The roast goose takes time, so get it started, along with the rich red cabbage and potato dumplings.",
+        "detail": "Begin the culinary preparations for your St. Martin's feast. The Martinsente (roast duck) takes time, so get it started, along with the rich red cabbage and potato dumplings.",
         "recipes": [
-          "roast-goose",
+          "martinsente",
           "red-cabbage",
           "potato-dumplings"
         ]
@@ -2067,9 +2006,9 @@
       {
         "time": "Evening",
         "activity": "The Grand St. Martin's Feast",
-        "detail": "Gather your loved ones for the main event: a sumptuous feast featuring the traditional roast goose, red cabbage, and potato dumplings, celebrating the close of the agrarian year.",
+        "detail": "Gather your loved ones for the main event: a sumptuous feast featuring the Martinsente (roast duck), red cabbage, and potato dumplings, celebrating the close of the agrarian year.",
         "recipes": [
-          "roast-goose",
+          "martinsente",
           "red-cabbage",
           "potato-dumplings"
         ]
@@ -2859,6 +2798,15 @@
     "title": "Sinterklaas Arrival Day at Home",
     "intro": "Welcome Sinterklaas and his Pieten from Spain with a day full of Dutch traditions, bringing the festive spirit right into your home.",
     "schedule": [
+      {
+        "time": "Morning",
+        "activity": "Bake Pepernoten & Kruidnoten",
+        "detail": "Make traditional soft rye-and-honey pepernoten, or the crunchy spice-cookie version called kruidnoten. Pack some to share during the Sinterklaas festivities.",
+        "recipes": [
+          "pepernoten",
+          "spiced-pepernoten"
+        ]
+      },
       {
         "time": "Morning",
         "activity": "Bake Festive Treats",
@@ -4014,5 +3962,76 @@
       }
     ],
     "closing": "May your home be filled with the spirit of merriment and good cheer this festive season!"
+  },
+  "Día de Muertos / Día de los Angelitos": {
+    "slug": "dia-de-los-angelitos",
+    "title": "Día de Muertos: Remembrance, Tamalada & Community Events",
+    "intro": "On November 1st, we lovingly prepare our homes to welcome back the spirits of children who have passed, believing they return first to feel the warmth of their families. November 1 community events for 2026: the Children’s Museum of Denver begins at 9 a.m.; the Colorado Springs Fine Arts Center celebration runs 12:30–4:30 p.m. These are separate venues in different cities; choose a visit to suit your day.",
+    "schedule": [
+      {
+        "time": "Morning",
+        "activity": "Preparing the Altar for Angelitos",
+        "detail": "Begin the day by lovingly setting up your altar. Adorn it with bright candles, cherished toys, and colourful paper cut-outs, creating a welcoming beacon for the little spirits.",
+        "recipes": []
+      },
+      {
+        "time": "Morning into Afternoon",
+        "activity": "An At-Home Tamalada",
+        "detail": "A tamalada is a gathering of family or friends to make tamales together, sharing the work of spreading masa, adding fillings, folding husks, and steaming while exchanging stories. Traditions vary by family and region. Prepare the filling ahead, gather to spread masa and fold husks, and allow several hours for cooking and steaming. Share the finished tamales with warm atole.",
+        "recipes": [
+          "tamales",
+          "atole"
+        ]
+      },
+      {
+        "time": "Late Morning",
+        "activity": "Crafting Sweet Tributes",
+        "detail": "Dedicate time to prepare traditional treats. Bake tiny pan de muerto loaves, craft intricate sugar skulls, and gather other favourite sweets that delighted the children in life.",
+        "recipes": [
+          "pan-de-muerto",
+          "sugar-skulls",
+          "sweets"
+        ]
+      },
+      {
+        "time": "Early Afternoon",
+        "activity": "Arranging the Angelitos' Feast",
+        "detail": "Carefully arrange the prepared foods, along with fresh fruit, on the altar. These offerings are a loving invitation for the angelitos to enjoy the flavours of home.",
+        "recipes": [
+          "fruit"
+        ]
+      },
+      {
+        "time": "Late Afternoon",
+        "activity": "Guiding Lights and Sounds",
+        "detail": "As the afternoon progresses, scatter vibrant marigold petals from your door to the altar, creating a fragrant path. Gently ring bells to announce your readiness to welcome the returning spirits.",
+        "recipes": []
+      },
+      {
+        "time": "Evening",
+        "activity": "Sharing Warmth and Memories",
+        "detail": "As dusk settles, prepare a warm batch of atole. This comforting beverage can be offered on the altar and shared among family members, symbolizing warmth and continued connection.",
+        "recipes": [
+          "atole"
+        ]
+      },
+      {
+        "time": "Night",
+        "activity": "Quiet Reflection and Presence",
+        "detail": "Spend a quiet moment by the glowing altar. Reflect on the joyful memories of the children being honoured, feeling their presence close as they visit their earthly home.",
+        "recipes": []
+      }
+    ],
+    "closing": "May your home be filled with love and cherished memories as you honour your angelitos.",
+    "resources": [
+      {
+        "label": "Fine Arts Center · November 1, 2026, 12:30–4:30 p.m.",
+        "url": "https://fac.coloradocollege.edu/events/dia-de-muertos/"
+      },
+      {
+        "label": "Children’s Museum of Denver · November 1, 2026, 9 a.m.",
+        "url": "https://www.mychildsmuseum.org/events/EventDetail/day-of-the-dead"
+      }
+    ]
   }
 }

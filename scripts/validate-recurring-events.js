@@ -45,7 +45,7 @@ function recurrenceSignature(date) {
 
 const MOVABLE_NAME = /\b(lunar|losar|ramadan|eid|passover|pesach|rosh hashana?h?|yom kippur|sukkot|hanukkah|chanukah|purim|easter|ash wednesday|palm sunday|maundy thursday|good friday|holy saturday|pentecost|ascension|corpus christi|orthodox|mardi gras|carnival|diwali|deepavali|navaratri|dussehra|vijayadashami|holi|vesak|wesak|mid-autumn|moon|equinox|solstice|nowruz|navroz|yalda|thanksgiving|advent|gaudete|sinterklaas arrival|ghost festival|ullambana|gita jayanti)\b/i;
 const ONE_OFF_NAME = new Set([
-  'Día de Muertos at the Children’s Museum of Denver','Día de Muertos Celebration at the Fine Arts Center', '800th Anniversary Transitus of St. Francis', 'Broadmoor Brunch', 'Madrigal Dinner at Glen Eyrie']);
+  '800th Anniversary Transitus of St. Francis', 'Broadmoor Brunch', 'Madrigal Dinner at Glen Eyrie']);
 
 const blocks = [...content.matchAll(/BEGIN:VEVENT[\s\S]*?END:VEVENT/g)].map((match) => match[0]);
 function blockFor(summary) {

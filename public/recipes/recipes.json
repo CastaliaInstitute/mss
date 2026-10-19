@@ -3601,7 +3601,7 @@
     "dish": "Sweets",
     "events": [
       "Nowruz",
-      "Dia de los Angelitos"
+      "Día de Muertos / Día de los Angelitos"
     ],
     "intro": "These delicate, melt-in-your-mouth rice flour cookies are a beloved part of Nowruz, the Persian New Year celebration. Often adorned with poppy seeds, they symbolize prosperity and are a staple on the Haft-Seen table, offered to guests as a sweet welcome to spring. While this recipe is for Nowruz, a holiday celebrating renewal and rebirth, other distinct sweets are traditionally prepared for Dia de los Angelitos, a day to honor deceased children as part of Dia de Muertos.",
     "yield": "About 3 dozen cookies",
@@ -4766,7 +4766,7 @@
     "dish": "Fruit",
     "events": [
       "Buddhist Ghost Festival (Ullambana)",
-      "Dia de los Angelitos"
+      "Día de Muertos / Día de los Angelitos"
     ],
     "intro": "This Seasonal Fruit Offering Platter is a simple yet profound way to honor ancestors and spirits during the Buddhist Ghost Festival (Ullambana) and Dia de los Angelitos. Fresh fruit symbolizes purity, abundance, and the bounty of the earth, making it a respectful and cherished offering. It's prepared with care to reflect devotion and remembrance.",
     "yield": "One large platter (serves 4-6 as an offering)",
@@ -5328,9 +5328,7 @@
     "dish": "Pan de Muerto",
     "events": [
       "Dia de los Muertos",
-      "Dia de los Angelitos",
-      "Día de Muertos Celebration at the Fine Arts Center",
-      "Día de Muertos at the Children’s Museum of Denver"
+      "Día de Muertos / Día de los Angelitos"
     ],
     "intro": "Pan de Muerto, or 'Bread of the Dead,' is a traditional sweet bread baked and consumed during Mexico's Dia de los Muertos (Day of the Dead) and Dia de los Angelitos (Day of the Little Angels) celebrations. It is a central element of the 'ofrenda' (altar) dedicated to deceased loved ones, symbolizing the cycle of life and death. The bread is often flavored with orange blossom or anise and decorated with 'bones' and a 'teardrop' or 'skull' shape on top.",
     "yield": "1 large loaf or 2 smaller loaves (Serves 8-10)",
@@ -5555,9 +5553,7 @@
     "dish": "Tamales de Muerto",
     "events": [
       "Dia de los Muertos",
-      "Dia de los Angelitos",
-      "Día de Muertos Celebration at the Fine Arts Center",
-      "Día de Muertos at the Children’s Museum of Denver"
+      "Día de Muertos / Día de los Angelitos"
     ],
     "intro": "Tamales are a cornerstone of Día de los Muertos celebrations, lovingly prepared to honor departed loved ones. These savory bundles of masa, often filled with rich pork in a chile sauce, are placed on altars as offerings and shared among family, symbolizing sustenance and connection across generations. A tamalada is a gathering of family or friends to make tamales together, sharing the work of spreading masa, adding fillings, folding husks, and steaming while exchanging stories. Traditions vary by family and region.",
     "yield": "Serves 8-10 (makes about 30-40 tamales)",
@@ -6029,7 +6025,6 @@
     "title": "Traditional Roast Goose",
     "dish": "Roast Goose",
     "events": [
-      "St. Martin's Day (Martinstag)",
       "Christmas Day"
     ],
     "intro": "Roast goose is a magnificent centerpiece for festive occasions, deeply rooted in European culinary traditions. It is famously served on St. Martin's Day (Martinstag) in November, marking the end of the agricultural year, and is a grand, celebratory dish for Christmas Day, symbolizing abundance and feasting during the holiday season.",
@@ -7317,12 +7312,12 @@
     ]
   },
   "spiced-pepernoten": {
-    "title": "Spiced Pepernoten",
+    "title": "Kruidnoten (Crunchy Sinterklaas Spice Cookies)",
     "dish": "Spiced Pepernoten",
     "events": [
       "Sinterklaas Arrival (Intocht)"
     ],
-    "intro": "Pepernoten are small, bite-sized spiced cookies, traditionally scattered by Zwarte Piet (Black Pete) during the Sinterklaas celebrations in the Netherlands. Their arrival marks the beginning of the festive season, and these delightful treats are a beloved part of the Sinterklaas feast, often enjoyed by children and adults alike.",
+    "intro": "These crunchy, rounded Dutch spice cookies are kruidnoten, often casually called pepernoten during Sinterklaas. Traditional pepernoten are softer, irregular rye-and-honey bites; our separate pepernoten recipe makes that version.",
     "yield": "Serves 8-10 (makes about 150 small cookies)",
     "prepTime": "25 min (plus 30 min chilling)",
     "cookTime": "15 min",
@@ -7348,12 +7343,12 @@
       "Form the dough into a ball, wrap it in plastic film, and refrigerate for at least 30 minutes to firm up.",
       "Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper.",
       "Take small pieces of dough, about the size of a marble (1/2 inch or 1.25 cm in diameter), and roll them between your palms to form small, round balls. Place them about 1/2 inch (1.25 cm) apart on the prepared baking sheet.",
-      "Bake for 12-15 minutes, or until the pepernoten are lightly golden brown and firm to the touch. They will harden more as they cool.",
+      "Bake for 12-15 minutes, or until the kruidnoten are lightly golden brown and firm to the touch. They will harden more as they cool.",
       "Remove from the oven and let them cool completely on the baking sheet before transferring to an airtight container."
     ],
     "tips": [
       "For an authentic speculaas spice blend, you can purchase pre-mixed \"speculaaskruiden\" or \"koekkruiden\" and use 2 teaspoons (4g) in place of the individual spices.",
-      "Ensure the pepernoten are fully cooled before storing to maintain their crisp texture. They can be stored in an airtight container for up to two weeks.",
+      "Ensure the kruidnoten are fully cooled before storing to maintain their crisp texture. They can be stored in an airtight container for up to two weeks.",
       "Vary the spice levels to your preference; some like a stronger ginger or clove flavor."
     ]
   },
@@ -9710,10 +9705,8 @@
     "title": "Traditional Atole de Maiz",
     "dish": "Atole",
     "events": [
-      "Dia de los Angelitos",
-      "Dia de los Muertos",
-      "Día de Muertos Celebration at the Fine Arts Center",
-      "Día de Muertos at the Children’s Museum of Denver"
+      "Día de Muertos / Día de los Angelitos",
+      "Dia de los Muertos"
     ],
     "intro": "Atole is a comforting, warm, and thick beverage made from masa harina, traditionally enjoyed throughout Mexico and Central America. During Dia de los Angelitos on November 1st, it is a beloved offering on altars for the returning spirits of children, and a cherished drink for families to share, symbolizing warmth and sustenance for both the living and the departed.",
     "yield": "Serves 6-8",
@@ -9823,7 +9816,7 @@
     "title": "Sugar Skulls (Calaveras de Azúcar)",
     "dish": "Sugar Skulls",
     "events": [
-      "Dia de los Angelitos"
+      "Día de Muertos / Día de los Angelitos"
     ],
     "intro": "Sugar Skulls, or Calaveras de Azúcar, are iconic decorations for Dia de los Muertos, particularly significant during Dia de los Angelitos (November 1st), when they honor deceased children. These sweet, edible (though often purely decorative) confections symbolize life, death, and remembrance, bringing a touch of festive artistry to altars and celebrations.",
     "yield": "Makes 6-8 medium skulls",
@@ -11607,10 +11600,8 @@
     "title": "Calabaza en Tacha (Candied Pumpkin)",
     "dish": "Candied Pumpkin",
     "events": [
-      "Dia de los Angelitos",
-      "Dia de los Muertos",
-      "Día de Muertos Celebration at the Fine Arts Center",
-      "Día de Muertos at the Children’s Museum of Denver"
+      "Día de Muertos / Día de los Angelitos",
+      "Dia de los Muertos"
     ],
     "intro": "Calabaza en tacha is a traditional Mexican pumpkin dessert enjoyed during Día de Muertos. Pumpkin wedges simmer gently in piloncillo and cinnamon syrup until tender. The edible flesh is served with syrup; the rind helps the pieces hold their shape.",
     "yield": "Serves 6–8",
@@ -11672,6 +11663,79 @@
       "Work promptly once the nuts are added; an adult should handle the hot sugar syrup.",
       "Keep tightly wrapped in an airtight container in a cool, dry place. Avoid damp conditions, which make nougat sticky.",
       "This hazelnut version contains nuts and egg."
+    ]
+  },
+  "martinsente": {
+    "title": "Martinsente (St. Martin’s Roast Duck)",
+    "dish": "Martinsente",
+    "events": [
+      "St. Martin's Day (Martinstag)"
+    ],
+    "intro": "Martinsente is roast duck for the St. Martin’s feast, a smaller alternative to Martinsgans (roast goose). Our duck is served with red cabbage and potato dumplings after the Wild Goose Chase, while Martin the Porch Goose remains our guest.",
+    "yield": "Serves 4",
+    "prepTime": "25 min, plus optional overnight drying",
+    "cookTime": "About 2–2½ hours, plus 15–20 minutes resting",
+    "ingredients": [
+      "1 whole duck, about 4½–5½ lb (2–2.5 kg), thawed and giblets removed",
+      "2 teaspoons fine salt, or to taste",
+      "½ teaspoon freshly ground black pepper",
+      "1 teaspoon dried marjoram",
+      "2 apples, cored and quartered",
+      "1 onion, quartered",
+      "2 sprigs thyme (optional)",
+      "1 cup (240 ml) water or unsalted stock, plus more as needed",
+      "1 tablespoon flour (optional, for gravy)"
+    ],
+    "steps": [
+      "Pat the duck dry, including the cavity. Trim excess loose fat. Prick the skin over the fatty breast and thighs with a skewer without piercing the meat. For crisper skin, refrigerate uncovered overnight on a rack over a tray.",
+      "Heat the oven to 350°F (180°C). Season the duck inside and out with salt, pepper, and marjoram. Loosely place the apples, onion, and optional thyme in the cavity; do not pack tightly.",
+      "Set the duck breast-side up on a rack in a roasting pan. Add the water or stock beneath the rack. Roast for about 2–2½ hours, carefully pouring off excess rendered fat every 45 minutes and adding water if the pan threatens to dry out. Reserve the fat for potatoes.",
+      "If needed, increase the oven to 425°F (220°C) for the last 10–15 minutes to crisp the skin. The duck is ready when a thermometer reads at least 165°F (74°C) in the thickest part of the breast and inner thigh, away from bone. Timing varies with the bird; use the thermometer.",
+      "Transfer the duck to a board and rest for 15–20 minutes. Discard the cavity aromatics.",
+      "For gravy, skim the fat from the pan juices. Simmer the juices with a splash of stock, scraping up browned bits. If desired, whisk the flour with a little cold water, add to the simmering juices, and cook until thickened. Season to taste.",
+      "Carve and serve with red cabbage, potato dumplings, and the gravy."
+    ],
+    "tips": [
+      "Do not rinse raw duck; pat it dry instead.",
+      "Keep the skin dry while roasting; baste the pan juices beneath the bird rather than over the skin.",
+      "Refrigerate leftovers within 2 hours and use within 3–4 days."
+    ]
+  },
+  "pepernoten": {
+    "title": "Traditional Pepernoten (Soft Rye & Honey Spice Bites)",
+    "dish": "Pepernoten",
+    "events": [
+      "Sinterklaas Arrival (Intocht)"
+    ],
+    "intro": "Traditional Dutch pepernoten are soft, slightly chewy, irregularly shaped rye-and-honey spice bites for Sinterklaas. They differ from the small crunchy domes called kruidnoten, which are also often called pepernoten in everyday speech.",
+    "yield": "About 50 small bites",
+    "prepTime": "25 min, plus 1 hour chilling",
+    "cookTime": "12–15 min",
+    "ingredients": [
+      "150 g rye flour",
+      "100 g all-purpose flour, plus a little for dusting",
+      "1 teaspoon baking powder",
+      "¼ teaspoon salt",
+      "100 g honey",
+      "75 g dark brown sugar",
+      "1 large egg",
+      "1 teaspoon ground aniseed",
+      "1 teaspoon ground cinnamon",
+      "¼ teaspoon ground cloves",
+      "¼ teaspoon ground ginger",
+      "1–2 teaspoons water, only if needed"
+    ],
+    "steps": [
+      "Whisk the rye flour, all-purpose flour, baking powder, salt, and spices together.",
+      "Warm the honey and brown sugar gently just until the sugar softens and the mixture is stirrable. Cool to lukewarm, then mix in the egg.",
+      "Stir the honey mixture into the flour to make a firm, slightly sticky dough. Add water a teaspoon at a time only if it will not come together. Cover and chill for 1 hour.",
+      "Heat the oven to 350°F (175°C). Line a baking tray with parchment. On a lightly floured surface, roll the dough into ropes about ½ inch (1.5 cm) thick. Cut into small, uneven nuggets about ½ inch long.",
+      "Arrange the nuggets on the tray with a little space between them. Bake for 12–15 minutes until lightly colored and set at the edges, keeping the centers soft; do not bake to a hard crunch.",
+      "Cool on the tray, then keep in an airtight container. Enjoy with warm cocoa at Sinterklaas."
+    ],
+    "tips": [
+      "Anise and rye give this soft version its characteristic flavor.",
+      "These are best within 3–4 days. Avoid overbaking, which makes the little bites hard."
     ]
   }
 }

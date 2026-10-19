@@ -549,7 +549,7 @@ BEGIN:VEVENT
 DTSTAMP:20251104T055848Z
 DTSTART:20251101T070000Z
 DTEND:20251102T070000Z
-SUMMARY:Dia de los Angelitos
+SUMMARY:Día de Muertos / Día de los Angelitos
 DESCRIPTION:History: On 1 November\, Mexican families honour children who h
  ave died\, believing their angelitos return first to enjoy the love of the
  ir kin.\nTraditions: Altars glow with candles\, toys\, and paper cut-outs\
@@ -562,7 +562,17 @@ DESCRIPTION:History: On 1 November\, Mexican families honour children who h
  ke tamales together. Share the work of spreading masa\, filling\, folding
   husks\, and steaming while exchanging stories. Customs vary by family and
   region.\nDay: Saturday\nFilms: At home\, watch Coco (2017) or The Book of
-  Life (2014).\n\nIcon: 👼\nCategory: cultural
+  Life (2014).\n2026 community events (November 1):\nChildren’s Museum of
+  Denver: 9 a.m. start\; activities included with admission\, members free.
+  Ofrenda\, kite making\, stories\, face painting\, tastings and mariachi p
+ arade. 2121 Children’s Museum Drive\, Denver.\nFine Arts Center: 12:30
+ –4:30 p.m.\; free\, RSVP encouraged. Community ofrenda\, performances\,
+  art activities\, mercado and children’s parade. 30 West Dale St.\, Colo
+ rado Springs. These are separate venues\; choose a visit to suit your day.
+  Future venue dates require organizer confirmation.\nChildren’s Museum:
+  https://www.mychildsmuseum.org/events/EventDetail/day-of-the-dead\nFine A
+ rts Center: https://fac.coloradocollege.edu/events/dia-de-muertos/\n\nIcon
+ : 👼\nCategory: cultural
 CATEGORIES:cultural
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -606,12 +616,12 @@ DESCRIPTION:History: Eves of St. Martin's Day in German-speaking lands reca
  Our family tradition: Create the Yule Log / Tió from the tree we fell on
   St. Martin’s Eve\, carrying its wood into our Yule celebration.\nInvita
  tion: https://mss.castalia.institute/martinstag/invitation/\nScripts: http
- s://mss.castalia.institute/martinstag/scripts/\n\nIcon: 🧥\nCategory: cu
+ s://mss.castalia.institute/martinstag/scripts/\n\nIcon: 🏮\nCategory: cu
  ltural
 CATEGORIES:cultural
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-X-IMAGE:/images/image23.png
+X-IMAGE:/images/martinstag-lantern.svg
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20251104T055848Z
@@ -622,15 +632,15 @@ DESCRIPTION:History: Medieval Europe celebrated 11 November as the close of
   the agrarian year\, pairing St. Martin's biography with harvest thanksgiv
  ing and almsgiving.\nTraditions: Lantern parades\, charity drives\, and dr
  amatizations of Martin's cloak-sharing remind communities to care for thos
- e in need.\nFeasting: Feasts centre on roast goose with red cabbage\, pota
- to dumplings\, spiced biscuits\, and mugs of Gluehwein or Federweisser.\nD
- ay: Tuesday\nOur celebration: On the morning of November 11\, give the chi
- ldren cloaks for the Wild Goose Chase. Martin the Porch Goose has run away
-  overnight\, fearful he will be eaten! Follow the clues he left attached t
- o yesterday’s pine cones\, with children using goose calls as they searc
- h.\nInvitation: https://mss.castalia.institute/martinstag/invitation/\nScr
- ipts: https://mss.castalia.institute/martinstag/scripts/\n\nIcon: 🪿\nCa
- tegory: cultural
+ e in need.\nFeasting: Feasts centre on Martinsente (roast duck) with red c
+ abbage\, potato dumplings\, spiced biscuits\, and mugs of Gluehwein or Fed
+ erweisser.\nDay: Tuesday\nOur celebration: On the morning of November 11\,
+  give the children cloaks for the Wild Goose Chase. Martin the Porch Goose
+  has run away overnight\, fearful he will be eaten! Follow the clues he le
+ ft attached to yesterday’s pine cones\, with children using goose calls
+  as they search.\nInvitation: https://mss.castalia.institute/martinstag/in
+ vitation/\nScripts: https://mss.castalia.institute/martinstag/scripts/\n\n
+ Icon: 🪿\nCategory: cultural
 CATEGORIES:cultural
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -855,16 +865,18 @@ DTEND:20251116T070000Z
 SUMMARY:Sinterklaas Arrival (Intocht)
 DESCRIPTION:History: Dutch newspapers popularised Sinterklaas arriving by s
  teamboat in the nineteenth century\, blending Saint Nicholas lore with mar
- itime identity.\nTraditions: On the first Saturday after Saint Martin's Day
-  Sinterklaas docks with his Pieten helpers\, parades through town distributing pe
- pernoten\, and listens to children's wish lists before 5 December gifts.\n
- Feasting: Crowds crunch spiced pepernoten\, speculaas windmill cookies\, c
- hocolate letters\,and marzipan while sipping hot cocoa along the canals.\n
- Day: Saturday\n\nIcon: 🚢\nCategory: cultural
+ itime identity.\nTraditions: On the first Saturday after Saint Martin's Da
+ y Sinterklaas docks with his Pieten helpers\, parades through town distrib
+ uting pepernoten\, and listens to children's wish lists before 5 December
+  gifts.\nFeasting: Crowds crunch soft rye-and-honey pepernoten and crunchy
+  kruidnoten\, speculaas windmill cookies\, chocolate letters\,and marzipan
+  while sipping hot cocoa along the canals.\nDay: Saturday\n\nIcon: 🚢\nC
+ ategory: cultural
 CATEGORIES:cultural
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-X-IMAGE:/images/traditional-dutch-celebration-period-with-sinterklaas-arriving-by-steamboat-star.png
+X-IMAGE:/images/traditional-dutch-celebration-period-with-sinterklaas-arriv
+ ing-by-steamboat-star.png
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20251104T055848Z
@@ -1314,66 +1326,27 @@ CATEGORIES:religious
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
+
+
 BEGIN:VEVENT
-UID:fac-dia-de-muertos-20261101@mss.castalia.institute
-DTSTAMP:20261018T000000Z
-DTSTART:20261101T193000Z
-DTEND:20261101T233000Z
-SUMMARY:Día de Muertos Celebration at the Fine Arts Center
-LOCATION:Colorado Springs Fine Arts Center at Colorado College\, 30 West Da
- le St.\, Colorado Springs\, CO 80903
-URL:https://fac.coloradocollege.edu/events/dia-de-muertos/
-DESCRIPTION:Sunday\, November 1\, 2026\, 12:30–4:30 p.m. Mountain Time.\n
- Location: Colorado Springs Fine Arts Center at Colorado College\, 30 West
-  Dale St.\, Colorado Springs\, CO 80903.\nFree and open to the public\; RS
- VPs strongly encouraged. Celebrate with a community ofrenda\, live music a
- nd performances\, hands-on art activities\, an installation by Cal Duran\,
-  a mercado\, and a children's costume parade. Food and drinks available fo
- r purchase.\nFeasting: At home\, bake pan de muerto\, an orange-scented sw
- eet bread with bone-shaped decorations and a sugar topping. At home\, enjo
- y candied pumpkin (calabaza en tacha) simmered in piloncillo and cinnamon
-  syrup. Serve warm atole flavored with cinnamon and vanilla alongside the
-  bread. At home\, share tamales with warm atole.\nAt-home activity: Host a
-  tamalada—a gathering of family or friends to make tamales together. Sha
- re the work of spreading masa\, filling\, folding husks\, and steaming whi
- le exchanging stories. Customs vary by family and region.\nFilms: At home\
- , watch Coco (2017) or The Book of Life (2014).\n\nIcon: 💀\nCategory: c
- ultural
-CATEGORIES:cultural
+UID:witch-paddle-chatfield@mss.castalia.institute
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=3SA
+SUMMARY:Witch Paddle
+LOCATION:Chatfield State Park\, Littleton\, Colorado
+URL:https://witchpaddle.com/
+DESCRIPTION:Annual calendar reminder on the third Saturday of October. Orga
+ nizer-confirmed 2026 event: Saturday\, October 17 at 7 a.m. Mountain Time
+  at Chatfield State Park. Future dates and times must be checked with the
+  organizer\; this reminder is not confirmation of future event dates.\nA w
+ omen-led Halloween paddle supporting Sacred Sisterhood Collective. Paddleb
+ oards\, kayaks and canoes are welcome. Registration is required for everyo
+ ne on the water\; spectators are welcome without registration.\n\nIcon:
+  🧙\nCategory: seasonal
+CATEGORIES:seasonal
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-X-IMAGE:/images/image6.png
-END:VEVENT
-BEGIN:VEVENT
-UID:childrens-museum-dia-de-muertos-20261101@mss.castalia.institute
-DTSTAMP:20261018T000000Z
-DTSTART:20261101T160000Z
-SUMMARY:Día de Muertos at the Children’s Museum of Denver
-LOCATION:Children's Museum of Denver\, 2121 Children's Museum Drive\, Denve
- r\, CO 80211
-URL:https://www.mychildsmuseum.org/events/EventDetail/day-of-the-dead
-DESCRIPTION:Sunday\, November 1\, 2026\, starting at 9 a.m. Mountain Time.
-  Museum hours: 9 a.m.–4 p.m.\nLocation: 2121 Children's Museum Drive\, D
- enver\, CO 80211.\nCelebrate traditions from Mexico\, Guatemala and Ecuado
- r. Activities are included with Museum admission\; members are free. Adult
- s must be accompanied by a child and children by an adult.\nProgram: All-d
- ay ofrenda in The Art Studio\; 9–11 a.m. kite making in Joy Park\; 10 a.
- m. StoryTime with Elisa Garcia\; 11:30 a.m.–12:30 p.m. flower exploratio
- n in the CornerCopia Garden\; 1:30 p.m. face painting\; 2 p.m. arroz con l
- eche and horchata tastings while supplies last\; 2:30 p.m. StoryTime\; 3 p
- .m. mariachi parade. Activities subject to change.\nFeasting: At home\, ba
- ke pan de muerto\, an orange-scented sweet bread with bone-shaped decorati
- ons and a sugar topping. At home\, enjoy candied pumpkin (calabaza en tach
- a) simmered in piloncillo and cinnamon syrup. Serve warm atole flavored wi
- th cinnamon and vanilla alongside the bread. At home\, share tamales with
-  warm atole.\nAt-home activity: Host a tamalada—a gathering of family or
-  friends to make tamales together. Share the work of spreading masa\, fill
- ing\, folding husks\, and steaming while exchanging stories. Customs vary
-  by family and region.\nFilms: At home\, watch Coco (2017) or The Book of
-  Life (2014).\n\nIcon: 💀\nCategory: cultural
-CATEGORIES:cultural
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-X-IMAGE:/images/image6.png
 END:VEVENT
 END:VCALENDAR

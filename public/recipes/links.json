@@ -931,9 +931,9 @@
   ],
   "St. Martin's Day (Martinstag)": [
     {
-      "text": "roast goose",
-      "dish": "Roast Goose",
-      "slug": "roast-goose"
+      "text": "Martinsente",
+      "dish": "Martinsente",
+      "slug": "martinsente"
     },
     {
       "text": "red cabbage",
@@ -1137,11 +1137,6 @@
   ],
   "Sinterklaas Arrival (Intocht)": [
     {
-      "text": "spiced pepernoten",
-      "dish": "Spiced Pepernoten",
-      "slug": "spiced-pepernoten"
-    },
-    {
       "text": "speculaas windmill cookies",
       "dish": "Speculaas Windmill Cookies",
       "slug": "speculaas-windmill-cookies"
@@ -1160,6 +1155,16 @@
       "text": "hot cocoa",
       "dish": "Hot Cocoa",
       "slug": "hot-cocoa"
+    },
+    {
+      "text": "pepernoten",
+      "dish": "Pepernoten",
+      "slug": "pepernoten"
+    },
+    {
+      "text": "kruidnoten",
+      "dish": "Kruidnoten",
+      "slug": "spiced-pepernoten"
     }
   ],
   "Immaculada": [
@@ -1510,43 +1515,6 @@
       "slug": "artisanal-mezcal"
     }
   ],
-  "Dia de los Angelitos": [
-    {
-      "text": "atole",
-      "dish": "Atole",
-      "slug": "atole"
-    },
-    {
-      "text": "sugar skulls",
-      "dish": "Sugar Skulls",
-      "slug": "sugar-skulls"
-    },
-    {
-      "text": "tiny pan de muerto",
-      "dish": "Pan de Muerto",
-      "slug": "pan-de-muerto"
-    },
-    {
-      "text": "fruit",
-      "dish": "Fruit",
-      "slug": "fruit"
-    },
-    {
-      "text": "favourite sweets",
-      "dish": "Sweets",
-      "slug": "sweets"
-    },
-    {
-      "text": "candied pumpkin",
-      "dish": "Candied Pumpkin",
-      "slug": "calabaza-en-tacha"
-    },
-    {
-      "text": "tamales",
-      "dish": "Tamales de Muerto",
-      "slug": "tamales"
-    }
-  ],
   "Christmas Eve": [
     {
       "text": "Italian Seven Fishes dinners",
@@ -1804,43 +1772,36 @@
       "slug": "pie"
     }
   ],
-  "Día de Muertos Celebration at the Fine Arts Center": [
-    {
-      "text": "pan de muerto",
-      "dish": "Pan de Muerto",
-      "slug": "pan-de-muerto"
-    },
-    {
-      "text": "candied pumpkin",
-      "dish": "Candied Pumpkin",
-      "slug": "calabaza-en-tacha"
-    },
+  "Día de Muertos / Día de los Angelitos": [
     {
       "text": "atole",
       "dish": "Atole",
       "slug": "atole"
     },
     {
-      "text": "tamales",
-      "dish": "Tamales de Muerto",
-      "slug": "tamales"
-    }
-  ],
-  "Día de Muertos at the Children’s Museum of Denver": [
+      "text": "sugar skulls",
+      "dish": "Sugar Skulls",
+      "slug": "sugar-skulls"
+    },
     {
-      "text": "pan de muerto",
+      "text": "tiny pan de muerto",
       "dish": "Pan de Muerto",
       "slug": "pan-de-muerto"
+    },
+    {
+      "text": "fruit",
+      "dish": "Fruit",
+      "slug": "fruit"
+    },
+    {
+      "text": "favourite sweets",
+      "dish": "Sweets",
+      "slug": "sweets"
     },
     {
       "text": "candied pumpkin",
       "dish": "Candied Pumpkin",
       "slug": "calabaza-en-tacha"
-    },
-    {
-      "text": "atole",
-      "dish": "Atole",
-      "slug": "atole"
     },
     {
       "text": "tamales",

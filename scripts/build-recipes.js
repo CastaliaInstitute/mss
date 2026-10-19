@@ -168,7 +168,7 @@ for (const [summary, a] of Object.entries(agendas)) {
         <h2 class="christmas">${esc(summary)}</h2>
         <p class="events">${esc(a.title)}</p>
         <p class="intro">${esc(a.intro)}</p>
-        ${a.resources?.length ? `<h3>Invitation &amp; scripts</h3><ul>${a.resources.map(r => `<li><a href="${esc(r.url)}">${esc(r.label)}</a></li>`).join('')}</ul>` : ''}
+        ${a.resources?.length ? `<h3>Event resources</h3><ul>${a.resources.map(r => `<li><a href="${esc(r.url)}">${esc(r.label)}</a></li>`).join('')}</ul>` : ''}
         <ol class="agenda">${items}</ol>
         ${a.closing ? `<p class="closing">${esc(a.closing)}</p>` : ''}
         ${dishes.length
