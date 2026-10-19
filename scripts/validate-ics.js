@@ -30,7 +30,19 @@ function validateICS() {
   
   // Read and parse ICS file
   const content = fs.readFileSync(ICS_PATH, 'utf8');
-  const lines = content.split('\n');
+  // RFC 5545 folds long properties onto lines beginning with one space or
+  // tab. Unfold before checking image paths, retaining physical source lines
+  // so diagnostics still point to the original file.
+  const lines = [];
+  const lineNumbers = [];
+  content.split(/\r?\n/).forEach((line, index) => {
+    if (/^[ \t]/.test(line) && lines.length) {
+      lines[lines.length - 1] += line.slice(1);
+    } else {
+      lines.push(line);
+      lineNumbers.push(index + 1);
+    }
+  });
   
   let inEvent = false;
   let eventCount = 0;
@@ -46,7 +58,7 @@ function validateICS() {
     // Detect event start - BEGIN:VEVENT or UID/DTSTAMP after END:VEVENT or header
     if (trimmed === 'BEGIN:VEVENT') {
       inEvent = true;
-      currentEvent = { lineNumber: i + 1 };
+      currentEvent = { lineNumber: lineNumbers[i] };
       eventCount++;
     } else if ((trimmed.startsWith('UID:') || trimmed.startsWith('DTSTAMP:')) && !inEvent) {
       // Event starts with UID or DTSTAMP (for files without BEGIN:VEVENT)
@@ -54,7 +66,7 @@ function validateICS() {
       if (prevLine === 'END:VEVENT' || prevLine.startsWith('X-WR-') || 
           (prevLine === '' && i > 0 && lines[i - 2] && lines[i - 2].trim().startsWith('X-WR-'))) {
         inEvent = true;
-        currentEvent = { lineNumber: i + 1 };
+        currentEvent = { lineNumber: lineNumbers[i] };
         eventCount++;
       }
     } else if (trimmed === 'END:VEVENT' && inEvent) {

@@ -1419,4 +1419,25 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 X-MSS-DATE-SOURCE:https://www.drikpanchang.com/dashavatara/rama-navami/rama-navami-date-time.html?geoname-id=1253914
 END:VEVENT
+BEGIN:VEVENT
+UID:denver-diwali-dhamaka-20261025@mss.castalia.institute
+DTSTAMP:20261019T000000Z
+DTSTART:20261025T180000Z
+DTEND:20261026T003000Z
+SUMMARY:Denver Diwali Dhamaka
+LOCATION:Colorado’s Finest High School of Choice\, 300 W Chenango Ave\, E
+ nglewood\, CO 80110
+URL:https://www.denverdiwalidhamaka.com/
+DESCRIPTION:Sunday\, October 25\, 2026\, noon–6:30 p.m. Mountain Daylight
+  Time. Colorado’s Finest High School of Choice\, 300 W Chenango Ave\, En
+ glewood.\nCommunity Diwali celebration with cultural performances\, Ramlee
+ la\, Indian dance\, fashion\, food vendors and children’s activities. Ti
+ ckets required. Organizer: Denver Diwali Dhamaka / JKYOG. Proceeds support
+  underprivileged children in India.\nThis is a one-time organizer-announce
+ d 2026 event\; future dates are not assumed.\n\nIcon: 🪔\nCategory: cult
+ ural
+CATEGORIES:cultural
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR
