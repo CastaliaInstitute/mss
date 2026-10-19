@@ -1407,4 +1407,16 @@ CATEGORIES:cultural
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:rama-navami@maybesomethingseasonal.com
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:Rama Navami
+DESCRIPTION:Celebrate the birth of Lord Rama. Traditions: Read the Ramayana and reflect on dharma and compassion. Family plan: Watch the 2026 Ramayana film and enjoy Indian food. The observance follows the Ujjain Hindu calendar convention; local dates may differ.\n\nIcon: 🪔\nCategory: cultural
+CATEGORIES:cultural
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+X-MSS-DATE-SOURCE:https://www.drikpanchang.com/dashavatara/rama-navami/rama-navami-date-time.html?geoname-id=1253914
+END:VEVENT
 END:VCALENDAR
