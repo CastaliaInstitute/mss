@@ -1349,4 +1349,62 @@ CATEGORIES:seasonal
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:diwali-deepavali@maybesomethingseasonal.com
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+RDATE;VALUE=DATE:20271029
+RDATE;VALUE=DATE:20281017
+RDATE;VALUE=DATE:20291105
+RDATE;VALUE=DATE:20301026
+RDATE;VALUE=DATE:20311114
+RDATE;VALUE=DATE:20321102
+RDATE;VALUE=DATE:20331022
+RDATE;VALUE=DATE:20341110
+RDATE;VALUE=DATE:20351030
+SUMMARY:Diwali (Deepavali)
+URL:https://www.drikpanchang.com/diwali/diwali-puja-calendar.html?geoname-i
+ d=1253914
+DESCRIPTION:Diwali is the festival of lights\, celebrating light\, renewal\
+ , and hope. This entry marks the principal Lakshmi Puja day\; the wider fe
+ stival spans several days and customs vary among communities.\nTraditions:
+  Light diyas\, create rangoli\, visit family and friends\, and share sweet
+ s.\nFeasting: Share mithai and a festive family meal.\nDates follow the Dr
+ ik Panchang India calendar convention used by MSS\, referenced to Ujjain (
+ Asia/Kolkata). Local observances may differ. Annual dates are listed throu
+ gh 2035.\n\nIcon: 🪔\nCategory: cultural
+CATEGORIES:cultural
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:holi@maybesomethingseasonal.com
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20260304
+DTEND;VALUE=DATE:20260305
+RDATE;VALUE=DATE:20270322
+RDATE;VALUE=DATE:20280311
+RDATE;VALUE=DATE:20290301
+RDATE;VALUE=DATE:20300320
+RDATE;VALUE=DATE:20310309
+RDATE;VALUE=DATE:20320327
+RDATE;VALUE=DATE:20330316
+RDATE;VALUE=DATE:20340305
+RDATE;VALUE=DATE:20350324
+SUMMARY:Holi (Festival of Colors)
+URL:https://www.drikpanchang.com/festivals/holi/festivals-holi-rangwali.htm
+ l?geoname-id=1253914
+DESCRIPTION:Holi welcomes spring with color\, music\, and joyful gatherings
+ . This entry marks Rangwali Holi\, the day of colors\; Holika Dahan is obs
+ erved on the preceding evening. Customs and dates can vary by region.\nTra
+ ditions: Share colors\, sing\, dance\, and visit friends and family.\nFeas
+ ting: Enjoy gujiya\, thandai\, and other festive sweets.\nDates follow the
+  Drik Panchang India calendar convention used by MSS\, referenced to Ujjai
+ n (Asia/Kolkata). Local observances may differ. Annual dates are listed th
+ rough 2035.\n\nIcon: 🌈\nCategory: cultural
+CATEGORIES:cultural
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR

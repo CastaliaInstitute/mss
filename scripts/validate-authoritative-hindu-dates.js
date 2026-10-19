@@ -16,6 +16,13 @@ const GITA_JAYANTI_DATES = [
   '20261220', '20271209', '20281127', '20291216', '20301205',
   '20311224', '20321212', '20331202', '20341221', '20351211',
 ];
+const DIWALI_DATES = [
+  '20261108', '20271029', '20281017', '20291105', '20301026', '20311114', '20321102', '20331022', '20341110', '20351030',
+];
+const HOLI_DATES = [
+  '20260304', '20270322', '20280311', '20290301', '20300320', '20310309', '20320327', '20330316', '20340305', '20350324',
+];
+
 const NAVARATRI_EVENTS = [
   ['Navaratri Day 1 — Shailaputri', 'shailaputri', 0],
   ['Navaratri Day 2 — Brahmacharini', 'brahmacharini', 1],
@@ -77,5 +84,8 @@ for (const [summary, slug, offset] of NAVARATRI_EVENTS) {
 }
 assertEvent('Dussehra / Vijayadashami', DUSSEHRA_DATES, 'dussehra-vijayadashami@maybesomethingseasonal.com');
 assertEvent('Gita Jayanti (गीता जयंती)', GITA_JAYANTI_DATES, 'gita-jayanti@maybesomethingseasonal.com');
+
+assertEvent('Diwali (Deepavali)', DIWALI_DATES, 'diwali-deepavali@maybesomethingseasonal.com');
+assertEvent('Holi (Festival of Colors)', HOLI_DATES, 'holi@maybesomethingseasonal.com');
 
 console.log('Authoritative Ujjain Hindu festival date validation passed through 2035.');

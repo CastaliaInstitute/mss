@@ -28,6 +28,13 @@ const GITA_JAYANTI_DATES = [
   '20311224', '20321212', '20331202', '20341221', '20351211',
 ];
 
+const DIWALI_DATES = [
+  '20261108', '20271029', '20281017', '20291105', '20301026', '20311114', '20321102', '20331022', '20341110', '20351030',
+];
+const HOLI_DATES = [
+  '20260304', '20270322', '20280311', '20290301', '20300320', '20310309', '20320327', '20330316', '20340305', '20350324',
+];
+
 const NAVARATRI_EVENTS = [
   ['Navaratri Day 1 — Shailaputri', 'shailaputri', 0],
   ['Navaratri Day 2 — Brahmacharini', 'brahmacharini', 1],
@@ -99,6 +106,13 @@ content = content.replace(eventRegex, (block) => {
     return applyDates(block, DUSSEHRA_DATES, 'dussehra-vijayadashami@maybesomethingseasonal.com');
   }
 
+  if (summary === 'Diwali (Deepavali)' || summary === 'Holi (Festival of Colors)') {
+    const isDiwali = summary === 'Diwali (Deepavali)';
+    changed.set(summary, (changed.get(summary) || 0) + 1);
+    return applyDates(block, isDiwali ? DIWALI_DATES : HOLI_DATES,
+      `${isDiwali ? 'diwali-deepavali' : 'holi'}@maybesomethingseasonal.com`);
+  }
+
   if (summary === 'Gita Jayanti (गीता जयंती)') {
     changed.set(summary, (changed.get(summary) || 0) + 1);
     return applyDates(block, GITA_JAYANTI_DATES, 'gita-jayanti@maybesomethingseasonal.com');
@@ -108,6 +122,8 @@ content = content.replace(eventRegex, (block) => {
 });
 
 const expectedSummaries = [
+  'Diwali (Deepavali)',
+  'Holi (Festival of Colors)',
   ...NAVARATRI_EVENTS.map(([summary]) => summary),
   'Dussehra / Vijayadashami',
   'Gita Jayanti (गीता जयंती)',
