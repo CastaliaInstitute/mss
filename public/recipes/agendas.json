@@ -2271,58 +2271,51 @@
   },
   "St. Catherine's Day": {
     "slug": "st-catherines-day",
-    "title": "A St. Catherine's Day Celebration at Home",
-    "intro": "Embrace the joyful spirit of St. Catherine's Day with a warm celebration right in your own home, honoring ancient traditions and delightful flavors. This agenda offers a practical guide to a day filled with reflection, creativity, and delicious treats.",
+    "title": "St. Catherine's Day — Wheels of Light and Traditional Foods",
+    "intro": "Celebrate Saint Catherine of Alexandria on November 25 with stories of learning and courage, traditional English Cattern cakes and Québec pulled molasses taffy, and a projected water-powered Catherine wheel. Catherine's biography is chiefly legendary; distinguish historical traditions from modern family activities.",
     "schedule": [
       {
         "time": "Morning",
-        "activity": "Reflective Start",
-        "detail": "Begin your day with a moment of quiet reflection, perhaps learning more about St. Catherine of Alexandria and the Catherinettes, setting a thoughtful tone for the festivities.",
+        "activity": "Story and scholarship",
+        "detail": "Read the traditional story of Catherine of Alexandria, the debate with philosophers and the broken wheel. Explain that the surviving accounts are legendary. Make a paper wheel or discuss courage and learning.",
         "recipes": []
       },
       {
         "time": "Late Morning",
-        "activity": "Whispers of Fate",
-        "detail": "Engage in the ancient tradition of pouring melted wax through an old key into cold water, then interpreting the candlelit shadows to glimpse what the year ahead may hold.",
-        "recipes": []
-      },
-      {
-        "time": "Afternoon",
-        "activity": "Baking St. Catherine's Treats",
-        "detail": "Fill your home with the comforting aroma of saffron and honey as you bake traditional Catter N Cakes and sweet biscuits, perfect for sharing later.",
+        "activity": "Bake Cattern cakes",
+        "detail": "Make English Cattern cakes with currants and caraway; saffron is an optional regional variation. Invite children to shape the dough.",
         "recipes": [
-          "saffron-catter-n-cakes",
-          "honeyed-biscuits"
+          "saffron-catter-n-cakes"
         ]
       },
       {
-        "time": "Late Afternoon",
-        "activity": "Crafting a Catherinette Touch",
-        "detail": "While a street procession might be difficult, you can craft a symbolic \"St. Catherine's wheel\" or adorn a bright ribbon, bringing the joyful spirit of the Catherinettes into your home.",
+        "time": "Afternoon",
+        "activity": "Pull Sainte-Catherine taffy",
+        "detail": "Prepare Québec-style tire Sainte-Catherine, a traditional molasses pulled candy. Adults handle hot syrup; children can help wrap cooled pieces.",
         "recipes": []
       },
       {
-        "time": "Early Evening",
-        "activity": "Warming Winter Drinks",
-        "detail": "As dusk settles, prepare comforting mulled cider and spiced wine, letting their fragrant aromas fill your home in anticipation of the evening's feast.",
+        "time": "Late Afternoon",
+        "activity": "Make pastry Catherine wheels",
+        "detail": "Roll puff pastry with cinnamon sugar, slice into spirals and bake. These wheel-shaped pastries are a modern thematic adaptation, not a universal historical feast custom.",
+        "recipes": []
+      },
+      {
+        "time": "Dinner",
+        "activity": "Autumn feast",
+        "detail": "Serve mushroom-and-leek pie, honey-roasted carrots and roasted chestnuts with warm apple cider. These are seasonal menu suggestions, not specific historic Catherine's Day requirements.",
         "recipes": [
-          "mulled-cider",
-          "spiced-wine"
+          "mulled-cider"
         ]
       },
       {
         "time": "Evening",
-        "activity": "St. Catherine's Vespers Feast",
-        "detail": "Gather your loved ones to enjoy the delicious saffron cakes, honeyed biscuits, and warm beverages, celebrating the day's traditions and the spirit of community.",
-        "recipes": [
-          "saffron-catter-n-cakes",
-          "honeyed-biscuits",
-          "mulled-cider",
-          "spiced-wine"
-        ]
+        "activity": "Hydro Catherine Wheel",
+        "detail": "Display a rotating water sprinkler fed by a regulated IBC-tote pump, with projected golden spirals. Keep the projector and mains electricity outside the splash area, secure the sprinkler, and confirm rated pressure and drainage before use. No pyrotechnics required.",
+        "recipes": []
       }
     ],
-    "closing": "May your St. Catherine's Day be filled with warmth, wonder, and delightful traditions shared with those you cherish."
+    "closing": "Share Cattern cakes and Sainte-Catherine taffy while the wheel of water and light turns. Repeat annually on November 25."
   },
   "Thanksgiving Day (United States)": {
     "slug": "thanksgiving-day-united-states",
