@@ -154,5 +154,37 @@
       }
     ],
     "closing": "Consult local practitioners for religious ceremonies and dates."
+  },
+  "Dussehra / Vijayadashami": {
+    "slug": "dussehra-vijayadashami",
+    "title": "Dussehra: Film and Indian Feast",
+    "intro": "Celebrate Vijayadashami with a family film screening and Indian food, reflecting on the victory of good over evil.",
+    "schedule": [
+      {
+        "time": "Afternoon",
+        "activity": "Learn the story",
+        "detail": "Introduce the traditions of Rama's victory over Ravana and Durga's victory over Mahishasura; regional celebrations vary.",
+        "recipes": []
+      },
+      {
+        "time": "Evening",
+        "activity": "Watch the film",
+        "detail": "Watch https://youtu.be/gKcOjnDJfzk?si=F5nF96zNPxxSaXcA together.",
+        "recipes": []
+      },
+      {
+        "time": "Dinner",
+        "activity": "Indian feast",
+        "detail": "Enjoy Indian food together. Choose favorite dishes or prepare a family-style thali.",
+        "recipes": []
+      }
+    ],
+    "resources": [
+      {
+        "label": "Dussehra film",
+        "url": "https://youtu.be/gKcOjnDJfzk?si=F5nF96zNPxxSaXcA"
+      }
+    ],
+    "closing": "Reflect together on courage, justice, and the triumph of good over harm."
   }
 }
