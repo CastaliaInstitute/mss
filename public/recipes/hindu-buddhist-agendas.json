@@ -186,5 +186,41 @@
       }
     ],
     "closing": "Reflect together on courage, justice, and the triumph of good over harm."
+  },
+  "Rama Navami": {
+    "slug": "rama-navami",
+    "title": "Rama Navami: Ramayana Film and Indian Dinner",
+    "intro": "Celebrate the birth of Lord Rama on April 15, 2027 (MSS Ujjain Hindu calendar convention).",
+    "schedule": [
+      {
+        "time": "Morning",
+        "activity": "Learn about Rama Navami",
+        "detail": "Read about Rama, Sita and the Ramayana, and discuss dharma, courage and compassion.",
+        "recipes": []
+      },
+      {
+        "time": "Evening",
+        "activity": "Watch Ramayana (2026)",
+        "detail": "Family screening of Nitesh Tiwari's 2026 film Ramayana, starring Ranbir Kapoor as Rama. Confirm home viewing availability closer to the holiday.",
+        "recipes": []
+      },
+      {
+        "time": "Dinner",
+        "activity": "Indian feast",
+        "detail": "Enjoy an Indian meal together; consider dal, vegetable biryani, naan, raita and sweets.",
+        "recipes": []
+      }
+    ],
+    "resources": [
+      {
+        "label": "Official Ramayana film trailer",
+        "url": "https://www.youtube.com/watch?v=74nF-FWAS6M"
+      },
+      {
+        "label": "Rama Navami date source (Ujjain)",
+        "url": "https://www.drikpanchang.com/dashavatara/rama-navami/rama-navami-date-time.html?geoname-id=1253914"
+      }
+    ],
+    "closing": "Share gratitude and reflect on Rama's example."
   }
 }
