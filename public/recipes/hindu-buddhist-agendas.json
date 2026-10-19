@@ -1,0 +1,190 @@
+{
+  "Bodhi Day": {
+    "slug": "bodhi-day",
+    "title": "Bodhi Day at Home",
+    "intro": "Japanese Buddhist observance of the Buddha's awakening, December 8.",
+    "schedule": [
+      {
+        "time": "Morning",
+        "activity": "Learn the tradition",
+        "detail": "Japanese Buddhist observance of the Buddha's awakening, December 8.",
+        "recipes": []
+      },
+      {
+        "time": "Afternoon",
+        "activity": "Celebrate together",
+        "detail": "Decorate a small tree with eight paper ornaments; read the enlightenment story; make milk-rice pudding; reflect on compassion.",
+        "recipes": []
+      },
+      {
+        "time": "Evening",
+        "activity": "Reflect and share",
+        "detail": "Talk about what this celebration means in its own tradition, and consider a local community observance.",
+        "recipes": []
+      }
+    ],
+    "closing": "Consult local practitioners for religious ceremonies and dates."
+  },
+  "Vesak": {
+    "slug": "vesak",
+    "title": "Vesak at Home",
+    "intro": "Theravada Buddhist celebration of the Buddha's birth, awakening and passing; date varies by regional lunar calendar.",
+    "schedule": [
+      {
+        "time": "Morning",
+        "activity": "Learn the tradition",
+        "detail": "Theravada Buddhist celebration of the Buddha's birth, awakening and passing; date varies by regional lunar calendar.",
+        "recipes": []
+      },
+      {
+        "time": "Afternoon",
+        "activity": "Celebrate together",
+        "detail": "Offer food or donations; make paper lotus lanterns; share a vegetarian meal; visit a temple celebration.",
+        "recipes": []
+      },
+      {
+        "time": "Evening",
+        "activity": "Reflect and share",
+        "detail": "Talk about what this celebration means in its own tradition, and consider a local community observance.",
+        "recipes": []
+      }
+    ],
+    "closing": "Consult local practitioners for religious ceremonies and dates."
+  },
+  "Obon": {
+    "slug": "obon",
+    "title": "Obon at Home",
+    "intro": "Japanese Buddhist season of remembrance, with dates varying by community.",
+    "schedule": [
+      {
+        "time": "Morning",
+        "activity": "Learn the tradition",
+        "detail": "Japanese Buddhist season of remembrance, with dates varying by community.",
+        "recipes": []
+      },
+      {
+        "time": "Afternoon",
+        "activity": "Celebrate together",
+        "detail": "Share family stories and photographs; make paper lanterns; learn Bon Odori; visit a local temple event.",
+        "recipes": []
+      },
+      {
+        "time": "Evening",
+        "activity": "Reflect and share",
+        "detail": "Talk about what this celebration means in its own tradition, and consider a local community observance.",
+        "recipes": []
+      }
+    ],
+    "closing": "Consult local practitioners for religious ceremonies and dates."
+  },
+  "Ganesh Chaturthi": {
+    "slug": "ganesh-chaturthi",
+    "title": "Ganesh Chaturthi at Home",
+    "intro": "Hindu celebration honoring Ganesha; date follows a lunisolar calendar.",
+    "schedule": [
+      {
+        "time": "Morning",
+        "activity": "Learn the tradition",
+        "detail": "Hindu celebration honoring Ganesha; date follows a lunisolar calendar.",
+        "recipes": []
+      },
+      {
+        "time": "Afternoon",
+        "activity": "Celebrate together",
+        "detail": "Make a reusable clay Ganesha; prepare modak; tell stories about wisdom and beginnings.",
+        "recipes": []
+      },
+      {
+        "time": "Evening",
+        "activity": "Reflect and share",
+        "detail": "Talk about what this celebration means in its own tradition, and consider a local community observance.",
+        "recipes": []
+      }
+    ],
+    "closing": "Consult local practitioners for religious ceremonies and dates."
+  },
+  "Diwali (Deepavali)": {
+    "slug": "diwali-deepavali",
+    "title": "Diwali (Deepavali) at Home",
+    "intro": "Festival of lights, with varied Hindu and regional traditions.",
+    "schedule": [
+      {
+        "time": "Morning",
+        "activity": "Learn the tradition",
+        "detail": "Festival of lights, with varied Hindu and regional traditions.",
+        "recipes": []
+      },
+      {
+        "time": "Afternoon",
+        "activity": "Celebrate together",
+        "detail": "Create rangoli; cook sweets; light supervised diyas or LEDs; share food and practice generosity.",
+        "recipes": []
+      },
+      {
+        "time": "Evening",
+        "activity": "Reflect and share",
+        "detail": "Talk about what this celebration means in its own tradition, and consider a local community observance.",
+        "recipes": []
+      }
+    ],
+    "closing": "Consult local practitioners for religious ceremonies and dates."
+  },
+  "Holi (Festival of Colors)": {
+    "slug": "holi-festival-of-colors",
+    "title": "Holi (Festival of Colors) at Home",
+    "intro": "Hindu spring festival of colors.",
+    "schedule": [
+      {
+        "time": "Morning",
+        "activity": "Learn the tradition",
+        "detail": "Hindu spring festival of colors.",
+        "recipes": []
+      },
+      {
+        "time": "Afternoon",
+        "activity": "Celebrate together",
+        "detail": "Tell the story of Prahlada; play with washable colors outdoors; make gujiya or thandai.",
+        "recipes": []
+      },
+      {
+        "time": "Evening",
+        "activity": "Reflect and share",
+        "detail": "Talk about what this celebration means in its own tradition, and consider a local community observance.",
+        "recipes": []
+      }
+    ],
+    "closing": "Consult local practitioners for religious ceremonies and dates."
+  },
+  "Dussehra / Vijayadashami": {
+    "slug": "dussehra-vijayadashami",
+    "title": "Dussehra: Film and Indian Feast",
+    "intro": "Celebrate Vijayadashami with a family film screening and Indian food, reflecting on the victory of good over evil.",
+    "schedule": [
+      {
+        "time": "Afternoon",
+        "activity": "Learn the story",
+        "detail": "Introduce the traditions of Rama's victory over Ravana and Durga's victory over Mahishasura; regional celebrations vary.",
+        "recipes": []
+      },
+      {
+        "time": "Evening",
+        "activity": "Watch the film",
+        "detail": "Watch https://youtu.be/gKcOjnDJfzk?si=F5nF96zNPxxSaXcA together.",
+        "recipes": []
+      },
+      {
+        "time": "Dinner",
+        "activity": "Indian feast",
+        "detail": "Enjoy Indian food together. Choose favorite dishes or prepare a family-style thali.",
+        "recipes": []
+      }
+    ],
+    "resources": [
+      {
+        "label": "Dussehra film",
+        "url": "https://youtu.be/gKcOjnDJfzk?si=F5nF96zNPxxSaXcA"
+      }
+    ],
+    "closing": "Reflect together on courage, justice, and the triumph of good over harm."
+  }
+}
