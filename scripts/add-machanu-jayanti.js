@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const file = path.join(__dirname, '..', 'dist', 'MSS.ics');
+const file = path.join(__dirname, '..', process.argv.includes('--source') ? 'public' : 'dist', 'MSS.ics');
 let ics = fs.readFileSync(file, 'utf8');
 const dates = ['20240423','20250412','20260402','20270420'];
 const uid = 'machanu-jayanti@maybesomethingseasonal.com';
