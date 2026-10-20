@@ -13,7 +13,7 @@ const event = [
 'DTEND;VALUE=DATE:' + next(dates[0]),
 ...dates.slice(1).map(d => 'RDATE;VALUE=DATE:' + d),
 'SUMMARY:Machanu Jayanti — The Monkey Prince of the Sea',
-'DESCRIPTION:Family-created Thai-Indian cultural celebration on Chaitra Purnima alongside Hanuman Jayanti. Not an established traditional religious festival. Tell the Ramakien story of Hanuman\\, Suvannamaccha and their son Machanu. Prepare Thai basil pakora\\, coconut butter paneer\\, red bean curry\\, golden dal\\, coconut basmati rice and mango sticky rice. Decorate in gold\\, white and turquoise. Dates are explicit lunar-calendar instances\\; extend with verified dates after 2027.',
+'DESCRIPTION:Family-created Thai-Indian cultural celebration on Chaitra Purnima alongside Hanuman Jayanti. Not an established traditional religious festival. Tell the Ramakien story of Hanuman\\, Suvannamaccha and their son Machanu. Feature shrimp in Thai-Indian coastal dishes: coconut-lime shrimp curry\\, tamarind shrimp skewers\\, crispy shrimp pakora\\, coconut basmati rice and mango sticky rice. Offer paneer or vegetables as an alternative. Decorate in gold\\, white and turquoise. Dates are explicit lunar-calendar instances\\; extend with verified dates after 2027.',
 'CATEGORIES:Cultural,Family,Food',
 'END:VEVENT'
 ].join('\r\n');
