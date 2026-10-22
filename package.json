@@ -19,7 +19,8 @@
     "test:ipad2": "playwright test --project=iPad2",
     "test:ipad2:ui": "playwright test --project=iPad2 --ui",
     "precommit": "npm run validate",
-    "prepare": "npx simple-git-hooks"
+    "prepare": "npx simple-git-hooks",
+    "test:rsvp": "playwright test --config=playwright.rsvp.config.ts"
   },
   "dependencies": {
     "date-fns": "^2.30.0",

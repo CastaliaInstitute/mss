@@ -25,6 +25,7 @@ import {
 } from "lucide-react";
 import { initPresence, presenceWantedInLocation } from "./presence";
 import "./App.css";
+import RsvpForm, { parseRsvpConfig, type RsvpConfig } from "./RsvpForm";
 
 interface AlternateCalendarOccurrence {
   calendarSystem: string;
@@ -44,6 +45,7 @@ interface CalendarMetadata {
 }
 
 interface CalendarEvent {
+  uid?: string;
   title: string;
   date: string;
   description: string;
@@ -2970,6 +2972,15 @@ const App: React.FC = () => {
   const [todayOpen, setTodayOpen] = useState(false);
   const [todaySeen, setTodaySeen] = useState(false);
   const [selectedEvents, setSelectedEvents] = useState<CalendarEvent[]>([]);
+  const [rsvpConfig, setRsvpConfig] = useState<RsvpConfig | null>(null);
+  useEffect(() => {
+    let active = true;
+    fetch(`${getBaseUrl().replace(/\/$/, "")}/rsvp.json`)
+      .then(response => response.ok ? response.json() : null)
+      .then(config => { if (active) setRsvpConfig(parseRsvpConfig(config)); })
+      .catch(() => { if (active) setRsvpConfig(null); });
+    return () => { active = false; };
+  }, []);
   // On phones the per-event tap targets are tiny icons sharing one cell, so a
   // tap opens every event on that day; on larger screens a label is its own
   // target and opens just that event.
@@ -3324,6 +3335,7 @@ const App: React.FC = () => {
                 const daysDiff = differenceInCalendarDays(endDate, startDate);
 
                 const eventData: CalendarEvent = {
+                  uid: currentEvent.uid,
                   title: currentEvent.title,
                   date: currentEvent.date,
                   endDate: daysDiff > 1 ? currentEvent.endDate : undefined,
@@ -3366,6 +3378,8 @@ const App: React.FC = () => {
             currentEvent = {};
             descriptionLines = [];
             inDescription = false;
+          } else if (inEvent && trimmedLine.startsWith("UID:")) {
+            currentEvent.uid = trimmedLine.substring(4).trim();
           } else if (inEvent && trimmedLine.startsWith("SUMMARY")) {
             // Handle SUMMARY with or without parameters (e.g., SUMMARY: or SUMMARY;LANGUAGE=en:)
             const colonIndex = trimmedLine.indexOf(":");
@@ -3924,6 +3938,7 @@ const App: React.FC = () => {
                   Event details
                 </a>
               )}
+              <RsvpForm event={selectedEvent} config={rsvpConfig} />
             </section>
           ))}
         </div>
