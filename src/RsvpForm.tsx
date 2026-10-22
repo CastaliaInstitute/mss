@@ -75,7 +75,7 @@ export default function RsvpForm({ event, config }: { event: RsvpEvent; config: 
     try {
       const result = await fetch(config.endpoint!, {
         method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({ ...fields, _subject: subject, _replyto: fields.email, _gotcha: new FormData(form).get("_gotcha") || "" }),
+        body: JSON.stringify({ ...fields, _subject: subject, _replyto: fields.email, _gotcha: (form.elements.namedItem("_gotcha") as HTMLInputElement | null)?.value || "" }),
       });
       const receipt = await result.json();
       if (!result.ok || receipt.ok !== true) throw new Error("Submission not acknowledged");
