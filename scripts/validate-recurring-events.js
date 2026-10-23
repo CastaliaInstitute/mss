@@ -45,6 +45,7 @@ function recurrenceSignature(date) {
 
 const MOVABLE_NAME = /\b(lunar|losar|ramadan|eid|passover|pesach|rosh hashana?h?|yom kippur|sukkot|hanukkah|chanukah|purim|easter|ash wednesday|palm sunday|maundy thursday|good friday|holy saturday|pentecost|ascension|corpus christi|orthodox|mardi gras|carnival|diwali|deepavali|navaratri|dussehra|vijayadashami|holi|holika dahan|vesak|wesak|mid-autumn|moon|equinox|solstice|nowruz|navroz|yalda|thanksgiving|advent|gaudete|sinterklaas arrival|ghost festival|ullambana|gita jayanti)\b/i;
 const ONE_OFF_NAME = new Set([
+  'Moscow Ballet’s Great Russian Nutcracker',
   'A Colorado Nutcracker — Matinee',
   'Cowboy Christmas Jubilee',
   'Rama Navami',
@@ -194,6 +195,7 @@ for (const summary of [
 assertNoRecurrence('Broadmoor Brunch');
 assertNoRecurrence('Cowboy Christmas Jubilee');
 assertNoRecurrence('A Colorado Nutcracker — Matinee');
+assertNoRecurrence('Moscow Ballet’s Great Russian Nutcracker');
 
 // Apple/iCloud subscriptions should receive true all-day values for date-only observances.
 const timedMidnightEvents = blocks.filter((block) => {

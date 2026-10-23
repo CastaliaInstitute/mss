@@ -1557,6 +1557,29 @@ STATUS:TENTATIVE
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:moscow-ballet-nutcracker-denver-2026@maybesomethingseasonal.com
+DTSTAMP:20261023T000000Z
+DTSTART;TZID=America/Denver:20261129T150000
+SUMMARY:Moscow Ballet’s Great Russian Nutcracker
+URL:https://www.ticketmaster.com/paramount-theatre-tickets-denver/venue/
+ 245776
+LOCATION:Paramount Theatre\, Denver\, CO
+DESCRIPTION:Tentative family outing to Moscow Ballet’s Great Russian N
+ utcracker at the Paramount Theatre in Denver. Preferred performance: Su
+ nday\, November 29\, 2026 at 3:00 p.m. Mountain Standard Time. Tickets
+  have not been booked.\nDate and time supplied by the family\; not yet
+  independently confirmed against the current ticket inventory. Other su
+ pplied options: November 29 at 7 p.m. and November 30 at 1 p.m. or 5 p.
+ m.\nTicket link: the Paramount Theatre’s official Ticketmaster venue
+  listing. Confirm the production\, date\, and 3 p.m. time before purcha
+ sing. Performance end time is not confirmed.\nTour information: https:/
+ /nutcracker.com/your-city/get-tickets/denver\n\nIcon: 🩰\nCategory: c
+ ultural
+CATEGORIES:cultural
+STATUS:TENTATIVE
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:machanu-jayanti@maybesomethingseasonal.com
 DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20240423
