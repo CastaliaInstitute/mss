@@ -32,6 +32,7 @@ def start_day(component):
 occurrences = {(str(event.get("SUMMARY", "")), start_day(event)) for event in expanded}
 
 expected = {
+    ("Ramayana in IMAX — Diwali Outing", date(2026, 11, 8)),
     ("Moscow Ballet’s Great Russian Nutcracker", date(2026, 11, 29)),
     ("A Colorado Nutcracker — Matinee", date(2026, 12, 23)),
     ("Cowboy Christmas Jubilee", date(2026, 12, 18)),

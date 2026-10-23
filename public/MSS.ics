@@ -1580,6 +1580,26 @@ STATUS:TENTATIVE
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:ramayana-imax-diwali-2026@maybesomethingseasonal.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Ramayana in IMAX — Diwali Outing
+RELATED-TO:diwali-deepavali@maybesomethingseasonal.com
+URL:https://www.imax.com/movies
+DESCRIPTION:Plan to see Ramayana in IMAX on Diwali\, Sunday\, November 8
+ \, 2026. This is a tentative family outing\, subject to the film’s re
+ lease and local IMAX availability.\nTheater and showtime are not yet se
+ lected or confirmed. Tickets have not been booked. Check IMAX and local
+  cinema listings before making travel plans.\nCoordinate the screening
+  with rangoli\, diyas\, sweets\, and the Diwali meal. The date follows
+  the Diwali entry in our calendar\; this film outing is for 2026 only.\
+ n\nIcon: 🎬\nCategory: cultural
+CATEGORIES:cultural
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:machanu-jayanti@maybesomethingseasonal.com
 DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20240423
