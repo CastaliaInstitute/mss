@@ -125,7 +125,7 @@ test('sharing opens the exact event occurrence in a regular calendar', async ({ 
   expect(url.searchParams.get('event')).toBe('martinstag-rsvp-fixture@example.test');
   expect(url.searchParams.get('date')).toBe('2026-11-10');
   expect(url.searchParams.has('kiosk')).toBe(false);
-  await page.goto(href!);
+  await page.goto(`/?route=${encodeURIComponent(url.pathname)}&${url.searchParams.toString()}`);
   await expect(page.getByRole('dialog').getByText('Martinstag Lantern Evening', { exact: true })).toBeVisible();
   await expect(page.getByRole('dialog').getByText('November 10, 2026', { exact: false })).toBeVisible();
   // Clipboard failure still exposes a selectable link.

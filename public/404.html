@@ -14,6 +14,7 @@
           base +
           "?route=" +
           encodeURIComponent(route) +
+          (location.search ? "&" + location.search.slice(1) : "") +
           (location.hash ? "&hash=" + encodeURIComponent(location.hash) : "");
         location.replace(target);
       })();
