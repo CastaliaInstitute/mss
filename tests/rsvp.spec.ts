@@ -133,3 +133,25 @@ test('sharing opens the exact event occurrence in a regular calendar', async ({ 
   await page.getByRole('button', { name: 'Copy event link' }).click();
   await expect(page.getByLabel('Event sharing link')).toHaveValue(href!);
 });
+
+test('protected endpoint waits for Turnstile, forwards proof, and resets it for retry', async ({ page }) => {
+  await page.route('https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit', route => route.fulfill({
+    contentType: 'application/javascript',
+    body: `window.turnstile = { render: function(el, options) { window.testChallenge = options; return 'widget'; }, remove: function() {} };`,
+  }));
+  let requests = 0;
+  await page.route(endpoint, async route => {
+    requests++;
+    expect(route.request().postDataJSON().turnstileToken).toBe('verified-token');
+    await route.fulfill({status: 503, json: {ok: false}});
+  });
+  await openEvent(page, {mode: 'endpoint', recipient, endpoint, turnstileSiteKey: 'test-public-site-key'});
+  await fill(page);
+  await expect(page.getByRole('button', {name: 'Send RSVP', exact: true})).toBeDisabled();
+  await page.waitForFunction(() => (window as any).testChallenge);
+  await page.evaluate(() => (window as any).testChallenge.callback('verified-token'));
+  await page.getByRole('button', {name: 'Send RSVP', exact: true}).click();
+  await expect(page.getByRole('alert')).toContainText('We couldn’t confirm');
+  await expect(page.getByRole('button', {name: 'Send RSVP', exact: true})).toBeDisabled();
+  expect(requests).toBe(1);
+});

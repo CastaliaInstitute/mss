@@ -8,3 +8,8 @@
 # Use environment variables instead
 .env.local
 node_modules
+
+# Cloudflare local state and private development secrets
+.wrangler/
+.dev.vars
+.dev.vars.*

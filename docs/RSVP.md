@@ -22,15 +22,24 @@ The endpoint must allow browser requests from `https://mss.castalia.institute` a
 
 The endpoint must handle server-side validation, spam protection, rate limits, and delivery. A form endpoint URL is public configuration. SMTP/API passwords and CalDAV credentials must remain on the server, never in `public/`, `src/`, or `VITE_*` variables. Confirm the form recipient with the provider before enabling endpoint mode. Test delivery separately with the recipient; an accepted submission does not establish inbox delivery.
 
-## CalDAV scheduling
+## Private CalDAV attendance records
 
-The published MSS subscription is a read-only holiday feed. It is not a scheduling inbox and cannot process `ATTENDEE` replies. CalDAV RSVP support needs a scheduling-capable calendar server and organizer account, not merely an ICS download.
+The Cloudflare Worker in [`workers/rsvp`](../workers/rsvp/README.md) implements
+private CalDAV storage and automatic email/Matrix notifications. It verifies
+Turnstile proofs and matches the event UID, title, and actual occurrence against
+the published calendar before durably accepting an RSVP. It writes to a dedicated
+private collection on `cal.castalia.institute`. CalDAV writes and notifications
+retry in the background. “Received” means durably queued, not inbox delivery.
 
-A future scheduling endpoint can accept the same form payload. It must map the selected event UID and occurrence date to the organizer's hosted gathering, create/manage an invitation with `ORGANIZER` and `ATTENDEE`/`RSVP=TRUE`, and process calendar scheduling responses (`PARTSTAT=ACCEPTED`, `TENTATIVE`, or `DECLINED`). Changing an attendee property in an arbitrary CalDAV resource is not a substitute for the server's scheduling workflow. Calendar account URLs, scheduling privileges, notification behavior, and authentication must be verified with the selected provider.
+This is an attendance-record integration for Radicale, not native invitation/reply
+scheduling. Records are private, transparent all-day entries with PARTSTAT;
+they do not set party start times, book tickets, or publish attendee addresses.
 
-Do not put attendee addresses into the public holiday subscription. Keep private invitations and attendance records in the organizer's private calendar. Per-event scheduling also requires actual gathering start/end times; the holiday's all-day occurrence should not be silently presented as a confirmed party time.
-
-No CalDAV server has been configured for this feature yet.
+The implementation is prepared but requires Cloudflare deployment access, scoped
+CalDAV credentials, production Turnstile settings, and email/Matrix credentials.
+Follow the Worker README to deploy and verify actual delivery before switching
+`public/rsvp.json`. The live site remains in email-draft mode until activation.
+The protected endpoint configuration adds a public `turnstileSiteKey` field.
 
 ## Verification
 

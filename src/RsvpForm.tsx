@@ -1,9 +1,12 @@
 import React, { useId, useState } from "react";
 
+import TurnstileChallenge from "./TurnstileChallenge";
+
 export interface RsvpConfig {
   mode: "email" | "endpoint";
   recipient: string;
   endpoint?: string;
+  turnstileSiteKey?: string;
   eventTitles?: string[];
 }
 
@@ -20,6 +23,7 @@ export function parseRsvpConfig(value: unknown): RsvpConfig | null {
     } catch { return null; }
   }
   if (config.eventTitles !== undefined && (!Array.isArray(config.eventTitles) || !config.eventTitles.every(title => typeof title === "string"))) return null;
+  if (config.turnstileSiteKey !== undefined && (config.mode !== "endpoint" || typeof config.turnstileSiteKey !== "string" || !/^[a-zA-Z0-9_-]{10,100}$/.test(config.turnstileSiteKey))) return null;
   return config as unknown as RsvpConfig;
 }
 
@@ -38,6 +42,8 @@ export default function RsvpForm({ event, config }: { event: RsvpEvent; config: 
   const [guests, setGuests] = useState("1");
   const [note, setNote] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "draft" | "error">("idle");
+  const [turnstileToken, setTurnstileToken] = useState("");
+  const [challengeVersion, setChallengeVersion] = useState(0);
   const [draftUrl, setDraftUrl] = useState("");
 
   if (!config || (config.eventTitles && config.eventTitles.indexOf(event.title) === -1)) return null;
@@ -53,11 +59,13 @@ export default function RsvpForm({ event, config }: { event: RsvpEvent; config: 
     if (!form.reportValidity()) return;
     const attendees = response === "no" ? 0 : Number(guests);
     if (!name.trim() || !Number.isInteger(attendees) || attendees < 0 || attendees > 20 || (response !== "no" && attendees === 0)) return;
+    if (config.turnstileSiteKey && !turnstileToken) return;
     const subject = `RSVP: ${event.title.replace(/[\r\n]/g, " ")} — ${event.date}`;
     const fields = {
       name: name.trim(), email: email.trim(), response: labels[response],
       guests: attendees, note: note.trim(), event: event.title, date: event.date,
       event_uid: event.uid || "", event_url: window.location.href,
+      ...(config.turnstileSiteKey ? { turnstileToken } : {}),
     };
     if (config.mode === "email") {
       const body = [
@@ -82,12 +90,14 @@ export default function RsvpForm({ event, config }: { event: RsvpEvent; config: 
       setStatus("sent");
     } catch {
       setStatus("error");
+    } finally {
+      if (config.turnstileSiteKey) { setTurnstileToken(""); setChallengeVersion(value => value + 1); }
     }
   }
 
   return (
     <div className="mt-5 border-t border-green-100 pt-4">
-      <button type="button" className="rounded-lg bg-green-800 px-4 py-2 font-semibold text-white hover:bg-green-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800" aria-expanded={open} aria-controls={`${id}-form`} onClick={() => setOpen(!open)}>
+      <button type="button" className="rounded-lg bg-green-800 px-4 py-2 font-semibold text-white hover:bg-green-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800" aria-expanded={open} aria-controls={`${id}-form`} onClick={() => { setTurnstileToken(""); setOpen(!open); }}>
         RSVP to our gathering
       </button>
       {open && (
@@ -101,7 +111,8 @@ export default function RsvpForm({ event, config }: { event: RsvpEvent; config: 
             {response !== "no" && <label className="block text-sm font-medium" htmlFor={`${id}-guests`}>Party size, including you<input id={`${id}-guests`} type="number" className={field} min={1} max={20} step={1} required value={guests} onChange={e => { setGuests(e.target.value); setStatus("idle"); }} /></label>}
             <label className="block text-sm font-medium" htmlFor={`${id}-note`}>Note to the host (optional)<textarea id={`${id}-note`} className={field} maxLength={1000} rows={3} value={note} onChange={e => { setNote(e.target.value); setStatus("idle"); }} /></label>
             <div hidden aria-hidden="true"><label>Leave this empty<input name="_gotcha" tabIndex={-1} autoComplete="off" /></label></div>
-            <button type="submit" disabled={status === "sending"} className="rounded-lg bg-green-800 px-4 py-2 font-semibold text-white disabled:opacity-50">{status === "sending" ? "Sending…" : config.mode === "email" ? "Open email RSVP" : "Send RSVP"}</button>
+            {config.turnstileSiteKey && <TurnstileChallenge key={challengeVersion} siteKey={config.turnstileSiteKey} onToken={setTurnstileToken} />}
+            <button type="submit" disabled={status === "sending" || (!!config.turnstileSiteKey && !turnstileToken)} className="rounded-lg bg-green-800 px-4 py-2 font-semibold text-white disabled:opacity-50">{status === "sending" ? "Sending…" : config.mode === "email" ? "Open email RSVP" : "Send RSVP"}</button>
           </fieldset>}
           <div aria-live="polite" className="text-sm">
             {status === "sent" && <p role="status" className="text-green-800">Your RSVP was received. Thank you!</p>}

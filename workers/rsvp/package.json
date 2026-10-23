@@ -1,0 +1,8 @@
+{
+  "name": "mss-rsvp-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test", "check": "wrangler deploy --dry-run", "deploy": "wrangler deploy"},
+  "dependencies": {"ical.js": "^2.2.1"},
+  "devDependencies": {"wrangler": "^4.0.0"}
+}
