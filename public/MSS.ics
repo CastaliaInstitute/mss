@@ -1492,6 +1492,29 @@ STATUS:TENTATIVE
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:santas-workshop-sinterklaas@maybesomethingseasonal.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=SA;BYMONTHDAY=12,13,14,15,16,17,18
+SUMMARY:Santa’s Workshop — Sinterklaas Arrival Outing
+URL:https://northpolecolorado.com/
+LOCATION:North Pole–Santa’s Workshop\, Cascade\, Colorado
+DESCRIPTION:Our annual family outing to North Pole–Santa’s Workshop
+  in Cascade\, Colorado\, on Sinterklaas Arrival day: the first Saturday
+  after St. Martin’s Day. Enjoy the Christmas-themed amusement park an
+ d a visit with Santa\, subject to the park’s seasonal offerings.\nPac
+ k pepernoten or kruidnoten for the day and return home for Sinterklaas
+  stories and hot cocoa.\nThis is our planned outing\, not a park-organi
+ zed Sinterklaas event. Check the park’s opening calendar\, admission\
+ , reservations\, and weather before visiting. No visit time is set.\n\n
+ Icon: 🎅\nCategory: cultural
+X-IMAGE:/images/north-pole-santas-workshop.png
+CATEGORIES:cultural
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:machanu-jayanti@maybesomethingseasonal.com
 DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20240423

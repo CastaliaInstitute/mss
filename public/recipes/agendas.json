@@ -2788,8 +2788,8 @@
   },
   "Sinterklaas Arrival (Intocht)": {
     "slug": "sinterklaas-arrival-intocht",
-    "title": "Sinterklaas Arrival Day at Home",
-    "intro": "Welcome Sinterklaas and his Pieten from Spain with a day full of Dutch traditions, bringing the festive spirit right into your home.",
+    "title": "Sinterklaas Arrival Day: Santa’s Workshop and Dutch Treats",
+    "intro": "Welcome Sinterklaas with Dutch treats, a family outing to North Pole–Santa’s Workshop in Cascade, Colorado, and stories at home.",
     "schedule": [
       {
         "time": "Morning",
@@ -2808,6 +2808,12 @@
           "spiced-pepernoten",
           "speculaas-windmill-cookies"
         ]
+      },
+      {
+        "time": "Daytime — check park hours",
+        "activity": "Visit North Pole–Santa’s Workshop",
+        "detail": "Our family outing to the Christmas-themed amusement park in Cascade, Colorado, on Sinterklaas Arrival day. Check https://northpolecolorado.com/ for seasonal opening dates, admission, reservations, and weather before visiting. This is our planned outing, not a park-organized Sinterklaas event.",
+        "recipes": []
       },
       {
         "time": "Late Morning",

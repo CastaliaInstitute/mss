@@ -32,6 +32,9 @@ def start_day(component):
 occurrences = {(str(event.get("SUMMARY", "")), start_day(event)) for event in expanded}
 
 expected = {
+    ("Santa’s Workshop — Sinterklaas Arrival Outing", date(2026, 11, 14)),
+    ("Santa’s Workshop — Sinterklaas Arrival Outing", date(2028, 11, 18)),
+    ("Santa’s Workshop — Sinterklaas Arrival Outing", date(2033, 11, 12)),
     ("Brown Palace Champagne Cascade", date(2026, 11, 22)),
     ("Brown Palace Champagne Cascade", date(2029, 11, 18)),
     ("Brown Palace Champagne Cascade", date(2030, 11, 24)),
@@ -119,3 +122,9 @@ print(
     f"External RFC 5545 validation passed: {len(vevents)} VEVENTs parsed; "
     f"{len(expanded)} occurrences expanded across 2026-2035."
 )
+
+# The family outing must stay on Sinterklaas Arrival day in every expanded year.
+arrival_days = {day for title, day in occurrences if title == "Sinterklaas Arrival (Intocht)"}
+outing_days = {day for title, day in occurrences if title == "Santa’s Workshop — Sinterklaas Arrival Outing"}
+if outing_days != arrival_days:
+    raise SystemExit("Santa’s Workshop outing no longer matches Sinterklaas Arrival dates")
