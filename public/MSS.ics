@@ -1470,6 +1470,28 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:brown-palace-champagne-cascade@maybesomethingseasonal.com
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=SU;BYMONTHDAY=18,19,20,21,22,23,24
+SUMMARY:Brown Palace Champagne Cascade
+URL:https://www.brownpalace.com/
+LOCATION:The Brown Palace Hotel and Spa\, 321 17th Street\, Denver\, CO
+DESCRIPTION:Tentative annual planning date for the Brown Palace Champagn
+ e Cascade in Denver\, traditionally held on the Sunday before Thanksgiv
+ ing. The hotel celebrates the holiday season by pouring Champagne down
+  a towering pyramid of glasses in its historic atrium.\n2026 planning d
+ ate: Sunday\, November 22. The organizer's 2026 date\, time\, admission
+ \, and reservation details have not yet been confirmed. Check with the
+  hotel before making plans\; future occurrences follow the customary pa
+ ttern and remain tentative.\nLocation: The Brown Palace Hotel and Spa\,
+  321 17th Street\, Denver\, Colorado.\n\nIcon: 🥂\nCategory: cultural
+CATEGORIES:cultural
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:machanu-jayanti@maybesomethingseasonal.com
 DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20240423
