@@ -1515,6 +1515,26 @@ STATUS:TENTATIVE
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:cowboy-christmas-jubilee-2026@maybesomethingseasonal.com
+DTSTAMP:20261023T000000Z
+DTSTART;TZID=America/Denver:20261218T183000
+DTEND;TZID=America/Denver:20261218T203000
+SUMMARY:Cowboy Christmas Jubilee
+URL:https://www.showpass.com/cowboy-christmas-jubilee-26-12-18-18-8426/
+LOCATION:Flying W Ranch\, 3330 Chuckwagon Road\, Colorado Springs\, CO
+DESCRIPTION:Pencilled-in outing to the Flying W Ranch Cowboy Christmas J
+ ubilee. Tickets have not been booked.\nFriday\, December 18\, 2026: 6:3
+ 0–8:30 p.m. Mountain Standard Time. Gates open at 6:15 p.m.\; dinner
+  is served at 6:45 p.m.\, followed by the show.\nFestive western music
+  and Christmas classics by the Flying W Wranglers featuring the Marian
+  L. Wolfe Orchestra\, with a hearty holiday meal.\nCheck the linked Sho
+ wpass listing for current ticket availability\, admission details\, and
+  policies.\n\nIcon: 🤠\nCategory: cultural
+CATEGORIES:cultural
+STATUS:TENTATIVE
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:machanu-jayanti@maybesomethingseasonal.com
 DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20240423

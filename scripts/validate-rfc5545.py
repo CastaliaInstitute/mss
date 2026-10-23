@@ -32,6 +32,7 @@ def start_day(component):
 occurrences = {(str(event.get("SUMMARY", "")), start_day(event)) for event in expanded}
 
 expected = {
+    ("Cowboy Christmas Jubilee", date(2026, 12, 18)),
     ("Santa’s Workshop — Sinterklaas Arrival Outing", date(2026, 11, 14)),
     ("Santa’s Workshop — Sinterklaas Arrival Outing", date(2028, 11, 18)),
     ("Santa’s Workshop — Sinterklaas Arrival Outing", date(2033, 11, 12)),
@@ -128,3 +129,13 @@ arrival_days = {day for title, day in occurrences if title == "Sinterklaas Arriv
 outing_days = {day for title, day in occurrences if title == "Santa’s Workshop — Sinterklaas Arrival Outing"}
 if outing_days != arrival_days:
     raise SystemExit("Santa’s Workshop outing no longer matches Sinterklaas Arrival dates")
+
+# The tentative ticketed outing has a specific local evening time, not a yearly rule.
+jubilee = [e for e in vevents if str(e.get("SUMMARY")) == "Cowboy Christmas Jubilee"]
+if len(jubilee) != 1:
+    raise SystemExit("Expected exactly one Cowboy Christmas Jubilee")
+jubilee = jubilee[0]
+if str(jubilee.get("STATUS")) != "TENTATIVE" or jubilee.get("RRULE") or jubilee.get("RDATE"):
+    raise SystemExit("Jubilee must remain a tentative one-off outing")
+if jubilee.decoded("DTSTART").isoformat() != "2026-12-18T18:30:00-07:00" or jubilee.decoded("DTEND").isoformat() != "2026-12-18T20:30:00-07:00":
+    raise SystemExit("Jubilee time must be 6:30–8:30 p.m. MST")
