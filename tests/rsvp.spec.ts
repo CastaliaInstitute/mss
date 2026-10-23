@@ -114,3 +114,22 @@ test('an insecure endpoint is not enabled', async ({ page }) => {
   await openEvent(page, { mode: 'endpoint', recipient, endpoint: 'http://rsvp.example.test/submit' });
   await expect(page.getByRole('button', { name: 'RSVP to our gathering' })).toHaveCount(0);
 });
+
+test('sharing opens the exact event occurrence in a regular calendar', async ({ page }) => {
+  await openEvent(page, { mode: 'email', recipient });
+  const link = page.getByRole('link', { name: 'Link to this event', exact: true });
+  const href = await link.getAttribute('href');
+  expect(href).toBeTruthy();
+  const url = new URL(href!);
+  expect(url.pathname).toBe('/2026/11');
+  expect(url.searchParams.get('event')).toBe('martinstag-rsvp-fixture@example.test');
+  expect(url.searchParams.get('date')).toBe('2026-11-10');
+  expect(url.searchParams.has('kiosk')).toBe(false);
+  await page.goto(href!);
+  await expect(page.getByRole('dialog').getByText('Martinstag Lantern Evening', { exact: true })).toBeVisible();
+  await expect(page.getByRole('dialog').getByText('November 10, 2026', { exact: false })).toBeVisible();
+  // Clipboard failure still exposes a selectable link.
+  await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { value: undefined, configurable: true }));
+  await page.getByRole('button', { name: 'Copy event link' }).click();
+  await expect(page.getByLabel('Event sharing link')).toHaveValue(href!);
+});

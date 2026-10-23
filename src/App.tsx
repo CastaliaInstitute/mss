@@ -25,6 +25,7 @@ import {
 } from "lucide-react";
 import { initPresence, presenceWantedInLocation } from "./presence";
 import "./App.css";
+import EventShare from "./EventShare";
 import RsvpForm, { parseRsvpConfig, type RsvpConfig } from "./RsvpForm";
 
 interface AlternateCalendarOccurrence {
@@ -2940,6 +2941,8 @@ const canonicalMonthPath = (date: Date): string => {
   const basePath = getBaseUrl().replace(/\/$/, "");
   const params = new URLSearchParams(window.location.search);
   params.delete("route");
+  params.delete("event");
+  params.delete("date");
   const query = params.toString();
   return `${basePath}/${format(date, "yyyy/MM")}${query ? `?${query}` : ""}${window.location.hash}`;
 };
@@ -2972,6 +2975,24 @@ const App: React.FC = () => {
   const [todayOpen, setTodayOpen] = useState(false);
   const [todaySeen, setTodaySeen] = useState(false);
   const [selectedEvents, setSelectedEvents] = useState<CalendarEvent[]>([]);
+  // Resolve a shared occurrence after the calendar feed has loaded.
+  useEffect(() => {
+    const openSharedEvent = () => {
+      const params = new URLSearchParams(window.location.search);
+      const identity = params.get("event");
+      const date = params.get("date");
+      if (!identity || !date) return;
+      const event = events.find(item => (item.uid || item.title) === identity && item.date === date);
+      if (event) {
+        setCurrentDate(startOfMonth(toLocalDate(event.date)));
+        setTodayOpen(false);
+        setSelectedEvents([event]);
+      }
+    };
+    openSharedEvent();
+    window.addEventListener("popstate", openSharedEvent);
+    return () => window.removeEventListener("popstate", openSharedEvent);
+  }, [events]);
   const [rsvpConfig, setRsvpConfig] = useState<RsvpConfig | null>(null);
   useEffect(() => {
     let active = true;
@@ -3117,10 +3138,13 @@ const App: React.FC = () => {
   useEffect(() => {
     const redirectPath = new URLSearchParams(window.location.search).get("route");
     if (redirectPath) {
+      const sharedParams = new URLSearchParams(window.location.search);
+      sharedParams.delete("route");
+      const sharedPath = `${getBaseUrl().replace(/\/$/, "")}/${format(initialDate, "yyyy/MM")}?${sharedParams.toString()}${window.location.hash}`;
       window.history.replaceState(
         { month: canonicalMonthPath(initialDate) },
         "",
-        canonicalMonthPath(initialDate),
+        sharedPath,
       );
     }
     const handlePopState = () => {
@@ -3938,6 +3962,7 @@ const App: React.FC = () => {
                   Event details
                 </a>
               )}
+              <EventShare event={selectedEvent} base={getBaseUrl()} />
               <RsvpForm event={selectedEvent} config={rsvpConfig} />
             </section>
           ))}
