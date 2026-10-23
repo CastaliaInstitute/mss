@@ -228,5 +228,37 @@
       }
     ],
     "closing": "Share gratitude and reflect on Rama's example."
+  },
+  "Holika Dahan": {
+    "slug": "holika-dahan",
+    "title": "Holika Dahan: Bonfire and the Story of Prahlada",
+    "intro": "An evening of storytelling, reflection, and hospitality around the Hindu spring bonfire observance. Consult your local temple for the observance date and muhurat.",
+    "schedule": [
+      {
+        "time": "Late afternoon",
+        "activity": "Prepare and gather",
+        "detail": "Prepare gujiya, roasted chickpeas, and non-infused thandai to share. Arrange to attend a local community bonfire or prepare an outdoor fire where permitted.",
+        "recipes": []
+      },
+      {
+        "time": "Before dusk",
+        "activity": "Tell the story of Prahlada and Holika",
+        "detail": "Tell how Prahlada remains devoted to Vishnu despite his father Hiranyakashipu’s demands, and survives the fire in which Holika perishes. Discuss courage, devotion, and the triumph of good over evil.",
+        "recipes": []
+      },
+      {
+        "time": "Evening — confirm local muhurat",
+        "activity": "Holika Dahan",
+        "detail": "Join a community observance for the bonfire, prayers, and songs. At home, gather for storytelling and reflection; religious ceremonies and fire-lighting times follow local practice.",
+        "recipes": []
+      },
+      {
+        "time": "After the gathering",
+        "activity": "Share refreshments",
+        "detail": "Enjoy sweets and drinks together, and look ahead to celebrating colors at Holi.",
+        "recipes": []
+      }
+    ],
+    "closing": "The calendar currently lists published India civil dates for 2026–2027 only. Local temple dates and auspicious times may differ; future dates await verification."
   }
 }
