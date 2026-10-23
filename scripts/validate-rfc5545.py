@@ -32,6 +32,7 @@ def start_day(component):
 occurrences = {(str(event.get("SUMMARY", "")), start_day(event)) for event in expanded}
 
 expected = {
+    ("A Colorado Nutcracker — Matinee", date(2026, 12, 23)),
     ("Cowboy Christmas Jubilee", date(2026, 12, 18)),
     ("Santa’s Workshop — Sinterklaas Arrival Outing", date(2026, 11, 14)),
     ("Santa’s Workshop — Sinterklaas Arrival Outing", date(2028, 11, 18)),
@@ -139,3 +140,10 @@ if str(jubilee.get("STATUS")) != "TENTATIVE" or jubilee.get("RRULE") or jubilee.
     raise SystemExit("Jubilee must remain a tentative one-off outing")
 if jubilee.decoded("DTSTART").isoformat() != "2026-12-18T18:30:00-07:00" or jubilee.decoded("DTEND").isoformat() != "2026-12-18T20:30:00-07:00":
     raise SystemExit("Jubilee time must be 6:30–8:30 p.m. MST")
+
+nutcracker = [e for e in vevents if str(e.get("SUMMARY")) == "A Colorado Nutcracker — Matinee"]
+if len(nutcracker) != 1:
+    raise SystemExit("Expected exactly one Nutcracker matinee")
+nutcracker = nutcracker[0]
+if nutcracker.decoded("DTSTART").isoformat() != "2026-12-23T14:00:00-07:00" or nutcracker.get("RRULE") or nutcracker.get("RDATE"):
+    raise SystemExit("Nutcracker must be the one-off December 23, 2026, 2 p.m. MST matinee")

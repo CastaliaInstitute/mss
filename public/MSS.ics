@@ -1535,6 +1535,28 @@ STATUS:TENTATIVE
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:a-colorado-nutcracker-2026-matinee@maybesomethingseasonal.com
+DTSTAMP:20261023T000000Z
+DTSTART;TZID=America/Denver:20261223T140000
+SUMMARY:A Colorado Nutcracker — Matinee
+URL:https://www.danceinthesprings.com/performances/a-colorado-nutcracker
+ -2026
+LOCATION:Pikes Peak Center\, 190 South Cascade Avenue\, Colorado Springs
+ \, CO 80903
+DESCRIPTION:Planned outing to Colorado Ballet Society’s A Colorado Nut
+ cracker 2026: the Wednesday\, December 23 matinee at 2:00 p.m. Mountain
+  Standard Time. Tickets have not been booked.\nVenue: Pikes Peak Center
+ \, 190 South Cascade Avenue\, Colorado Springs\, Colorado 80903.\nThe o
+ rganizer lists performances December 22 at 7:00 p.m. and December 23 at
+  2:00 p.m. and 7:00 p.m.\; we plan to attend the matinee. Performance e
+ nd time has not been published on the linked page.\nSee the organizer
+ ’s performance page for ticket information and updates.\n\nIcon: 🩰
+ \nCategory: cultural
+CATEGORIES:cultural
+STATUS:TENTATIVE
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:machanu-jayanti@maybesomethingseasonal.com
 DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20240423
