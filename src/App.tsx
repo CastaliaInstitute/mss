@@ -3663,6 +3663,9 @@ const App: React.FC = () => {
   const todaysEvents = events.length ? getEventsForDate(today) : [];
   useEffect(() => {
     if (todaySeen || isKioskMode || todaysEvents.length === 0) return;
+    // A recipient following an invitation should see that event, not today's welcome.
+    const sharedEvent = new URLSearchParams(window.location.search);
+    if (sharedEvent.get("event") && sharedEvent.get("date")) return;
     let dismissed = false;
     try {
       dismissed = localStorage.getItem("mss-today-dismissed") === todayKey;

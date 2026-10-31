@@ -198,3 +198,14 @@ test('cancelling the share menu does not copy or report a failure', async ({ pag
   await expect(page.getByLabel('Invitation to share')).toHaveCount(0);
   expect(await page.evaluate(() => (window as any).copiedInvitation)).toBeUndefined();
 });
+
+test('an invitation opens above holiday greetings even when today has an event', async ({ page }) => {
+  await page.clock.install({ time: new Date('2026-11-10T12:00:00') });
+  await page.addInitScript(() => Object.defineProperty(navigator, 'share', { configurable: true, value: undefined }));
+  await openEvent(page, { mode: 'email', recipient });
+  const href = await page.getByRole('link', { name: 'Link to this event', exact: true }).getAttribute('href');
+  await page.goto(href!);
+  await expect(page.getByRole('heading', { name: 'Today on Maybe Something Seasonal' })).toHaveCount(0);
+  await page.getByRole('button', { name: 'Share invitation', exact: true }).click();
+  await expect(page.getByLabel('Invitation to share')).toBeVisible();
+});
