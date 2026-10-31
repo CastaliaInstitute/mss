@@ -155,3 +155,46 @@ test('protected endpoint waits for Turnstile, forwards proof, and resets it for 
   await expect(page.getByRole('button', {name: 'Send RSVP', exact: true})).toBeDisabled();
   expect(requests).toBe(1);
 });
+
+test('share invitation uses the mobile sharing menu with the exact occurrence', async ({ page }) => {
+  await page.addInitScript(() => Object.defineProperty(navigator, 'share', { configurable: true, value: async (data: unknown) => { (window as any).sharedInvitation = data; } }));
+  await openEvent(page, { mode: 'email', recipient });
+  await page.getByRole('button', { name: 'Share invitation', exact: true }).click();
+  await expect(page.getByRole('status')).toHaveText('Sharing completed.');
+  const shared = await page.evaluate(() => (window as any).sharedInvitation);
+  expect(shared.title).toBe('Martinstag Lantern Evening');
+  expect(shared.text).toContain('Tuesday, November 10, 2026');
+  expect(shared.text).toContain('RSVP');
+  const url = new URL(shared.url);
+  expect(url.searchParams.get('event')).toBe('martinstag-rsvp-fixture@example.test');
+  expect(url.searchParams.get('date')).toBe('2026-11-10');
+  expect(url.searchParams.has('kiosk')).toBe(false);
+});
+
+test('unsupported sharing and blocked clipboard expose a full invitation to copy', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'share', { configurable: true, value: undefined });
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: undefined });
+  });
+  await openEvent(page, { mode: 'email', recipient });
+  await page.getByRole('button', { name: 'Share invitation', exact: true }).click();
+  await expect(page.getByRole('status')).toContainText('Select the invitation');
+  const invitation = await page.getByLabel('Invitation to share').inputValue();
+  expect(invitation).toContain('Join us for Martinstag Lantern Evening!');
+  expect(invitation).toContain('Tuesday, November 10, 2026');
+  expect(invitation).toContain('date=2026-11-10');
+  await page.goto(invitation.split('\n').pop()!);
+  await expect(page.getByRole('dialog').getByText('Martinstag Lantern Evening', { exact: true })).toBeVisible();
+});
+
+test('cancelling the share menu does not copy or report a failure', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'share', { configurable: true, value: async () => { throw new DOMException('Cancelled', 'AbortError'); } });
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async () => { (window as any).copiedInvitation = true; } } });
+  });
+  await openEvent(page, { mode: 'email', recipient });
+  await page.getByRole('button', { name: 'Share invitation', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Share invitation', exact: true })).toBeEnabled();
+  await expect(page.getByLabel('Invitation to share')).toHaveCount(0);
+  expect(await page.evaluate(() => (window as any).copiedInvitation)).toBeUndefined();
+});
