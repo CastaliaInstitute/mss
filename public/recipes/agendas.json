@@ -1789,7 +1789,7 @@
       {
         "time": "Afternoon",
         "activity": "Bake Sourdough Weckmänner & Festive Treats",
-        "detail": "Bake the proofed sourdough bread figures until golden. Add raisin eyes and buttons before baking, with optional edible dough croziers. Save them to warm and share after the lantern procession.",
+        "detail": "Bake the proofed sourdough bread figures until golden. Add raisin eyes and buttons before baking, with optional edible dough croziers. Save them to warm and share after the lantern procession. Keep the Wockenfuss black licorice pipes aside until after baking.",
         "recipes": [
           "sourdough-weckmaenner",
           "pretzels",
@@ -1811,7 +1811,7 @@
       {
         "time": "Evening",
         "activity": "Post-Procession Warmth and Treats",
-        "detail": "After the lantern walk, gather for warm sourdough Weckmänner with butter or jam and warm cider. Share the sweet bread figures together as part of our St. Martin’s Eve hospitality. Read “How the Bishop’s Staff Became a Pipe”: one explanation links the pipe to Protestant rejection of Catholic bishops’ authority during the Reformation. Tell it as a possible origin story, not settled history; Protestant traditions varied.",
+        "detail": "Finish each sourdough Weckmann with a Wockenfuss black licorice pipe after baking or reheating, then share the buns with butter or jam and warm cider after the lantern walk. After the lantern walk, gather for warm sourdough Weckmänner with butter or jam and warm cider. Share the sweet bread figures together as part of our St. Martin’s Eve hospitality. Read “How the Bishop’s Staff Became a Pipe”: one explanation links the pipe to Protestant rejection of Catholic bishops’ authority during the Reformation. Tell it as a possible origin story, not settled history; Protestant traditions varied.",
         "recipes": [
           "sourdough-weckmaenner",
           "warm-cider",
@@ -1841,6 +1841,10 @@
       {
         "label": "Weckmänner pipe story — a Reformation explanation",
         "url": "/martinstag/scripts/#weckmann-pipe"
+      },
+      {
+        "label": "Wockenfuss black licorice pipes — 1 dozen",
+        "url": "https://wockenfusscandies.com/product/licorice-pipes-1-dozen/"
       }
     ]
   },
