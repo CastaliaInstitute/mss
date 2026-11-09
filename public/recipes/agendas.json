@@ -1811,7 +1811,7 @@
       {
         "time": "Evening",
         "activity": "Post-Procession Warmth and Treats",
-        "detail": "After the lantern walk, gather for warm sourdough Weckmänner with butter or jam and warm cider. Share the sweet bread figures together as part of our St. Martin’s Eve hospitality.",
+        "detail": "After the lantern walk, gather for warm sourdough Weckmänner with butter or jam and warm cider. Share the sweet bread figures together as part of our St. Martin’s Eve hospitality. Read “How the Bishop’s Staff Became a Pipe”: one explanation links the pipe to Protestant rejection of Catholic bishops’ authority during the Reformation. Tell it as a possible origin story, not settled history; Protestant traditions varied.",
         "recipes": [
           "sourdough-weckmaenner",
           "warm-cider",
@@ -1837,6 +1837,10 @@
       {
         "label": "Stories & Wild Goose Chase scripts",
         "url": "/martinstag/scripts/"
+      },
+      {
+        "label": "Weckmänner pipe story — a Reformation explanation",
+        "url": "/martinstag/scripts/#weckmann-pipe"
       }
     ]
   },
