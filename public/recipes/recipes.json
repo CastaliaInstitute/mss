@@ -11737,5 +11737,40 @@
       "Anise and rye give this soft version its characteristic flavor.",
       "These are best within 3–4 days. Avoid overbaking, which makes the little bites hard."
     ]
+  },
+  "sourdough-weckmaenner": {
+    "title": "Sourdough Weckmänner",
+    "dish": "Sourdough Weckmänner",
+    "events": [
+      "Martinstag Lantern Evening"
+    ],
+    "intro": "Soft, lightly sweet sourdough bread figures for St. Martin’s Eve. Begin the dough the day before, shape on the morning of November 10, and bake in the afternoon to share with warm cider after the lantern walk.",
+    "yield": "Makes 8 bread figures",
+    "prepTime": "Start the day before: 6–10 hours first rise, optional overnight refrigeration, then 2–4 hours final proof",
+    "cookTime": "18–23 minutes",
+    "ingredients": [
+      "150 g active sourdough starter, 100% hydration",
+      "250 g lukewarm whole milk, plus up to 30 g more if needed",
+      "500 g bread flour",
+      "70 g sugar",
+      "8 g fine salt",
+      "70 g softened unsalted butter",
+      "Optional: zest of 1 orange",
+      "Raisins for eyes and buttons",
+      "1 egg beaten with 1 tablespoon milk, for glazing"
+    ],
+    "steps": [
+      "The day before: mix the starter, milk, flour, sugar, salt, and optional orange zest. Knead until combined, then gradually work in the butter. Knead for about 10–15 minutes until smooth and elastic. Add a little extra milk if stiff; aim for a soft, slightly tacky dough.",
+      "Cover and leave at about 24–26°C / 75–79°F until visibly expanded and airy, usually 6–10 hours. A sluggish starter or cool room may take longer; follow the dough rather than the clock. Refrigerate the risen dough overnight.",
+      "On St. Martin’s Eve morning: divide into 8 pieces. Let cold dough relax if needed, then roll each into a short, thick log. Pinch a neck below a rounded head. Cut upward from the bottom for two legs and diagonally at each side for arms. Spread the limbs apart on parchment-lined baking trays.",
+      "Press raisins firmly into the dough for eyes and buttons. Optionally add a small crozier made from dough. Cover loosely and proof somewhere warm until noticeably puffy and a gentle indentation springs back slowly, about 2–4 hours or longer from cold.",
+      "In the afternoon: heat the oven to 190°C / 375°F. Brush gently with the egg-and-milk glaze. Bake for 18–23 minutes until golden and cooked through, rotating trays if needed.",
+      "Cool on a rack. Serve warm with butter or jam and cider after the lantern procession. If baked earlier, warm briefly before serving."
+    ],
+    "tips": [
+      "Use a lively, recently fed starter; this recipe has no commercial yeast. Allow extra time for enriched sourdough.",
+      "Dough croziers are an edible alternative to clay pipes. Keep Sculpey and other polymer-clay decorations off the bread.",
+      "To rewarm, place in a 160°C / 325°F oven for about 5–8 minutes. Contains wheat, milk, and egg."
+    ]
   }
 }

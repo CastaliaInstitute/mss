@@ -1761,6 +1761,14 @@
     "intro": "A warm and practical guide to celebrating Martinstag, honoring the spirit of St. Martin's compassion and community from the comfort of your home. Our family celebration welcomes Martin the Porch Goose for stories on November 10, followed by a Wild Goose Chase the next morning.",
     "schedule": [
       {
+        "time": "Day before · November 9",
+        "activity": "Start the Sourdough Weckmänner",
+        "detail": "Mix the enriched sourdough and allow its first rise, usually 6–10 hours in a warm spot. Refrigerate overnight. Shape the bread figures on November 10 morning and allow 2–4 hours or longer for the final proof before afternoon baking.",
+        "recipes": [
+          "sourdough-weckmaenner"
+        ]
+      },
+      {
         "time": "Morning",
         "activity": "Make Turnip Lanterns",
         "detail": "Make lanterns from turnips: adults hollow and carve the turnips, while children choose the faces, decorate, and help add battery-powered lights. Fit sturdy handles for carrying them on the dusk lantern walk.",
@@ -1780,9 +1788,10 @@
       },
       {
         "time": "Afternoon",
-        "activity": "Prepare Festive Treats",
-        "detail": "Get a head start on the evening's feast by preparing some delicious traditional treats. The aroma will fill your home with warmth and anticipation.",
+        "activity": "Bake Sourdough Weckmänner & Festive Treats",
+        "detail": "Bake the proofed sourdough bread figures until golden. Add raisin eyes and buttons before baking, with optional edible dough croziers. Save them to warm and share after the lantern procession.",
         "recipes": [
+          "sourdough-weckmaenner",
           "pretzels",
           "buttery-pastries"
         ]
@@ -1802,8 +1811,9 @@
       {
         "time": "Evening",
         "activity": "Post-Procession Warmth and Treats",
-        "detail": "After your chilly lantern walk, it's time to warm up and enjoy the well-deserved feast. The warm drinks and delicious pastries are a perfect reward.",
+        "detail": "After the lantern walk, gather for warm sourdough Weckmänner with butter or jam and warm cider. Share the sweet bread figures together as part of our St. Martin’s Eve hospitality.",
         "recipes": [
+          "sourdough-weckmaenner",
           "warm-cider",
           "pretzels",
           "buttery-pastries"
