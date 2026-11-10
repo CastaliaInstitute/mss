@@ -32,6 +32,9 @@ def start_day(component):
 occurrences = {(str(event.get("SUMMARY", "")), start_day(event)) for event in expanded}
 
 expected = {
+    ("Ice Skating at Acacia Park", date(2026, 11, 13)),
+    ("Ice Skating at Acacia Park", date(2027, 11, 12)),
+    ("Ice Skating at Acacia Park", date(2033, 11, 18)),
     ("Ramayana in IMAX — Diwali Outing", date(2026, 11, 8)),
     ("Moscow Ballet’s Great Russian Nutcracker", date(2026, 11, 29)),
     ("A Colorado Nutcracker — Matinee", date(2026, 12, 23)),
@@ -156,3 +159,8 @@ if len(moscow) != 1:
 moscow = moscow[0]
 if moscow.decoded("DTSTART").isoformat() != "2026-11-29T15:00:00-07:00" or str(moscow.get("STATUS")) != "TENTATIVE" or moscow.get("RRULE") or moscow.get("RDATE"):
     raise SystemExit("Denver Nutcracker must be tentative November 29, 2026, 3 p.m. MST")
+
+# Family skating falls strictly after November 11, on that next Friday.
+for title, day in occurrences:
+    if title == "Ice Skating at Acacia Park" and not (day.month == 11 and 12 <= day.day <= 18 and day.weekday() == 4):
+        raise SystemExit("Acacia Park skating must be the first Friday after Martinmas")

@@ -1611,4 +1611,29 @@ SUMMARY:Machanu Jayanti — The Monkey Prince of the Sea
 DESCRIPTION:Family-created Thai-Indian cultural celebration on Chaitra Purnima alongside Hanuman Jayanti. Not an established traditional religious festival. Tell the Ramakien story of Hanuman\, Suvannamaccha and their son Machanu. Feature shrimp in Thai-Indian coastal dishes: coconut-lime shrimp curry\, tamarind shrimp skewers\, crispy shrimp pakora\, coconut basmati rice and mango sticky rice. Offer paneer or vegetables as an alternative. Decorate in gold\, white and turquoise. Dates are explicit lunar-calendar instances\; extend with verified dates after 2027.
 CATEGORIES:Cultural,Family,Food
 END:VEVENT
+BEGIN:VEVENT
+UID:acacia-park-skating-after-martinmas@maybesomethingseasonal.com
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=FR;BYMONTHDAY=12,13,14,15,16,17,18
+SUMMARY:Ice Skating at Acacia Park
+URL:https://www.downtowncs.com/event/skate/
+LOCATION:Acacia Park\, 115 E. Platte Avenue\, Colorado Springs\, CO 8090
+ 3
+DESCRIPTION:Our annual ice-skating outing at Acacia Park in Colorado Spr
+ ings on the first Friday after Martinmas (November 11). In 2026\, this
+  is Friday\, November 13.\nSkate in the Park opens for the 2026–27 se
+ ason on November 13 at 4 p.m. Our skating session is still to be chosen
+ . Tickets are sold onsite\; the organizer currently lists $15 admission
+  including skate rental.\nLocation: Acacia Park\, 115 E. Platte Avenue\
+ , Colorado Springs\, CO 80903.\nBring warm layers and gloves\, and enjo
+ y skating together after our Martinmas celebrations. Check the organize
+ r’s schedule and weather updates before visiting. Future entries foll
+ ow our family’s date rule\; the rink’s opening dates and hours may
+  change each season.\n\nIcon: ⛸️\nCategory: cultural
+CATEGORIES:cultural
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR
