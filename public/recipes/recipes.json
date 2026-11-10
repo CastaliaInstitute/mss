@@ -11774,5 +11774,40 @@
       "To rewarm, place in a 160°C / 325°F oven for about 5–8 minutes. Contains wheat, milk, and egg.",
       "Wockenfuss Licorice Pipes, 1 dozen: https://wockenfusscandies.com/product/licorice-pipes-1-dozen/ — one pack covers this eight-figure batch. Keep the candy pipes out of the oven; add them at serving."
     ]
+  },
+  "turnip-lantern-soup": {
+    "title": "Turnip Lantern Soup",
+    "dish": "Turnip Soup",
+    "events": [
+      "Martinstag Lantern Evening"
+    ],
+    "intro": "Our St. Martin’s Eve soup uses the clean turnip flesh scooped out while making the lanterns. The lanterns light our walk, and their scooped-out flesh becomes a warming supper. Reserve the flesh as you carve and refrigerate until cooking.",
+    "yield": "Serves 4–6",
+    "prepTime": "15 minutes, plus lantern carving",
+    "cookTime": "30–35 minutes",
+    "ingredients": [
+      "About 800 g clean turnip flesh scooped out during lantern making, chopped",
+      "1 large onion, chopped",
+      "1 medium potato (about 200 g), peeled and diced",
+      "2 tablespoons butter or olive oil",
+      "1 litre vegetable stock, plus extra to adjust consistency",
+      "1 small sprig thyme, or 1/2 teaspoon dried thyme",
+      "Salt and black pepper, to taste",
+      "Optional: 100 ml cream or milk",
+      "Chopped parsley or chives, to serve"
+    ],
+    "steps": [
+      "During morning lantern making, collect the clean scooped-out turnip flesh in a separate food container. Refrigerate until you are ready to cook. Weigh what you have and scale the recipe as needed.",
+      "In the late afternoon, melt the butter or heat the oil in a large saucepan. Add the onion and cook gently for 8–10 minutes until softened.",
+      "Add the chopped turnip flesh and diced potato. Stir for 2–3 minutes, then add the stock and thyme.",
+      "Bring to a boil, reduce the heat, and simmer gently for 20–25 minutes, until the turnip and potato are tender. Remove the thyme sprig if using.",
+      "Blend until smooth with an immersion blender, or leave some texture. Add more stock for a thinner soup. Stir in the optional cream or milk and warm gently. Taste and season with salt and pepper.",
+      "Serve hot after the lantern procession, topped with herbs, alongside the sourdough Weckmänner. If cooking ahead, cool promptly and refrigerate, then reheat thoroughly before serving."
+    ],
+    "tips": [
+      "Use the fresh flesh saved during carving, before the lanterns are decorated or lit.",
+      "Older or larger turnips can be peppery; the potato and optional cream soften the flavor.",
+      "Use olive oil and omit the dairy for a vegan version; choose a suitable vegetable stock."
+    ]
   }
 }

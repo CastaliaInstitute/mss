@@ -1771,8 +1771,10 @@
       {
         "time": "Morning",
         "activity": "Make Turnip Lanterns",
-        "detail": "Make lanterns from turnips: adults hollow and carve the turnips, while children choose the faces, decorate, and help add battery-powered lights. Fit sturdy handles for carrying them on the dusk lantern walk.",
-        "recipes": []
+        "detail": "Make lanterns from turnips: adults hollow and carve the turnips, while children choose the faces, decorate, and help add battery-powered lights. Fit sturdy handles for carrying them on the dusk lantern walk. Save the clean scooped-out turnip flesh in a food container and refrigerate it for tonight’s turnip soup.",
+        "recipes": [
+          "turnip-lantern-soup"
+        ]
       },
       {
         "time": "Afternoon",
@@ -1798,6 +1800,14 @@
       },
       {
         "time": "Late Afternoon",
+        "activity": "Cook Turnip Lantern Soup",
+        "detail": "Use the clean turnip flesh saved and refrigerated during morning lantern making. Simmer with onion, potato, stock, and thyme, then blend. Serve hot after the lantern procession with the sourdough Weckmänner.",
+        "recipes": [
+          "turnip-lantern-soup"
+        ]
+      },
+      {
+        "time": "Late Afternoon",
         "activity": "Learn St. Martin's Story and Songs",
         "detail": "Before the evening walk, gather to recount the tale of St. Martin sharing his cloak and practice some traditional Sankt Martin songs. This connects everyone to the history and meaning of the day.",
         "recipes": []
@@ -1811,8 +1821,9 @@
       {
         "time": "Evening",
         "activity": "Post-Procession Warmth and Treats",
-        "detail": "Finish each sourdough Weckmann with a Wockenfuss black licorice pipe after baking or reheating, then share the buns with butter or jam and warm cider after the lantern walk. After the lantern walk, gather for warm sourdough Weckmänner with butter or jam and warm cider. Share the sweet bread figures together as part of our St. Martin’s Eve hospitality. Read “How the Bishop’s Staff Became a Pipe”: one explanation links the pipe to Protestant rejection of Catholic bishops’ authority during the Reformation. Tell it as a possible origin story, not settled history; Protestant traditions varied.",
+        "detail": "Serve hot turnip soup made from the flesh saved during lantern making, alongside the sourdough Weckmänner. Finish each sourdough Weckmann with a Wockenfuss black licorice pipe after baking or reheating, then share the buns with butter or jam and warm cider after the lantern walk. After the lantern walk, gather for warm sourdough Weckmänner with butter or jam and warm cider. Share the sweet bread figures together as part of our St. Martin’s Eve hospitality. Read “How the Bishop’s Staff Became a Pipe”: one explanation links the pipe to Protestant rejection of Catholic bishops’ authority during the Reformation. Tell it as a possible origin story, not settled history; Protestant traditions varied.",
         "recipes": [
+          "turnip-lantern-soup",
           "sourdough-weckmaenner",
           "warm-cider",
           "pretzels",
