@@ -172,7 +172,13 @@ async function main() {
     const publicFile = path.join(PUBLIC_ART, filename);
     const distFile = path.join(DIST_ART, filename);
     const sourceRelative = path.relative(ROOT, source).replace(/\\/g, '/');
-    await sharp(source)
+    // Sharp rejects an input path that is also its output path. This happens
+    // on clean CI builds when the prior manifest points back to this event's
+    // already-generated public PNG, so detach the input before overwriting it.
+    const imageInput = path.resolve(source) === path.resolve(publicFile)
+      ? fs.readFileSync(source)
+      : source;
+    await sharp(imageInput)
       .rotate()
       .resize(WIDTH, HEIGHT, { fit: 'cover', position: sharp.strategy.attention })
       .png({ palette: true, colours: 6, dither: 1, compressionLevel: 9 })
