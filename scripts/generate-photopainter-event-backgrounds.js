@@ -134,6 +134,19 @@ function slug(text) {
     .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 54);
 }
 
+function seasonalEventArtwork(seed) {
+  const hash = crypto.createHash('sha256').update(seed).digest();
+  const hue = hash[0] % 360;
+  const shapes = Array.from({ length: 42 }, (_, index) => {
+    const x = (hash[(index * 3 + 1) % hash.length] / 255 * WIDTH).toFixed(1);
+    const y = (hash[(index * 3 + 2) % hash.length] / 255 * HEIGHT).toFixed(1);
+    const radius = (4 + hash[(index * 3 + 3) % hash.length] / 255 * 22).toFixed(1);
+    const opacity = (0.12 + hash[(index + 8) % hash.length] / 255 * 0.32).toFixed(2);
+    return `<circle cx="${x}" cy="${y}" r="${radius}" fill="hsl(${(hue + index * 13) % 360} 38% 48%)" opacity="${opacity}"/>`;
+  }).join('');
+  return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}"><defs><linearGradient id="paper" x2="1" y2="1"><stop stop-color="hsl(${hue} 25% 91%)"/><stop offset="1" stop-color="hsl(${(hue + 38) % 360} 30% 78%)"/></linearGradient></defs><rect width="800" height="480" fill="url(#paper)"/><path d="M0 365 Q180 290 365 370 T800 350 V480 H0Z" fill="hsl(${(hue + 160) % 360} 25% 42%)" opacity=".36"/><path d="M0 405 Q180 335 380 410 T800 380 V480 H0Z" fill="hsl(${(hue + 205) % 360} 27% 33%)" opacity=".30"/>${shapes}<rect x="20" y="20" width="760" height="440" rx="22" fill="none" stroke="hsl(${(hue + 35) % 360} 44% 42%)" stroke-opacity=".5" stroke-width="3"/></svg>`);
+}
+
 async function main() {
   if (!fs.existsSync(DIST_ICS)) throw new Error(`Missing final MSS feed: ${DIST_ICS}`);
   fs.mkdirSync(PUBLIC_ART, { recursive: true });
@@ -151,6 +164,7 @@ async function main() {
 
   for (const event of events) {
     let source = localPathFromImage(event['X-IMAGE']);
+    let sourceBuffer = null;
     let sourceType = 'MSS calendar artwork';
     if (!source) {
       source = chooseBookArt(event, event.dates, bookFiles);
@@ -161,23 +175,23 @@ async function main() {
       sourceType = 'Stored PhotoPainter background';
     }
     if (!source) {
-      unresolved.push({ uid: event.UID, title: event.SUMMARY, dates: event.dates });
-      continue;
+      sourceBuffer = seasonalEventArtwork(event.UID);
+      sourceType = 'Generated seasonal fallback artwork';
     }
-    if (path.basename(source).includes('photopainter-background-v1')) {
+    if (source && path.basename(source).includes('photopainter-background-v1')) {
       sourceType = 'AI-generated interpretive illustration';
     }
     const hash = crypto.createHash('sha256').update(event.UID).digest('hex').slice(0, 8);
     const filename = `${slug(event.SUMMARY)}-${hash}-photopainter.png`;
     const publicFile = path.join(PUBLIC_ART, filename);
     const distFile = path.join(DIST_ART, filename);
-    const sourceRelative = path.relative(ROOT, source).replace(/\\/g, '/');
+    const sourceRelative = source ? path.relative(ROOT, source).replace(/\\/g, '/') : 'generated:seasonal-event-artwork';
     // Sharp rejects an input path that is also its output path. This happens
     // on clean CI builds when the prior manifest points back to this event's
     // already-generated public PNG, so detach the input before overwriting it.
     const imageInput = path.resolve(source) === path.resolve(publicFile)
       ? fs.readFileSync(source)
-      : source;
+      : sourceBuffer || source;
     await sharp(imageInput)
       .rotate()
       .resize(WIDTH, HEIGHT, { fit: 'cover', position: sharp.strategy.attention })
