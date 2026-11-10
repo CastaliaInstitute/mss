@@ -1,0 +1,591 @@
+{
+  "schema": "mss-photopainter-event-backgrounds-v1",
+  "coverage": {
+    "start": "2026-11-01",
+    "end": "2027-01-31"
+  },
+  "generatedAt": "2026-11-10T14:05:07.715Z",
+  "display": {
+    "width": 800,
+    "height": 480,
+    "colors": 6
+  },
+  "events": {
+    "new-year-s-day@maybesomethingseasonal.com": {
+      "title": "New Year's Day",
+      "dates": [
+        "2027-01-01"
+      ],
+      "image": "/mss-daily-art/events/new-year-s-day-7374ddb3-photopainter.png",
+      "source": "public/images/new-years-day-champagne-and-confetti.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "perchta-day-perchtenlauf@maybesomethingseasonal.com": {
+      "title": "Perchta Day (Perchtenlauf)",
+      "dates": [
+        "2027-01-02"
+      ],
+      "image": "/mss-daily-art/events/perchta-day-perchtenlauf-8bf91c58-photopainter.png",
+      "source": "public/images/austrian-and-bavarian-tradition-perchta-day.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "berchtoldstag@maybesomethingseasonal.com": {
+      "title": "Berchtoldstag",
+      "dates": [
+        "2027-01-02"
+      ],
+      "image": "/mss-daily-art/events/berchtoldstag-77cbe48a-photopainter.png",
+      "source": "books/winter-2026/art/events/january-02-basil-gregory-berchtoldstag-edsr3-print.png",
+      "sourceType": "MSS book illustration",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "twelfth-night@maybesomethingseasonal.com": {
+      "title": "Twelfth Night",
+      "dates": [
+        "2027-01-05"
+      ],
+      "image": "/mss-daily-art/events/twelfth-night-94f31f06-photopainter.png",
+      "source": "public/images/twelfth-night-end-of-the-christmas-season.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "epiphany-three-kings-day@maybesomethingseasonal.com": {
+      "title": "Epiphany (Three Kings Day)",
+      "dates": [
+        "2027-01-06"
+      ],
+      "image": "/mss-daily-art/events/epiphany-three-kings-day-8f12b47b-photopainter.png",
+      "source": "public/images/epiphany-three-kings-day-celebration-of-the-magi.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "fete-de-papa-zaka-feast-of-the-farmer-loa@maybesomethingseasonal.com": {
+      "title": "Fete de Papa Zaka - Feast of the Farmer Loa",
+      "dates": [
+        "2027-01-10"
+      ],
+      "image": "/mss-daily-art/events/fete-de-papa-zaka-feast-of-the-farmer-loa-fe6b93fe-photopainter.png",
+      "source": "books/winter-2026/art/events/january-10-papa-zaka-study-v1.png",
+      "sourceType": "MSS book illustration",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "fete-du-vodoun-benin-vodoun-festival@maybesomethingseasonal.com": {
+      "title": "Fete du Vodoun (Benin Vodoun Festival)",
+      "dates": [
+        "2027-01-10"
+      ],
+      "image": "/mss-daily-art/events/fete-du-vodoun-benin-vodoun-festival-760dab3b-photopainter.png",
+      "source": "public/images/vodoun-festival-traditional-celebration-in-benin-honoring-vodoun-spirituality-an.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "feast-of-the-ass@maybesomethingseasonal.com": {
+      "title": "Feast of the Ass",
+      "dates": [
+        "2027-01-14"
+      ],
+      "image": "/mss-daily-art/events/feast-of-the-ass-f40d54b4-photopainter.png",
+      "source": "public/images/feast-of-the-ass-medieval-festival-celebrating-the-flight-into-egypt.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "dondoyaki-bonfire@maybesomethingseasonal.com": {
+      "title": "Dondoyaki Bonfire",
+      "dates": [
+        "2027-01-15"
+      ],
+      "image": "/mss-daily-art/events/dondoyaki-bonfire-d6aa90a5-photopainter.png",
+      "source": "public/images/japanese-new-year-tradition-of-burning-new-year-decorations.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "old-twelfth-night-wassail@maybesomethingseasonal.com": {
+      "title": "Old Twelfth Night Wassail",
+      "dates": [
+        "2027-01-17"
+      ],
+      "image": "/mss-daily-art/events/old-twelfth-night-wassail-12bb983e-photopainter.png",
+      "source": "public/images/old-twelfth-night-traditional-date-before-calendar-reform.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "burns-night-supper@maybesomethingseasonal.com": {
+      "title": "Burns Night Supper",
+      "dates": [
+        "2027-01-25"
+      ],
+      "image": "/mss-daily-art/events/burns-night-supper-e93f089b-photopainter.png",
+      "source": "public/images/scottish-celebration-of-the-poet-robert-burns-with-poetry-haggis-and-whisky.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "feast-of-st-muirgen-li-ban-the-mermaid@maybesomethingseasonal.com": {
+      "title": "Feast of St. Muirgen (Lí Ban the Mermaid)",
+      "dates": [
+        "2027-01-27"
+      ],
+      "image": "/mss-daily-art/events/feast-of-st-muirgen-li-ban-the-mermaid-bcc71b42-photopainter.png",
+      "source": "public/images/st-muirgen-mermaid.svg",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "imbolc-eve-la-fheile-bride@maybesomethingseasonal.com": {
+      "title": "Imbolc Eve (La Fheile Bride)",
+      "dates": [
+        "2027-01-30"
+      ],
+      "image": "/mss-daily-art/events/imbolc-eve-la-fheile-bride-c0277982-photopainter.png",
+      "source": "public/images/eve-of-imbolc-the-celtic-festival-marking-the-beginning-of-spring.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "dia-de-los-angelitos@maybesomethingseasonal.com": {
+      "title": "Dia de los Angelitos",
+      "dates": [
+        "2026-11-01"
+      ],
+      "image": "/mss-daily-art/events/dia-de-los-angelitos-6d794959-photopainter.png",
+      "source": "books/winter-2026/art/events/november-01-angelitos-remembrance-study-edsr3-print.png",
+      "sourceType": "MSS book illustration",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "dia-de-los-muertos@maybesomethingseasonal.com": {
+      "title": "Dia de los Muertos",
+      "dates": [
+        "2026-11-02"
+      ],
+      "image": "/mss-daily-art/events/dia-de-los-muertos-7ce0dcab-photopainter.png",
+      "source": "books/winter-2026/art/events/dia-de-muertos-marigold-garden-edsr3-print.png",
+      "sourceType": "MSS book illustration",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "martinstag-lantern-evening@maybesomethingseasonal.com": {
+      "title": "Martinstag Lantern Evening",
+      "dates": [
+        "2026-11-10"
+      ],
+      "image": "/mss-daily-art/events/martinstag-lantern-evening-8751e50d-photopainter.png",
+      "source": "public/images/image23.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "st-martin-s-day-martinstag@maybesomethingseasonal.com": {
+      "title": "St. Martin's Day (Martinstag)",
+      "dates": [
+        "2026-11-11"
+      ],
+      "image": "/mss-daily-art/events/st-martin-s-day-martinstag-10712e6a-photopainter.png",
+      "source": "public/images/image24.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "life-day-wookiee-tradition@maybesomethingseasonal.com": {
+      "title": "Life Day (Wookiee Tradition)",
+      "dates": [
+        "2026-11-17"
+      ],
+      "image": "/mss-daily-art/events/life-day-wookiee-tradition-3694319c-photopainter.png",
+      "source": "public/images/wookiee-celebration-from-the-star-wars-universe.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "st-catherine-s-day@maybesomethingseasonal.com": {
+      "title": "St. Catherine's Day",
+      "dates": [
+        "2026-11-25"
+      ],
+      "image": "/mss-daily-art/events/st-catherine-s-day-3389dee3-photopainter.png",
+      "source": "books/winter-2026/art/events/november-25-catherinettes-hatmaking-study-edsr3-print.png",
+      "sourceType": "MSS book illustration",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "thanksgiving-day-united-states@maybesomethingseasonal.com": {
+      "title": "Thanksgiving Day (United States)",
+      "dates": [
+        "2026-11-26"
+      ],
+      "image": "/mss-daily-art/events/thanksgiving-day-united-states-75242867-photopainter.png",
+      "source": "public/images/image26.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "noaptea-lupilor@maybesomethingseasonal.com": {
+      "title": "Noaptea Lupilor",
+      "dates": [
+        "2026-11-29"
+      ],
+      "image": "/mss-daily-art/events/noaptea-lupilor-a2ba0406-photopainter.png",
+      "source": "books/winter-2026/art/events/noaptea-lupilor-photopainter-background-v1.png",
+      "sourceType": "AI-generated interpretive illustration",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "st-andrew-s-day@maybesomethingseasonal.com": {
+      "title": "St. Andrew's Day",
+      "dates": [
+        "2026-11-30"
+      ],
+      "image": "/mss-daily-art/events/st-andrew-s-day-eb46d26a-photopainter.png",
+      "source": "public/images/feast-of-st-andrew-patron-saint-of-scotland.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "first-sunday-of-advent@maybesomethingseasonal.com": {
+      "title": "First Sunday of Advent",
+      "dates": [
+        "2026-11-29"
+      ],
+      "image": "/mss-daily-art/events/first-sunday-of-advent-d0223193-photopainter.png",
+      "source": "public/images/image28.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "krampusnacht@maybesomethingseasonal.com": {
+      "title": "Krampusnacht",
+      "dates": [
+        "2026-12-05"
+      ],
+      "image": "/mss-daily-art/events/krampusnacht-304f805d-photopainter.png",
+      "source": "public/images/image29.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "st-nicholas-day@maybesomethingseasonal.com": {
+      "title": "St. Nicholas Day",
+      "dates": [
+        "2026-12-06"
+      ],
+      "image": "/mss-daily-art/events/st-nicholas-day-6f7e630f-photopainter.png",
+      "source": "public/images/image30.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "gita-jayanti@maybesomethingseasonal.com": {
+      "title": "Gita Jayanti (गीता जयंती)",
+      "dates": [
+        "2026-12-20"
+      ],
+      "image": "/mss-daily-art/events/gita-jayanti-75747477-photopainter.png",
+      "source": "books/winter-2026/art/events/gita-jayanti-photopainter-background-v1.png",
+      "sourceType": "AI-generated interpretive illustration",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "tiki-christmas-at-pearl-harbor@maybesomethingseasonal.com": {
+      "title": "Tiki Christmas at Pearl Harbor",
+      "dates": [
+        "2026-12-07"
+      ],
+      "image": "/mss-daily-art/events/tiki-christmas-at-pearl-harbor-c4dd30fc-photopainter.png",
+      "source": "public/images/tiki-christmas-at-pearl-harbor.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "second-sunday-of-advent@maybesomethingseasonal.com": {
+      "title": "Second Sunday of Advent",
+      "dates": [
+        "2026-12-06"
+      ],
+      "image": "/mss-daily-art/events/second-sunday-of-advent-ae229ee8-photopainter.png",
+      "source": "public/images/image31.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "immaculada@maybesomethingseasonal.com": {
+      "title": "Immaculada",
+      "dates": [
+        "2026-12-08"
+      ],
+      "image": "/mss-daily-art/events/immaculada-7c13af0b-photopainter.png",
+      "source": "public/images/image36.jpg",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "sinterklaas-arrival-intocht@maybesomethingseasonal.com": {
+      "title": "Sinterklaas Arrival (Intocht)",
+      "dates": [
+        "2026-11-14"
+      ],
+      "image": "/mss-daily-art/events/sinterklaas-arrival-intocht-fd27c48f-photopainter.png",
+      "source": "public/images/traditional-dutch-celebration-period-with-sinterklaas-arriving-by-steamboat-star.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "magic-flute@maybesomethingseasonal.com": {
+      "title": "Magic Flute",
+      "dates": [
+        "2026-12-10"
+      ],
+      "image": "/mss-daily-art/events/magic-flute-7e44b320-photopainter.png",
+      "source": "public/images/magic-flute-opera.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "lussinatta-st-lucia-s-vigil@maybesomethingseasonal.com": {
+      "title": "Lussinatta (St. Lucia's Vigil)",
+      "dates": [
+        "2026-12-12"
+      ],
+      "image": "/mss-daily-art/events/lussinatta-st-lucia-s-vigil-4cf5bfa0-photopainter.png",
+      "source": "public/images/st-lucia-s-vigil-from-dusk-on-dec-11-until-dawn-on-dec-12.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "feast-of-our-lady-of-guadalupe@maybesomethingseasonal.com": {
+      "title": "Feast of Our Lady of Guadalupe",
+      "dates": [
+        "2026-12-12"
+      ],
+      "image": "/mss-daily-art/events/feast-of-our-lady-of-guadalupe-6e76d940-photopainter.png",
+      "source": "public/images/feast-of-our-lady-of-guadalupe-patroness-of-the-americas.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "st-lucia-s-day@maybesomethingseasonal.com": {
+      "title": "St. Lucia's Day",
+      "dates": [
+        "2026-12-13"
+      ],
+      "image": "/mss-daily-art/events/st-lucia-s-day-001ef837-photopainter.png",
+      "source": "public/images/swedish-celebration-of-light-and-st-lucia.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "gaudete-sunday@maybesomethingseasonal.com": {
+      "title": "Gaudete Sunday",
+      "dates": [
+        "2026-12-13"
+      ],
+      "image": "/mss-daily-art/events/gaudete-sunday-ab26abc9-photopainter.png",
+      "source": "public/images/third-sunday-of-advent-gaudete-sunday-joy-and-rejoicing.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "hanukkah-festival-of-lights@maybesomethingseasonal.com": {
+      "title": "Hanukkah (Festival of Lights)",
+      "dates": [
+        "2026-12-05"
+      ],
+      "image": "/mss-daily-art/events/hanukkah-festival-of-lights-5717fc69-photopainter.png",
+      "source": "public/images/festival-of-lights-eight-nights-of-celebration-starting-at-dusk-on-dec-15.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "saturnalia@maybesomethingseasonal.com": {
+      "title": "Saturnalia",
+      "dates": [
+        "2026-12-17"
+      ],
+      "image": "/mss-daily-art/events/saturnalia-b8231f92-photopainter.png",
+      "source": "public/images/ancient-roman-festival-of-saturn.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "fourth-sunday-of-advent@maybesomethingseasonal.com": {
+      "title": "Fourth Sunday of Advent",
+      "dates": [
+        "2026-12-20"
+      ],
+      "image": "/mss-daily-art/events/fourth-sunday-of-advent-a18ef1b6-photopainter.png",
+      "source": "public/images/fourth-sunday-of-advent-final-preparation-before-christmas.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "winter-solstice-yule@maybesomethingseasonal.com": {
+      "title": "Winter Solstice (Yule)",
+      "dates": [
+        "2026-12-21"
+      ],
+      "image": "/mss-daily-art/events/winter-solstice-yule-58e9065f-photopainter.png",
+      "source": "public/images/polar-bear-solstice.svg",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "polaris-meteor-watch-ufo-evening@maybesomethingseasonal.com": {
+      "title": "Polaris Meteor Watch & UFO Evening",
+      "dates": [
+        "2026-12-22"
+      ],
+      "image": "/mss-daily-art/events/polaris-meteor-watch-ufo-evening-f885472d-photopainter.png",
+      "source": "public/images/festive-ufo-meteor-watch.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "yalda-night@maybesomethingseasonal.com": {
+      "title": "Yalda Night",
+      "dates": [
+        "2026-12-20"
+      ],
+      "image": "/mss-daily-art/events/yalda-night-95b2a9bc-photopainter.png",
+      "source": "public/images/eve-of-the-winter-solstice-the-longest-night.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "la-noche-de-rabanos@maybesomethingseasonal.com": {
+      "title": "La Noche de Rabanos",
+      "dates": [
+        "2026-12-23"
+      ],
+      "image": "/mss-daily-art/events/la-noche-de-rabanos-453e5eb4-photopainter.png",
+      "source": "public/images/night-of-the-radishes-traditional-oaxacan-festival.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "christmas-eve@maybesomethingseasonal.com": {
+      "title": "Christmas Eve",
+      "dates": [
+        "2026-12-24"
+      ],
+      "image": "/mss-daily-art/events/christmas-eve-af50394d-photopainter.png",
+      "source": "public/images/caga-tio.svg",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "christmas-day@maybesomethingseasonal.com": {
+      "title": "Christmas Day",
+      "dates": [
+        "2026-12-25"
+      ],
+      "image": "/mss-daily-art/events/christmas-day-73093139-photopainter.png",
+      "source": "public/images/image33.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "st-stephen-s-day-boxing-day@maybesomethingseasonal.com": {
+      "title": "St. Stephen's Day (Boxing Day)",
+      "dates": [
+        "2026-12-26"
+      ],
+      "image": "/mss-daily-art/events/st-stephen-s-day-boxing-day-8768de28-photopainter.png",
+      "source": "public/images/stefans-feast-stone.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "feast-of-the-holy-innocents-childermas-banquet@maybesomethingseasonal.com": {
+      "title": "Feast of the Holy Innocents (Childermas Banquet)",
+      "dates": [
+        "2026-12-28"
+      ],
+      "image": "/mss-daily-art/events/feast-of-the-holy-innocents-childermas-banquet-18439591-photopainter.png",
+      "source": "public/images/baby-back-ribs.jpg",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "madrigal-dinner-at-glen-eyrie@maybesomethingseasonal.com": {
+      "title": "Madrigal Dinner at Glen Eyrie",
+      "dates": [
+        "2026-12-10"
+      ],
+      "image": "/mss-daily-art/events/madrigal-dinner-at-glen-eyrie-278a10b6-photopainter.png",
+      "source": "books/winter-2026/art/events/december-10-madrigal-banquet-study-edsr3-print.png",
+      "sourceType": "MSS book illustration",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    },
+    "palmer-lake-yule-log@maybesomethingseasonal.com": {
+      "title": "Palmer Lake Yule Log Hunt",
+      "dates": [
+        "2026-12-13"
+      ],
+      "image": "/mss-daily-art/events/palmer-lake-yule-log-hunt-a5ca10ce-photopainter.png",
+      "source": "public/images/annual-tradition-in-palmer-lake-colorado-community-yule-log-hunt-and-celebration.png",
+      "sourceType": "MSS calendar artwork",
+      "width": 800,
+      "height": 480,
+      "palette": "PhotoPainter six-color"
+    }
+  }
+}
