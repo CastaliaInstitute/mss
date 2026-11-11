@@ -2839,6 +2839,14 @@
         ]
       },
       {
+        "time": "Morning · or replay later",
+        "activity": "Watch Sinterklaas Coverage",
+        "detail": "Follow Sint’s journey with Het Sinterklaasjournaal and watch arrival coverage or replays through the linked Dutch channels. Enjoy the broadcast with pepernoten before our Santa’s Workshop outing, or catch up afterward.",
+        "recipes": [
+          "pepernoten"
+        ]
+      },
+      {
         "time": "Daytime — check park hours",
         "activity": "Visit North Pole–Santa’s Workshop",
         "detail": "Our family outing to the Christmas-themed amusement park in Cascade, Colorado, on Sinterklaas Arrival day. Check https://northpolecolorado.com/ for seasonal opening dates, admission, reservations, and weather before visiting. This is our planned outing, not a park-organized Sinterklaas event.",
@@ -2891,7 +2899,25 @@
         ]
       }
     ],
-    "closing": "May your home be filled with the joy and anticipation of Sinterklaas's arrival!"
+    "closing": "May your home be filled with the joy and anticipation of Sinterklaas's arrival!",
+    "resources": [
+      {
+        "label": "Het Sinterklaasjournaal — official YouTube",
+        "url": "https://www.youtube.com/@ntrsinterklaasjournaal"
+      },
+      {
+        "label": "NPO Zapp — YouTube",
+        "url": "https://www.youtube.com/@npozapp"
+      },
+      {
+        "label": "NPO Zappelin — songs and children’s videos",
+        "url": "https://www.youtube.com/@npozappelin"
+      },
+      {
+        "label": "Sinterklaasjournaal — full episodes",
+        "url": "https://sinterklaasjournaal.ntr.nl/"
+      }
+    ]
   },
   "Magic Flute": {
     "slug": "magic-flute",
@@ -3032,6 +3058,12 @@
         "recipes": []
       },
       {
+        "time": "Lucia morning · December 13",
+        "activity": "Watch a Swedish Lucia Procession",
+        "detail": "Watch SVT’s Luciamorgon on SVT Play, or choose a Lucia concert or children’s video from the links below. Share the candlelit singing with breakfast or fika.",
+        "recipes": []
+      },
+      {
         "time": "Morning",
         "activity": "Baking Saffron Delights",
         "detail": "Prepare a batch of traditional lussekatter (saffron buns), filling your home with their comforting aroma and embodying the spirit of sharing and warmth.",
@@ -3084,7 +3116,25 @@
         "recipes": []
       }
     ],
-    "closing": "May your St. Lucia's Day be filled with light, warmth, and the sweet taste of tradition."
+    "closing": "May your St. Lucia's Day be filled with light, warmth, and the sweet taste of tradition.",
+    "resources": [
+      {
+        "label": "SVT Barn — children’s Lucia videos",
+        "url": "https://www.youtube.com/@svtbarn"
+      },
+      {
+        "label": "Sweden — official Lucia concert",
+        "url": "https://www.youtube.com/watch?v=JZzKCyYrZIk"
+      },
+      {
+        "label": "TV4 Nyhetsmorgon — Sankta Lucia performance",
+        "url": "https://www.youtube.com/watch?v=UdS1W7OObZU"
+      },
+      {
+        "label": "SVT Play — Luciamorgon broadcasts",
+        "url": "https://www.svtplay.se/sok?q=Luciamorgon"
+      }
+    ]
   },
   "Gaudete Sunday": {
     "slug": "gaudete-sunday",
@@ -3151,7 +3201,7 @@
       {
         "time": "Evening",
         "activity": "Prepare for the Vigil",
-        "detail": "Gather your ingredients and set a cozy atmosphere. Light a few candles to begin warding off the long night's chill and mischief.",
+        "detail": "Gather your ingredients and set a cozy atmosphere. Light a few candles to begin warding off the long night's chill and mischief. Choose a Swedish Lucia concert from the links below for the vigil, and save SVT Play’s Luciamorgon link for the morning of December 13.",
         "recipes": []
       },
       {
@@ -3201,7 +3251,25 @@
         "recipes": []
       }
     ],
-    "closing": "May your home be filled with light and warmth as you celebrate this ancient tradition."
+    "closing": "May your home be filled with light and warmth as you celebrate this ancient tradition.",
+    "resources": [
+      {
+        "label": "SVT Barn — children’s Lucia videos",
+        "url": "https://www.youtube.com/@svtbarn"
+      },
+      {
+        "label": "Sweden — official Lucia concert",
+        "url": "https://www.youtube.com/watch?v=JZzKCyYrZIk"
+      },
+      {
+        "label": "TV4 Nyhetsmorgon — Sankta Lucia performance",
+        "url": "https://www.youtube.com/watch?v=UdS1W7OObZU"
+      },
+      {
+        "label": "SVT Play — Luciamorgon broadcasts",
+        "url": "https://www.svtplay.se/sok?q=Luciamorgon"
+      }
+    ]
   },
   "Fourth Sunday of Advent": {
     "slug": "fourth-sunday-of-advent",
