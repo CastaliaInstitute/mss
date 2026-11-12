@@ -60,9 +60,47 @@ const STYLE = `
   .agenda .recipes a { color: #15803d; }
   .closing { font-style: italic; color: #475569; margin: 1rem 0 0; }
   @media (max-width: 480px) { .agenda li { grid-template-columns: 1fr; gap: 0.2rem; } }
+
+  /* Recipe reading layout: ingredients stay beside the method on a kitchen display. */
+  .recipe-page .wrap { max-width: 82rem; padding-top: 1rem; }
+  .recipe-page .brand { margin-bottom: 1rem; }
+  .recipe-page .brand h1 { font-size: 1.65rem; }
+  .recipe-page .brand p { font-size: 0.85rem; }
+  .recipe-nav { position: sticky; top: 0; z-index: 10; display: flex; justify-content: space-between; gap: 1rem; padding: 0.4rem 0; margin-bottom: 0.5rem; background: #f0fdf4; }
+  .recipe-nav a { display: inline-flex; align-items: center; min-height: 44px; color: #166534; font-weight: 600; text-decoration: none; }
+  .recipe-nav a:hover { text-decoration: underline; }
+  .recipe-header { border-bottom: 1px solid #e2e8e3; padding-bottom: 1rem; margin-bottom: 1.5rem; }
+  .recipe-header .intro { max-width: 70ch; margin-bottom: 0; }
+  .recipe-page .card h2 { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.15; }
+  .recipe-page .meta { margin-bottom: 0.75rem; }
+  .recipe-columns { display: grid; gap: 1.5rem; }
+  .recipe-columns h3 { margin-top: 0; font-size: 1.25rem; }
+  .recipe-ingredients { background: #f0fdf4; border: 1px solid #dcfce7; border-radius: 0.75rem; padding: 1.25rem; }
+  .recipe-ingredients ul { margin-bottom: 0; }
+  .recipe-ingredients li { margin: 0.65rem 0; padding-left: 0.2rem; }
+  .recipe-method ol { margin-top: 0; padding-left: 1.8rem; }
+  .recipe-method ol > li { padding-left: 0.4rem; margin-bottom: 1.1rem; }
+  .recipe-method ol > li::marker { color: #166534; font-weight: 700; }
+  .recipe-method .tips { padding: 1rem 1.25rem; }
+  .recipe-method .tips ul { margin: 0; }
+  @media (min-width: 900px) and (orientation: landscape) {
+    .recipe-page .brand { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; text-align: left; }
+    .recipe-page .card { padding: 1.75rem 2rem; }
+    .recipe-columns { grid-template-columns: minmax(16rem, 0.85fr) minmax(0, 1.6fr); gap: 2.5rem; align-items: start; font-size: 1.125rem; line-height: 1.65; }
+    .recipe-ingredients { position: sticky; top: 4rem; max-height: calc(100vh - 5rem); overflow-y: auto; overscroll-behavior: contain; }
+  }
+  @media print {
+    .recipe-page { background: white; }
+    .recipe-page .wrap { max-width: none; padding: 0; }
+    .recipe-page .brand, .recipe-page .back, .recipe-nav { display: none; }
+    .recipe-page .card { padding: 0; box-shadow: none; }
+    .recipe-columns { display: block; }
+    .recipe-ingredients { position: static; max-height: none; overflow: visible; background: white; border: 0; padding: 0; margin-bottom: 1.5rem; }
+    .recipe-method li { break-inside: avoid; }
+  }
 `;
 
-const page = (title, body, description, subtitle = 'Feast-day recipes') => `<!DOCTYPE html>
+const page = (title, body, description, subtitle = 'Feast-day recipes', bodyClass = '') => `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -75,7 +113,7 @@ const page = (title, body, description, subtitle = 'Feast-day recipes') => `<!DO
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet" />
     <style>${STYLE}</style>
   </head>
-  <body>
+  <body class="${esc(bodyClass)}">
     <div class="wrap">
       <header class="brand">
         <a href="/"><h1 class="christmas">Maybe Something Seasonal</h1></a>
@@ -83,6 +121,23 @@ const page = (title, body, description, subtitle = 'Feast-day recipes') => `<!DO
       </header>
       ${body}
     </div>
+    <script>
+      // Preserve the event when moving between its agenda, recipes, and recipe index.
+      (function () {
+        var returnTo = new URLSearchParams(location.search).get('returnTo');
+        if (!returnTo) return;
+        try {
+          var target = new URL(returnTo, location.origin);
+          if (target.origin !== location.origin || !/^\\/(?:[0-9]{4}\\/[0-9]{2}\\/?)?$/.test(target.pathname)) return;
+          document.querySelectorAll('a[href]').forEach(function (link) {
+            var url = new URL(link.getAttribute('href'), location.origin);
+            if (url.origin !== location.origin || !/^\\/(recipes|agenda)\\//.test(url.pathname)) return;
+            url.searchParams.set('returnTo', target.pathname + target.search);
+            link.href = url.pathname + url.search;
+          });
+        } catch (_) { /* leave normal links unchanged */ }
+      })();
+    </script>
   </body>
 </html>
 `;
@@ -103,21 +158,46 @@ for (const [slug, r] of Object.entries(recipes)) {
     .map((m) => `<span>${esc(m)}</span>`)
     .join('');
   const body = `
+      <nav class="recipe-nav" aria-label="Recipe navigation">
+        <a id="recipe-return" href="/?kiosk=1">← Back to calendar</a>
+        <a href="/recipes/">All recipes</a>
+      </nav>
       <article class="card">
-        <h2 class="christmas">${esc(r.title)}</h2>
+        <header class="recipe-header">
+        <h2>${esc(r.title)}</h2>
         <p class="events">Served at: ${(r.events || [])
           .map((e) => (agendas[e] ? `<a href="/agenda/${agendas[e].slug}/">${esc(e)}</a>` : esc(e)))
           .join(' · ')}</p>
         <p class="meta">${meta}</p>
         <p class="intro">${esc(r.intro)}</p>
-        <h3>Ingredients</h3>
-        ${list(r.ingredients, 'ul')}
-        <h3>Method</h3>
-        ${list(r.steps, 'ol')}
-        ${r.tips && r.tips.length ? `<h3>Tips</h3><div class="tips">${list(r.tips, 'ul')}</div>` : ''}
+        </header>
+        <div class="recipe-columns">
+          <section class="recipe-ingredients" aria-labelledby="ingredients-heading">
+            <h3 id="ingredients-heading">Ingredients</h3>
+            ${list(r.ingredients, 'ul')}
+          </section>
+          <section class="recipe-method" aria-labelledby="method-heading">
+            <h3 id="method-heading">Method</h3>
+            ${list(r.steps, 'ol')}
+            ${r.tips && r.tips.length ? `<h3>Tips</h3><div class="tips">${list(r.tips, 'ul')}</div>` : ''}
+          </section>
+        </div>
       </article>
-      <a class="back" href="/recipes/">← All feast-day recipes</a>`;
-  fs.writeFileSync(path.join(dir, 'index.html'), page(r.title, body, r.intro.slice(0, 160)));
+      <a class="back" href="/recipes/">← All feast-day recipes</a>
+      <script>
+        (function () {
+          var returnTo = new URLSearchParams(location.search).get('returnTo');
+          if (!returnTo) return;
+          try {
+            var url = new URL(returnTo, location.origin);
+            if (url.origin !== location.origin || !/^\\/(?:[0-9]{4}\\/[0-9]{2}\\/?)?$/.test(url.pathname)) return;
+            var link = document.getElementById('recipe-return');
+            link.href = url.pathname + url.search;
+            link.textContent = url.searchParams.has('event') ? '← Back to event' : '← Back to calendar';
+          } catch (_) { /* retain the calendar fallback */ }
+        })();
+      </script>`;
+  fs.writeFileSync(path.join(dir, 'index.html'), page(r.title, body, r.intro.slice(0, 160), 'Feast-day recipes', 'recipe-page'));
   count += 1;
 }
 

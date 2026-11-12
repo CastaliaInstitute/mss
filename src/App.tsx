@@ -26,7 +26,7 @@ import {
 import { initPresence, presenceWantedInLocation } from "./presence";
 import { monthSwipeDirection } from "./month-swipe";
 import "./App.css";
-import EventShare from "./EventShare";
+import EventShare, { eventShareUrl } from "./EventShare";
 import RsvpForm, { parseRsvpConfig, type RsvpConfig } from "./RsvpForm";
 
 interface AlternateCalendarOccurrence {
@@ -3085,6 +3085,13 @@ const App: React.FC = () => {
       .catch(() => setGreetings({}));
   }, [recipesUrl]);
 
+  const eventContentHref = (path: string, event: CalendarEvent) => {
+    const returnUrl = new URL(eventShareUrl(event, getBaseUrl()));
+    if (isKioskMode) returnUrl.searchParams.set("kiosk", "1");
+    const params = new URLSearchParams({ returnTo: returnUrl.pathname + returnUrl.search });
+    return `${path}?${params.toString()}`;
+  };
+
   // Render a description, turning each dish named in the Feasting line into
   // a link to its recipe page.
   const renderDescription = (event: CalendarEvent) => {
@@ -3115,10 +3122,8 @@ const App: React.FC = () => {
           parts.push(
             <a
               key={`${dish.slug}-${dish.at}`}
-              href={`${recipesUrl}${dish.slug}/`}
+              href={eventContentHref(`${recipesUrl}${dish.slug}/`, event)}
               className="recipe-link"
-              target="_blank"
-              rel="noopener"
               title={`Recipe: ${dish.dish}`}
             >
               {dish.text}
@@ -3800,10 +3805,8 @@ const App: React.FC = () => {
                                     <React.Fragment key={slug}>
                                       {j > 0 && " · "}
                                       <a
-                                        href={`${recipesUrl}${slug}/`}
+                                        href={eventContentHref(`${recipesUrl}${slug}/`, event)}
                                         className="recipe-link"
-                                        target="_blank"
-                                        rel="noopener"
                                       >
                                         {dish ? dish.dish : slug}
                                       </a>
@@ -3846,10 +3849,8 @@ const App: React.FC = () => {
                 <p className="mt-4 text-sm">
                   {agenda && (
                     <a
-                      href={`${agendaUrl}${agenda.slug}/`}
+                      href={eventContentHref(`${agendaUrl}${agenda.slug}/`, event)}
                       className="recipe-link"
-                      target="_blank"
-                      rel="noopener"
                     >
                       Full agenda
                     </a>
@@ -3932,10 +3933,8 @@ const App: React.FC = () => {
                       <>
                         {" · "}
                         <a
-                          href={`${agendaUrl}${agendas[selectedEvent.title].slug}/`}
+                          href={eventContentHref(`${agendaUrl}${agendas[selectedEvent.title].slug}/`, selectedEvent)}
                           className="recipe-link"
-                          target="_blank"
-                          rel="noopener"
                         >
                           Agenda for the day
                         </a>
