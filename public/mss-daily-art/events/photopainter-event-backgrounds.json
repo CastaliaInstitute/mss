@@ -4,7 +4,7 @@
     "start": "2026-11-01",
     "end": "2027-01-31"
   },
-  "generatedAt": "2026-11-10T14:05:07.715Z",
+  "generatedAt": "2026-11-12T17:26:25.391Z",
   "display": {
     "width": 800,
     "height": 480,
@@ -17,8 +17,8 @@
         "2027-01-01"
       ],
       "image": "/mss-daily-art/events/new-year-s-day-7374ddb3-photopainter.png",
-      "source": "public/images/new-years-day-champagne-and-confetti.png",
-      "sourceType": "MSS calendar artwork",
+      "source": "public/images/new-year-photopainter-background-v1.png",
+      "sourceType": "AI-generated interpretive illustration",
       "width": 800,
       "height": 480,
       "palette": "PhotoPainter six-color"
@@ -209,8 +209,8 @@
         "2026-11-11"
       ],
       "image": "/mss-daily-art/events/st-martin-s-day-martinstag-10712e6a-photopainter.png",
-      "source": "public/images/image24.png",
-      "sourceType": "MSS calendar artwork",
+      "source": "public/images/st-martin-day-photopainter-background-v1.png",
+      "sourceType": "AI-generated interpretive illustration",
       "width": 800,
       "height": 480,
       "palette": "PhotoPainter six-color"
@@ -245,8 +245,8 @@
         "2026-11-26"
       ],
       "image": "/mss-daily-art/events/thanksgiving-day-united-states-75242867-photopainter.png",
-      "source": "public/images/image26.png",
-      "sourceType": "MSS calendar artwork",
+      "source": "public/images/thanksgiving-photopainter-background-v1.png",
+      "sourceType": "AI-generated interpretive illustration",
       "width": 800,
       "height": 480,
       "palette": "PhotoPainter six-color"
@@ -437,8 +437,8 @@
         "2026-12-05"
       ],
       "image": "/mss-daily-art/events/hanukkah-festival-of-lights-5717fc69-photopainter.png",
-      "source": "public/images/festival-of-lights-eight-nights-of-celebration-starting-at-dusk-on-dec-15.png",
-      "sourceType": "MSS calendar artwork",
+      "source": "public/images/hanukkah-photopainter-background-v1.png",
+      "sourceType": "AI-generated interpretive illustration",
       "width": 800,
       "height": 480,
       "palette": "PhotoPainter six-color"
@@ -473,8 +473,8 @@
         "2026-12-21"
       ],
       "image": "/mss-daily-art/events/winter-solstice-yule-58e9065f-photopainter.png",
-      "source": "public/images/polar-bear-solstice.svg",
-      "sourceType": "MSS calendar artwork",
+      "source": "public/images/winter-solstice-photopainter-background-v1.png",
+      "sourceType": "AI-generated interpretive illustration",
       "width": 800,
       "height": 480,
       "palette": "PhotoPainter six-color"
@@ -533,8 +533,8 @@
         "2026-12-25"
       ],
       "image": "/mss-daily-art/events/christmas-day-73093139-photopainter.png",
-      "source": "public/images/image33.png",
-      "sourceType": "MSS calendar artwork",
+      "source": "public/images/christmas-day-photopainter-background-v1.png",
+      "sourceType": "AI-generated interpretive illustration",
       "width": 800,
       "height": 480,
       "palette": "PhotoPainter six-color"

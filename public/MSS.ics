@@ -22,7 +22,7 @@ DESCRIPTION:History: The Roman calendar fixed the turn of the civil year to
 CATEGORIES:celebration
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-X-IMAGE:/images/new-years-day-champagne-and-confetti.png
+X-IMAGE:/images/new-year-photopainter-background-v1.png
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20251104T055848Z
@@ -644,7 +644,7 @@ DESCRIPTION:History: Medieval Europe celebrated 11 November as the close of
 CATEGORIES:cultural
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-X-IMAGE:/images/image24.png
+X-IMAGE:/images/st-martin-day-photopainter-background-v1.png
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20251104T055848Z
@@ -698,7 +698,7 @@ DESCRIPTION:History: Thanksgiving commemorates harvest gatherings and the 1
 CATEGORIES:celebration
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-X-IMAGE:/images/image26.png
+X-IMAGE:/images/thanksgiving-photopainter-background-v1.png
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20251104T055848Z
@@ -997,7 +997,7 @@ DESCRIPTION:History: Hanukkah commemorates the Maccabean rededication of th
 CATEGORIES:cultural
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-X-IMAGE:/images/festival-of-lights-eight-nights-of-celebration-starting-at-dusk-on-dec-15.png
+X-IMAGE:/images/hanukkah-photopainter-background-v1.png
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20251104T055848Z
@@ -1049,7 +1049,7 @@ DESCRIPTION:History: The solstice marks the sun's rebirth in cultures from
 CATEGORIES:seasonal
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-X-IMAGE:/images/polar-bear-solstice.svg
+X-IMAGE:/images/winter-solstice-photopainter-background-v1.png
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20251104T055848Z
@@ -1146,7 +1146,7 @@ DESCRIPTION:History: By late antiquity the Western church fixed December 25
 CATEGORIES:celebration
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-X-IMAGE:/images/image33.png
+X-IMAGE:/images/christmas-day-photopainter-background-v1.png
 END:VEVENT
 BEGIN:VEVENT
 DTSTAMP:20251104T055848Z
