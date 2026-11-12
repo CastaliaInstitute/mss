@@ -10,13 +10,14 @@
  */
 
 const CACHE_VERSION = "mss-v1";
-const PRECACHE = ["/", "/index.html", "/mss-events.html", "/MSS.ics"];
+const PRECACHE = ["/kiosk/", "/", "/index.html", "/mss-events.html", "/MSS.ics"];
 
 const isFreshFirst = (url) =>
   url.pathname === "/" ||
   url.pathname.endsWith(".html") ||
   url.pathname.endsWith(".ics") ||
-  url.pathname.endsWith(".json");
+  url.pathname.endsWith(".json") ||
+  url.pathname.endsWith(".webmanifest");
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

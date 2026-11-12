@@ -3,7 +3,7 @@
   "name": "Maybe Something Seasonal",
   "short_name": "Maybe Seasonal",
   "description": "A beautiful seasonal calendar celebrating nature's cycles and special moments throughout the year.",
-  "start_url": "/?source=pwa",
+  "start_url": "/kiosk/?source=pwa",
   "scope": "/",
   "display": "standalone",
   "orientation": "landscape",

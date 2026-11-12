@@ -2948,7 +2948,7 @@ const canonicalMonthPath = (date: Date): string => {
 };
 
 const App: React.FC = () => {
-  // The regular calendar is the default; `?kiosk=1` opts into kiosk mode.
+  // Installed PWAs use the kiosk; explicit query options take precedence.
   const isKioskMode = (() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
@@ -2958,6 +2958,14 @@ const App: React.FC = () => {
       if (params.get('kiosk') === 'false' || params.get('kiosk') === '0') {
         return false;
       }
+    }
+    // iPadOS exposes navigator.standalone; other browsers use display-mode.
+    // This also upgrades Home Screen installs that retained the old start URL.
+    if (typeof window !== 'undefined' && (
+      (window.navigator as Navigator & { standalone?: boolean }).standalone === true ||
+      window.matchMedia?.('(display-mode: standalone)').matches === true
+    )) {
+      return true;
     }
     // @ts-ignore - Vite replaces this
     return (import.meta.env as { VITE_KIOSK_MODE?: string })?.VITE_KIOSK_MODE === 'true';

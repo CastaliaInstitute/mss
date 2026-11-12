@@ -135,3 +135,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Inspired by the beauty of seasonal changes and nature's cycles
 - Built with modern web technologies for the best user experience
+
+## Refrigerator iPad PWA
+
+Open `/kiosk/` in Safari and choose **Share → Add to Home Screen**. The PWA
+manifest launches this kiosk entry point. Existing installed PWAs also enter
+kiosk mode automatically using iPadOS `navigator.standalone` or the browser's
+standalone display mode. An explicit `?kiosk=0` still opens the regular calendar.
+
+Use Guided Access on the iPad to require a passcode to leave MSS. Camera and
+microphone permissions remain browser prompts; no configuration profile is needed.

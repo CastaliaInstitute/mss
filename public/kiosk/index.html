@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="MSS Calendar">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/icons/icon-180.png">
+    <title>MSS Kiosk</title>
+    <script>
+      var params = new URLSearchParams(location.search);
+      params.set('kiosk', '1');
+      location.replace('/?' + params.toString() + location.hash);
+    </script>
+  </head>
+  <body><p><a href="/?kiosk=1">Open MSS Kiosk</a></p></body>
+</html>
