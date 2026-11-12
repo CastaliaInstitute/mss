@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   addDays,
   addMonths,
@@ -24,6 +24,7 @@ import {
   User,
 } from "lucide-react";
 import { initPresence, presenceWantedInLocation } from "./presence";
+import { monthSwipeDirection } from "./month-swipe";
 import "./App.css";
 import EventShare from "./EventShare";
 import RsvpForm, { parseRsvpConfig, type RsvpConfig } from "./RsvpForm";
@@ -2975,6 +2976,9 @@ const App: React.FC = () => {
   const initialDate =
     monthFromLocation() || new Date();
   const [currentDate, setCurrentDate] = useState(initialDate);
+  const monthSwipeStart = useRef<{ x: number; y: number; time: number } | null>(null);
+  const ignoreCalendarClickUntil = useRef(0);
+
   const [events, setEvents] = useState<CalendarEvent[]>([]);
   const [recipeLinks, setRecipeLinks] = useState<RecipeLinks>({});
   const [agendas, setAgendas] = useState<Record<string, Agenda>>({});
@@ -4060,7 +4064,36 @@ const App: React.FC = () => {
           </header>
           <div
             className="calendar-month-grid grid min-h-0 flex-1 grid-cols-7 gap-1"
+            onTouchStart={(event) => {
+              if (event.touches.length !== 1) {
+                monthSwipeStart.current = null;
+                return;
+              }
+              const touch = event.touches[0];
+              monthSwipeStart.current = { x: touch.clientX, y: touch.clientY, time: Date.now() };
+            }}
+            onTouchMove={(event) => {
+              if (event.touches.length !== 1) monthSwipeStart.current = null;
+            }}
+            onTouchCancel={() => { monthSwipeStart.current = null; }}
+            onTouchEnd={(event) => {
+              const start = monthSwipeStart.current;
+              monthSwipeStart.current = null;
+              if (!start || event.touches.length || event.changedTouches.length !== 1) return;
+              const touch = event.changedTouches[0];
+              const direction = monthSwipeDirection(touch.clientX - start.x, touch.clientY - start.y, Date.now() - start.time);
+              if (!direction) return;
+              ignoreCalendarClickUntil.current = Date.now() + 500;
+              showMonth(addMonths(currentDate, direction));
+            }}
+            onClickCapture={(event) => {
+              if (Date.now() < ignoreCalendarClickUntil.current) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+            }}
             style={{
+              touchAction: 'pan-x pinch-zoom',
               gridTemplateRows: `auto repeat(${calendarDays.length / 7}, minmax(0, 1fr))`,
             }}
           >
