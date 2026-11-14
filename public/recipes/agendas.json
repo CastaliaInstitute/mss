@@ -2342,9 +2342,24 @@
         "activity": "Hydro Catherine Wheel",
         "detail": "Display a rotating water sprinkler fed by a regulated IBC-tote pump, with projected golden spirals. Keep the projector and mains electricity outside the splash area, secure the sprinkler, and confirm rated pressure and drainage before use. No pyrotechnics required.",
         "recipes": []
+      },
+      {
+        "time": "Later Evening · about 110 minutes",
+        "activity": "Watch Decline of an Empire (2014)",
+        "detail": "Watch Michael Redwood’s drama about Catherine of Alexandria, starring Nicole Madjarov and Peter O’Toole. Also released as Fall of an Empire: The Story of Katherine of Alexandria. Settle in with vegan Cattern cakes and warm cider after the wheel of water and light. Choose a rental or viewing copy before the evening.",
+        "recipes": [
+          "saffron-catter-n-cakes",
+          "mulled-cider"
+        ]
       }
     ],
-    "closing": "Share vegan Cattern cakes and Sainte-Catherine taffy while the wheel of water and light turns. Repeat annually on November 25."
+    "closing": "Share vegan Cattern cakes and Sainte-Catherine taffy while the wheel of water and light turns. Repeat annually on November 25.",
+    "resources": [
+      {
+        "label": "Decline of an Empire (2014) — film information",
+        "url": "https://en.wikipedia.org/wiki/Decline_of_an_Empire"
+      }
+    ]
   },
   "Thanksgiving Day (United States)": {
     "slug": "thanksgiving-day-united-states",
